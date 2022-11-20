@@ -1,0 +1,11 @@
+include ../Slider/Slider
+include ../Button/Button
+
+mixin Carousel()
+    -
+        const slides = ['../../assets/img/winter/house.jpg', '../../assets/img/winter/inventory.jpg', '../../assets/img/winter/bath.jpg', '../../assets/img/winter/board.jpg', '../../assets/img/winter/fito.jpg', '../../assets/img/winter/rock.jpg', '../../assets/img/winter/trener.jpg']
+    .carousel
+        +Slider({slides})
+        .carousel__button
+            +Button({text: "ЗАБРОНИРОВАТЬ ДОМ", link: 'mock-me'})
+

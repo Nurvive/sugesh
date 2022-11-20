@@ -1,0 +1,12 @@
+mixin InfoCard({text = '', title = '', img = '', subtitle = '', isRight = false} = {})
+    -
+        const infoCardModifier = isRight ? 'infoCard_direction_right' : ''
+        const isSmallText = subtitle ? 'infoCard_textSize_small' : ''
+        const isCenterText = img ? '' : 'infoCard_textPosition_center'
+    .infoCard(class=infoCardModifier class=isSmallText class=isCenterText)
+        h3.infoCard__title=title
+        div
+            h4.infoCard__subtitle=subtitle
+            p.infoCard__text!=text
+        if img
+            img(src=img).infoCard__img

@@ -1,0 +1,6 @@
+include ../Button/Button
+
+mixin ButtonLine({buttons} = {})
+    .buttonLine
+        each button in buttons
+            +Button({text: button.text, link: button.link})

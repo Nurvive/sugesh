@@ -1,0 +1,10 @@
+mixin Burger({menu=[]} = {})
+    .burger.js-burger
+        .burger__open.js-burger__open
+            span
+        nav.burger__nav
+            ul.burger__nav-menu
+                each option in menu
+                    li.burger__nav-menu-item
+                        a(href=option.href).burger__nav-menu-item-link= option.text
+            .burger__close.js-burger__close

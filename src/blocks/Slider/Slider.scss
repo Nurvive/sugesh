@@ -1,0 +1,11 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+.glide {
+    &__slide {
+        max-height: 980px;
+
+        & > img {
+            width: 100%;
+        }
+    }
+}

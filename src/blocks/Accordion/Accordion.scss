@@ -1,0 +1,117 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.accordion {
+    margin: 0;
+    max-width: 617px;
+    width: 100%;
+    background-color: $sand;
+    border-radius: 13px;
+    padding: 2px 12px 5px 11px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100px;
+    align-items: center;
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+        color: $dark;
+        max-width: 490px;
+
+        @include media($tablet) {
+            font-size: 26px;
+            line-height: unset;
+        }
+    }
+
+    &__open-button {
+        flex-shrink: 0;
+        position: relative;
+        width: 80px;
+        cursor: pointer;
+        height: 55px;
+
+        &::after, &::before {
+            position: absolute;
+            content: "";
+            background-color: $light;
+            width: 9px;
+            height: 54px;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            transform: translateX(-50%) rotate(90deg);
+        }
+    }
+
+    &__modal {
+        max-width: 1280px;
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        display: none;
+        border-radius: 35px;
+        border: 5px solid $sand;
+        box-shadow: 0 4px 21px rgba(0, 0, 0, 0.8);
+        padding: 18px 18px 20px 27px;
+        justify-content: space-between;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $light;
+        z-index: 2;
+        gap: 10px;
+
+        &-text {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: $dark;
+
+            &-link {
+                color: $secondColor;
+                font-weight: 700;
+            }
+        }
+
+        &-close-button {
+            cursor: pointer;
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            border-radius: 50%;
+            background-color: transparentize($dark, 0.5);
+
+            &::after, &::before {
+                width: 6px;
+                position: absolute;
+                height: 31px;
+                content: "";
+                background-color: $closeColor;
+                left: 50%;
+                top: 50%;
+            }
+
+            &::after {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &::before {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+
+    }
+    &_active {
+        .accordion__modal {
+            display: flex;
+        }
+    }
+}

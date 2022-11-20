@@ -1,0 +1,7 @@
+mixin Slider({slides} = {})
+    .glide
+        .glide__track(data-glide-el="track")
+            ul.glide__slides
+                each slide in slides
+                    li.glide__slide
+                        img(src=slide)

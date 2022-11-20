@@ -1,0 +1,45 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.seasons {
+    background-color: $main-color;
+    padding: 32px 70px 18px;
+
+    @include media($tablet) {
+        padding-inline: 30px;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        color: $light;
+
+        @include media($tablet) {
+            font-size: 26px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        margin-top: 30px;
+
+        @include media($desktopBig) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__link {
+        display: block;
+    }
+}

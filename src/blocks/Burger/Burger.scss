@@ -1,0 +1,119 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.burger {
+    display: none;
+    @include media($desktopBig) {
+        display: block;
+    }
+
+    &__open {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+
+        & span {
+            width: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+
+            &, &::after, &::before {
+                display: block;
+                position: absolute;
+                height: 2px;
+                background-color: black;
+            }
+
+            &::after, &::before {
+                width: 100%;
+                content: '';
+            }
+
+            &::after {
+                top: -6px;
+            }
+
+            &::before {
+                top: 6px;
+            }
+        }
+
+    }
+
+    &__nav {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -100%);
+        background-color: $sand;
+        padding-block: 50px 15px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        transition: transform 0.6s ease;
+        z-index: 20;
+
+        &-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+            &-item {
+                text-align: center;
+                transition: background-color 0.4s;
+                width: 100%;
+
+                &:hover {
+                    background-color: darken($sand, 15);
+                }
+
+                &-link {
+                    font-size: 22px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    color: $light;
+                    display: block;
+                    padding-block: 8px;
+                }
+            }
+        }
+    }
+
+    &__close {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        right: 20px;
+        top: 10px;
+
+        &::after, &::before {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 23px;
+            width: 2px;
+            background-color: black;
+        }
+
+        &::after {
+            transform: rotate(45deg);
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &_active {
+        .burger__nav {
+            transform: translate(-50%, 0);
+        }
+    }
+}

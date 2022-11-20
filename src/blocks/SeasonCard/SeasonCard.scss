@@ -1,0 +1,43 @@
+@import '../../scss/colors';
+
+.seasonCard {
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    max-width: 280px;
+    height: 100%;
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__cover {
+        position: absolute;
+        width: 100%;
+        border-radius: 20px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding-top: 146px;
+        opacity: 1;
+        transition: opacity 0.4s ease;
+
+        &-text {
+            color: $light;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            font-weight: 500;
+            font-size: 82px;
+            line-height: 105px;
+            text-transform: uppercase;
+        }
+    }
+
+    &:hover {
+        .seasonCard__cover {
+            opacity: 0;
+        }
+    }
+}

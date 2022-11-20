@@ -1,0 +1,66 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.header {
+    background-color: $main-color;
+    display: flex;
+    align-items: center;
+    padding: 8px 78px 8px 26px;
+    justify-content: space-between;
+    position: relative;
+
+    @include media($tablet) {
+        padding: 8px 20px;
+    }
+
+    &__nav-menu {
+        display: flex;
+        gap: 30px;
+
+        @include media($desktopBig) {
+            display: none;
+        }
+
+        &-item {
+            &-link {
+                font-size: 22px;
+                line-height: 28px;
+                text-transform: uppercase;
+                color: $light;
+                position: relative;
+
+                &::after, &::before {
+                    content: "";
+                    opacity: 0;
+                    width: 100%;
+                    left: 0;
+                    position: absolute;
+                    transition: opacity 0.4s ease;
+                    background-color: $light;
+                    bottom: -2px;
+                }
+
+                &::after {
+                    height: 1px;
+                }
+
+                &::before {
+                    height: 3px;
+                }
+
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+
+                &:active {
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

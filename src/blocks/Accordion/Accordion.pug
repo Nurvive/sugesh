@@ -1,0 +1,7 @@
+mixin Accordion({title = '', text = ''} = {})
+    .accordion.js-accordion
+        p.accordion__title=title
+        .accordion__open-button.js-accordion__open-button
+        .accordion__modal.js-accordion__modal
+            p.accordion__modal-text!=text
+            .accordion__modal-close-button.js-accordion__modal-close-button

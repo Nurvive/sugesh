@@ -1,0 +1,11 @@
+@import '../../scss/colors';
+
+.carousel {
+    background-color: $main-color;
+
+    &__button {
+        padding-block: 20px;
+        margin-inline: auto;
+        width: fit-content;
+    }
+}

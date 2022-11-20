@@ -1,0 +1,25 @@
+extends ../../templates/page-template
+include ./Promo/Promo
+include ./Seasons/Seasons
+include ./Advantages/Advantages
+include ./Description/Description
+include ./Map/Map
+include ./QnA/QnA
+
+block title
+    title Главная
+
+block content
+    +Promo()
+    -
+        const seasons = [
+            {name: "зима", img: '../../assets/img/winter.png', link: 'winter.html'},
+            {name: "весна", img: '../../assets/img/spring.png', link: 'mock-me'},
+            {name: "лето", img: '../../assets/img/summer.png', link: 'mock-me'},
+            {name: "осень", img: '../../assets/img/autumn.png', link: 'mock-me'}
+        ]
+    +Seasons({seasons})
+    +Advantages()
+    +Description()
+    +Map()
+    +QnA()

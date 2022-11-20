@@ -1,0 +1,99 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.qna {
+    padding-top: 70px;
+    padding-inline: 20px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 37.4742px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: $dark;
+        text-align: center;
+    }
+
+    &__list {
+        margin-block: 48px 130px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        row-gap: 50px;
+
+        @include media($tablet) {
+            margin-bottom: 80px;
+        }
+
+        &-item {
+            max-width: 617px;
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        max-width: 1180px;
+        margin: 0 auto;
+        align-items: center;
+
+        @include media($desktopBig) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        &-left {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+
+        }
+
+        &-text {
+            &-big {
+                font-weight: 700;
+                font-size: 37px;
+                line-height: 48px;
+                color: $warn;
+                text-transform: uppercase;
+
+                @include media($tablet) {
+                    font-size: 28px;
+                    line-height: unset;
+                }
+            }
+
+            &-link {
+
+                & > img {
+                    width: 100%;
+
+                }
+            }
+
+            &-small {
+                font-weight: 400;
+                font-size: 20.47px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: $dark;
+            }
+        }
+
+        &-link {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+
+            & > img {
+                width: 100%;
+            }
+        }
+    }
+}

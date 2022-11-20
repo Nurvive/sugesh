@@ -1,0 +1,28 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.map {
+    padding-top: 76px;
+
+    &__inner {
+        background-color: $secondColor;
+        padding-block: 30px 40px;
+        padding-inline: 20px;
+    }
+
+    &__button-wrapper {
+        margin: 0 auto 30px;
+        max-width: 330px;
+    }
+
+    &__wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}

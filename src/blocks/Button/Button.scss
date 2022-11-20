@@ -1,0 +1,29 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.button {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+    color: $warn;
+    text-transform: uppercase;
+    background-color: $light;
+    border-radius: 12px;
+    transition: border-color 0.4s ease;
+    border: 3px solid $light;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    display: block;
+
+    @include media($tablet) {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    &:hover {
+        border-color: $warn;
+    }
+}

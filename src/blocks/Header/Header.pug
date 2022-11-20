@@ -1,0 +1,13 @@
+include ../Burger/Burger
+
+mixin Header({menu=[]} = {})
+    header.header.js-header
+        a.header__logo-link
+            img.header__logo(src='../../assets/img/logo.svg')
+        nav.header__nav
+            ul.header__nav-menu
+                each option in menu
+                    li.header__nav-menu-item
+                        a(href=option.href).header__nav-menu-item-link= option.text
+        +Burger({menu})
+

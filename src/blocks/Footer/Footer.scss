@@ -1,0 +1,45 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+.footer {
+    background-color: $main-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+    @include media($tablet) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__left {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__right {
+        .footer__promo  {
+            &-item{
+                text-align: right;
+
+            }
+        }
+    }
+
+    &__promo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &-item {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: $dark;
+
+            & a {
+                color: $dark;
+            }
+        }
+    }
+}

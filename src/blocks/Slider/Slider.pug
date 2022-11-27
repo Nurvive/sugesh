@@ -5,3 +5,8 @@ mixin Slider({slides} = {})
                 each slide in slides
                     li.glide__slide
                         img(src=slide)
+        .glide__arrows(data-glide-el="controls")
+            button.glide__arrow.glide__arrow_directon_left(data-glide-dir="<")
+                img(src="../../assets/img/arrow.svg")
+            button.glide__arrow.glide__arrow_direction_right(data-glide-dir=">")
+                img(src="../../assets/img/arrow.svg")

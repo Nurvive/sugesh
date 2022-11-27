@@ -1,0 +1,11 @@
+extends ../../templates/page-template
+include ../../blocks/Carousel/Carousel
+include ./Description/Description
+
+block title
+    title Весна
+
+block content
+    +Carousel({slides: ['../../assests/img/spring1.jpg', '../../assests/img/spring2.jpg', '../../assests/img/spring3.jpg', '../../assests/img/spring4.jpg', '../../assests/img/spring5.jpg']})
+    p.spring__text!="Многие отказываются от путешествий весной думая, что будет нечем заняться: слякоть, сырость, переменчивая погода. Но все это предрассудки!</br></br>  Мы оборудовали Сюгеш так, чтобы наши гости могли приехать к нам в любое время года и насладиться отдыхом в Хакасии."
+    +Description()

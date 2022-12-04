@@ -1,0 +1,14 @@
+mixin Kitchen()
+    -
+        const cuisine = ["русская", "американская", "итальянская", "японская", "европейская"]
+    .kitchen
+        div
+            img.kitchen__img(src='../../assets/img/cook.svg')
+        .kitchen__wrapper
+            .kitchen__title
+                h2="кухни"
+                ul.kitchen__cuisine
+                    each item in cuisine
+                        li.kitchen__item=item
+            p.kitchen__text="По запросу гостей повара Сюгеша могут приготовить блюда индивидуально для вас."
+            p.kitchen__text="Ежедневно вы можете заказать вкусную итальянскую пиццу, которая готовится в каменной печи, вкусные роллы или картошку фри прямо с доставкой в домик! Цена: 600 рублей."

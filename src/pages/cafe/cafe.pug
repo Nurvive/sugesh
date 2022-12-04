@@ -1,0 +1,15 @@
+extends ../../templates/page-template
+include ./CafePromo/CafePromo
+include ./Schedule/Schedule
+include ./Kitchen/Kitchen
+
+block title
+    title Кафе
+
+block content
+    .cafe
+        +CafePromo()
+        .cafe__inner
+            h3.cafe__subtitle="Приезжая в Сюгеш обязательно загляните в наше кафе!"
+            +Schedule()
+            +Kitchen()

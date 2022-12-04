@@ -1,0 +1,14 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+.contactIcon {
+    border-right: 6px solid $warn;
+    padding-right: 18px;
+    max-width: 120px;
+    width: 100%;
+    text-align: right;
+
+    @include media($tablet) {
+        display: none;
+    }
+}

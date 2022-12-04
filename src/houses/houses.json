@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Домик №1",
+        "beds": "4",
+        "description": [
+            "Полностью благоустроен: водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Холодильник;",
+            "Постельное бельё, полотенца;",
+            "В стоимость дома включены завтраки;"
+        ],
+        "images": [
+            "../assets/images/house1_1.jpg",
+            "../assets/images/house1_2.jpg",
+            "../assets/images/house1_3.jpg",
+            "../assets/images/house1_4.jpg",
+            "../assets/images/house1_5.jpg",
+            "../assets/images/house1_6.jpg",
+            "../assets/images/house1_7.jpg",
+            "../assets/images/house1_8.jpg",
+            "../assets/images/house1_9.jpg",
+            "../assets/images/house1_10.jpg",
+            "../assets/images/house1_11.jpg",
+            "../assets/images/house1_12.jpg",
+            "../assets/images/house1_13.jpg"
+        ]
+    },
+    {
+        "name": "Домик №2",
+        "beds": "7",
+        "subDescription": "Дом №2: 60 м2. 2 этажа: 7 спальных мест. Расположен на берегу озера, (две двухъярусные 1,5-спальные кровати и две 1,5-спальные)",
+        "description": [
+            "Холодильник;",
+            "Полностью благоустроен: водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник",
+            "В стоимость дома включены завтраки;"
+        ],
+        "images": [
+            "../assets/images/house2_1.jpg",
+            "../assets/images/house2_2.jpg",
+            "../assets/images/house2_3.jpg",
+            "../assets/images/house2_4.jpg",
+            "../assets/images/house2_5.jpg",
+            "../assets/images/house2_6.jpg",
+            "../assets/images/house2_7.jpg",
+            "../assets/images/house2_8.jpg",
+            "../assets/images/house2_9.jpg",
+            "../assets/images/house2_10.jpg",
+            "../assets/images/house2_11.jpg",
+            "../assets/images/house2_12.jpg"
+        ]
+    }
+]

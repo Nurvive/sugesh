@@ -1,0 +1,59 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.help {
+    display: flex;
+    gap: 40px;
+
+    &__img {
+        max-width: 225px;
+
+        @include media($tablet) {
+            display: none;
+        }
+
+        & > img {
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 38px;
+        color: $dark;
+
+        @include media($tablet) {
+            font-size: 20px;
+            line-height: unset;
+        }
+
+        & > span {
+            font-weight: 500;
+        }
+    }
+
+    &__link {
+        background-color: $warn;
+        max-width: 410px;
+        width: 100%;
+        color: $light;
+        font-weight: 400;
+        font-size: 41px;
+        line-height: 52px;
+        text-align: center;
+        border-radius: 20px;
+
+        @include media($tablet) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}

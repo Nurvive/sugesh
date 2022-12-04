@@ -1,0 +1,18 @@
+extends ../../templates/page-template
+include ./GalleryLinks/GalleryLinks
+
+block title
+    title Галерея
+
+block content
+    -
+        const links = [{
+            text: 'ДОМИК №1',
+            link: ''
+        }, {
+            text: 'ДОМИК №2',
+            link: ''
+        }]
+    .gallery
+        +GalleryLinks({links})
+        h1.gallery__title='ВЫБЕРИТЕ, В КАКОМ СЕЗОНЕ ВЫ ПЛАНИРУЕТЕ ОТДЫХ  В "СЮГЕШ"'

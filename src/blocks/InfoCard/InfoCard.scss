@@ -10,11 +10,6 @@
     margin-block: 55px;
     padding-block: 10px;
 
-    @include media($tablet) {
-        margin-block: 0;
-        padding-inline: 20px;
-    }
-
     &__title {
         left: 123px;
         position: absolute;
@@ -36,6 +31,7 @@
     }
 
     &__subtitle {
+        max-width: 700px;
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
@@ -80,8 +76,13 @@
             padding-right: 20px;
         }
 
+        .infoCard__wrapper {
+            order: 2;
+        }
+
         .infoCard__img {
             left: 123px;
+            order: 1;
             top: 0;
             transform: none;
             filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
@@ -114,5 +115,57 @@
             margin-inline: auto;
             max-width: 700px;
         }
+    }
+
+    &_textLength_medium {
+        .infoCard__text {
+            max-width: 700px;
+        }
+
+        .infoCard__img {
+            right: 110px;
+        }
+
+        &.infoCard_direction_right {
+            .infoCard__img {
+                left: 110px;
+            }
+        }
+
+    }
+
+    &_imgFlat {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 123px;
+
+        .infoCard__img {
+            position: static;
+            filter: none;
+            box-shadow: none;
+            transform: none;
+        }
+    }
+
+    &_subtitleSize {
+        &_big {
+            .infoCard__subtitle {
+                font-weight: 500;
+                font-size: 39px;
+                line-height: 49px;
+
+                @include media($tablet) {
+                    font-size: 28px;
+                    line-height: unset;
+                }
+            }
+        }
+    }
+
+    @include media($tablet) {
+        margin-block: 0;
+        padding-inline: 20px;
     }
 }

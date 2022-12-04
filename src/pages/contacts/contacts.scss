@@ -1,0 +1,78 @@
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.contacts {
+    padding: 50px 20px 80px 120px;
+
+    @include media($desktopBig) {
+        padding-left: 40px;
+    }
+
+    @include media($tablet) {
+        padding: 30px 20px 40px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 78px;
+
+        @include media($tablet) {
+            gap: 20px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 13px;
+
+        &:nth-child(2) {
+            & > .contacts__item-content {
+                padding-bottom: 60px;
+            }
+        }
+
+        &-content {
+            position: relative;
+
+            &-title {
+                position: absolute;
+                top: -38px;
+            }
+
+            & > p {
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 38px;
+
+                @include media($tablet) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            & > span {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                display: inline-block;
+                margin-top: 5px;
+            }
+
+            & > div {
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 51px;
+
+                &:last-of-type {
+                    margin-top: 38px;
+                }
+
+                @include media($tablet) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}

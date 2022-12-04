@@ -1,0 +1,13 @@
+@import '../../../scss/colors';
+
+.galleryLinks {
+    background-color: $mainColor;
+    padding: 32px 112px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 76px;
+        row-gap: 22px;
+    }
+}

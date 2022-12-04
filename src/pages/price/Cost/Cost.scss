@@ -1,0 +1,30 @@
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.cost {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    max-width: 1220px;
+    margin: 0 auto;
+
+    @include media($tablet) {
+        gap: 20px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 51px;
+
+        @include media($tablet) {
+            font-size: 28px;
+        }
+    }
+
+    &__img {
+        & > img {
+            width: 100%;
+        }
+    }
+}

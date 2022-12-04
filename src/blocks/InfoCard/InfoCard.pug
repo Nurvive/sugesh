@@ -1,11 +1,14 @@
-mixin InfoCard({text = '', title = '', img = '', subtitle = '', isRight = false} = {})
+mixin InfoCard({text = '', title = '', img = '', subtitle = '', isRight = false, isLanding = false, isBigSubtitle = false, flatImg = false} = {})
     -
         const infoCardModifier = isRight ? 'infoCard_direction_right' : ''
         const isSmallText = subtitle ? 'infoCard_textSize_small' : ''
         const isCenterText = img ? '' : 'infoCard_textPosition_center'
-    .infoCard(class=infoCardModifier class=isSmallText class=isCenterText)
+        const isLandingCard = isLanding ? '' : 'infoCard_textLength_medium'
+        const isFlatImg = flatImg ? 'infoCard_imgFlat' : ''
+        const bigSubtitle = isBigSubtitle ? 'infoCard_subtitleSize_big' : ''
+    .infoCard(class=infoCardModifier class=isSmallText class=isCenterText class=isLandingCard class=isFlatImg class=bigSubtitle)
         h3.infoCard__title=title
-        div
+        div.infoCard__wrapper
             h4.infoCard__subtitle=subtitle
             p.infoCard__text!=text
         if img

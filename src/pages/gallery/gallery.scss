@@ -1,0 +1,19 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.gallery {
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        color: $secondColor;
+        text-transform: uppercase;
+        text-align: center;
+        padding-inline: 20px;
+        margin-block: 20px;
+
+        @include media($tablet) {
+            font-size: 22px;
+        }
+    }
+}

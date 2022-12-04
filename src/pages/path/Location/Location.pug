@@ -1,0 +1,11 @@
+mixin Location({link = '', qr = '', icon = '', img = ''} = {})
+    .location
+        img.location__icon(src=icon)
+        .location__img
+            img(src=img)
+        .location__inner
+            .location__button.js-location__button(data-link=link)="Получить ссылку"
+            a.location__button.location__button_color_green(href=link)="Перейти по ссылке"
+            img.location__qr(src=qr)
+            .location__modal.js-location__modal="Ссылка скопирована"
+

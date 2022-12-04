@@ -1,0 +1,92 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+.kitchen {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    gap: 10px;
+    align-items: flex-start;
+
+    @include media($desktopBig) {
+        align-items: flex-end;
+    }
+
+    @include media($tablet) {
+        margin-top: 30px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        @include media($tablet) {
+            gap: 20px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+
+        @include media($tablet) {
+            display: none;
+        }
+    }
+
+    &__title {
+        & h2 {
+            font-weight: 600;
+            font-size: 80px;
+            line-height: 103px;
+            text-transform: uppercase;
+            color: $secondColor;
+            text-align: center;
+
+            @include media($tablet) {
+                font-size: 26px;
+                line-height: unset;
+            }
+        }
+    }
+
+    &__cuisine {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+        color: $secondColor;
+
+        &::after {
+            content: " - ";
+            white-space: pre;
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 38px;
+        color: $dark;
+
+        @include media($tablet) {
+            font-size: 20px;
+            line-height: unset;
+        }
+
+        &:last-child {
+            max-width: 700px;
+        }
+    }
+}

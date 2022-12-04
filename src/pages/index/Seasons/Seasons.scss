@@ -3,7 +3,7 @@
 @import '../../../scss/breakpoints';
 
 .seasons {
-    background-color: $main-color;
+    background-color: $mainColor;
     padding: 32px 70px 18px;
 
     @include media($tablet) {

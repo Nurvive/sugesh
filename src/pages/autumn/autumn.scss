@@ -1,0 +1,34 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.autumn {
+    &__text {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 51px;
+        color: $gold;
+        max-width: 1280px;
+        margin: 20px auto 0;
+        text-align: center;
+        padding-inline: 20px;
+
+        @include media($tablet) {
+            font-size: 24px;
+            line-height: unset;
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-block: 10px 63px;
+        padding-inline: 20px;
+        max-width: 550px;
+
+        & > img {
+            width: 100%;
+        }
+    }
+}

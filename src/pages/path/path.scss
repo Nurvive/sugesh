@@ -1,0 +1,46 @@
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+@import '../../scss/colors';
+
+.path {
+    padding: 95px 50px 85px;
+
+    @include media($tablet) {
+        padding: 50px 20px 40px;
+    }
+
+    &__lines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__location {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 44px;
+
+        &-title {
+            font-weight: 400;
+            font-size: 41px;
+            line-height: 52px;
+            color: $dark;
+            max-width: 744px;
+
+            @include media($tablet) {
+                font-size: 30px;
+                line-height: unset;
+            }
+        }
+    }
+
+    &__help {
+        margin-top: 100px;
+
+        @include media($tablet) {
+            margin-top: 30px;
+        }
+    }
+}

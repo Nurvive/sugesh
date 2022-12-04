@@ -1,0 +1,38 @@
+include ../../../blocks/InfoCard/InfoCard
+include ../../../blocks/ButtonLine/ButtonLine
+
+mixin Description()
+    section.souvenirsDescription
+        -
+            const cards = [
+                {
+                    subtitle: "- Маринованный папоротник. Его изготавливают в Таштыпе.",
+                    text: "Употребление папоротника благоприятно сказывается на процессах роста, помогает формированию скелета, обмену веществ, деятельности нервной системы, повышает работоспособность, улучшает состояние эндокринной системы. Обязательно попробуйте!",
+                    img: '../../assets/img/leaf.svg',
+                    flatImg: true,
+                    isBigSubtitle: true
+                },
+                {
+                    subtitle: "- Продукты из натурального козьего молока (сыры/йогурты).",
+                    img: '../../assets/img/goat.svg',
+                    flatImg: true,
+                    isBigSubtitle: true
+                },
+                {
+                    subtitle: "- Фирменная продукция Сюгеша",
+                    text: "Вы сможете приобрести блокноты, кружки, брелоки и магниты в подарок знакомым или как память о поездке в любимый Сюгеш!",
+                    img: '../../assets/img/infoCardSouvenirs/infoCardSouvenirs1.jpg',
+                    isBigSubtitle: true
+                },
+                {
+                    subtitle: '- Фиточаи Хакасии',
+                    text: "Ароматные травяные чаи - отличный подарок или воспоминание об отдыхе!",
+                    img: '../../assets/img/infoCardSouvenirs/infoCardSouvenirs2.jpg',
+                    isRight: true,
+                    isBigSubtitle: true
+                }
+            ]
+        ul.souvenirsDescription__cards
+            each card in cards
+                li.souvenirsDescription__cards-item
+                    +InfoCard(card)

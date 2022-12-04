@@ -1,0 +1,29 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.cafe {
+    @include media($tablet) {
+        padding-bottom: 20px;
+    }
+
+    &__inner {
+        padding-inline: 20px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 51px;
+        color: $secondColor;
+        max-width: 800px;
+        margin: 30px auto 0;
+
+        @include media($tablet) {
+            font-size: 26px;
+            margin-top: 20px;
+            line-height: unset;
+        }
+    }
+}

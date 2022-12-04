@@ -1,0 +1,13 @@
+extends ../../templates/page-template
+include ./Description/Description
+include ./Present/Present
+include ./Team/Team
+
+block title
+    title Прайс
+
+block content
+    .souvenirs
+        +Present()
+        +Description()
+        +Team()

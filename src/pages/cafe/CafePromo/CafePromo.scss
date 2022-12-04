@@ -1,0 +1,35 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.cafePromo {
+    position: relative;
+
+    &__title {
+        text-shadow: 4px 4px 20px $dark65;
+        font-weight: 600;
+        font-size: 110px;
+        line-height: 141px;
+        color: $light;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90px;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        @include media($desktopBig) {
+            font-size: 90px;
+            line-height: 110px;
+        }
+
+        @include media($tablet) {
+            font-size: 40px;
+            line-height: unset;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

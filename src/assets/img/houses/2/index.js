@@ -1,0 +1,12 @@
+import './house2_1.jpg';
+import './house2_2.jpg';
+import './house2_3.jpg';
+import './house2_4.jpg';
+import './house2_5.jpg';
+import './house2_6.jpg';
+import './house2_7.jpg';
+import './house2_8.jpg';
+import './house2_9.jpg';
+import './house2_10.jpg';
+import './house2_11.jpg';
+import './house2_12.jpg';

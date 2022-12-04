@@ -1,0 +1,21 @@
+extends ../../templates/page-template
+include ../../blocks/ButtonLine/ButtonLine
+include ./Cost/Cost
+
+block title
+    title Прайс
+
+block content
+    .price
+        +ButtonLine({
+            buttons: [
+                {
+                    text: 'ЗАБРОНИРОВАТЬ ДОМ',
+                    link: 'mock-me'
+                }
+            ],
+            isLine: true
+        })
+        .price__inner
+            +Cost({title: "ЛЕТНИЙ ПРАЙС", img: "../../assets/img/price/summerPrice.png"})
+            +Cost({title: "ЗИМНИЙ ПРАЙС", img: "../../assets/img/price/winterPrice.png"})

@@ -1,0 +1,13 @@
+extends ../../templates/page-template
+include ../../blocks/Carousel/Carousel
+include ./Description/Description
+
+block title
+    title Лето
+
+block content
+    +Carousel({slides: ['../../assets/img/summer/summer1.jpg', '../../assets/img/summer/summer2.jpg', '../../assets/img/summer/summer3.jpg', '../../assets/img/summer/summer4.jpg', '../../assets/img/summer/summer5.jpg']})
+    p.summer__text="Всегда ли нужно выезжать заграницу, чтобы насладиться комфортным отдыхом на природе и сменить обстановку? Нет!"
+    +Description()
+    a(href="mock-me" target="_blank" rel="noopener noreferrer").summer__link
+        img(src="../../assets/img/sugeshVK.svg")

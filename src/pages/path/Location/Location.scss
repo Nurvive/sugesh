@@ -1,0 +1,89 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.location {
+    position: relative;
+    display: flex;
+    gap: 35px;
+    margin-top: 80px;
+
+    &__icon {
+        position: absolute;
+        top: -80px;
+    }
+
+    &__img {
+        & > img {
+            width: 100%;
+            border: 8px solid $secondColor;
+            border-radius: 18px;
+        }
+
+        @include media($tablet) {
+            display: none;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1 1 auto;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    &__button {
+        max-width: 584px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 41px;
+        line-height: 52px;
+        color: $dark;
+        background-color: $secondColor;
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+
+        @include media($desktopBig) {
+            font-size: 26px;
+        }
+
+        &_color {
+            &_green {
+                background-color: $mainColor;
+            }
+        }
+    }
+
+    &__qr {
+        max-width: 280px;
+
+        @include media($tablet) {
+            display: none;
+        }
+    }
+
+    &__modal {
+        border-radius: 14px;
+        background-color: $light;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 29px;
+        color: $dark;
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        display: none;
+        padding-block: 30px;
+
+        &_active {
+            display: block;
+        }
+    }
+}

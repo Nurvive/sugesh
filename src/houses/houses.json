@@ -9,19 +9,19 @@
             "В стоимость дома включены завтраки;"
         ],
         "images": [
-            "../assets/images/house1_1.jpg",
-            "../assets/images/house1_2.jpg",
-            "../assets/images/house1_3.jpg",
-            "../assets/images/house1_4.jpg",
-            "../assets/images/house1_5.jpg",
-            "../assets/images/house1_6.jpg",
-            "../assets/images/house1_7.jpg",
-            "../assets/images/house1_8.jpg",
-            "../assets/images/house1_9.jpg",
-            "../assets/images/house1_10.jpg",
-            "../assets/images/house1_11.jpg",
-            "../assets/images/house1_12.jpg",
-            "../assets/images/house1_13.jpg"
+            "assets/images/house1_1.jpg",
+            "assets/images/house1_2.jpg",
+            "assets/images/house1_3.jpg",
+            "assets/images/house1_4.jpg",
+            "assets/images/house1_5.jpg",
+            "assets/images/house1_6.jpg",
+            "assets/images/house1_7.jpg",
+            "assets/images/house1_8.jpg",
+            "assets/images/house1_9.jpg",
+            "assets/images/house1_10.jpg",
+            "assets/images/house1_11.jpg",
+            "assets/images/house1_12.jpg",
+            "assets/images/house1_13.jpg"
         ]
     },
     {
@@ -30,24 +30,202 @@
         "subDescription": "Дом №2: 60 м2. 2 этажа: 7 спальных мест. Расположен на берегу озера, (две двухъярусные 1,5-спальные кровати и две 1,5-спальные)",
         "description": [
             "Холодильник;",
-            "Полностью благоустроен: водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Постельное бельё, полотенца;",
             "Электрический чайник",
             "В стоимость дома включены завтраки;"
         ],
         "images": [
-            "../assets/images/house2_1.jpg",
-            "../assets/images/house2_2.jpg",
-            "../assets/images/house2_3.jpg",
-            "../assets/images/house2_4.jpg",
-            "../assets/images/house2_5.jpg",
-            "../assets/images/house2_6.jpg",
-            "../assets/images/house2_7.jpg",
-            "../assets/images/house2_8.jpg",
-            "../assets/images/house2_9.jpg",
-            "../assets/images/house2_10.jpg",
-            "../assets/images/house2_11.jpg",
-            "../assets/images/house2_12.jpg"
+            "assets/images/house2_1.jpg",
+            "assets/images/house2_2.jpg",
+            "assets/images/house2_3.jpg",
+            "assets/images/house2_4.jpg",
+            "assets/images/house2_5.jpg",
+            "assets/images/house2_6.jpg",
+            "assets/images/house2_7.jpg",
+            "assets/images/house2_8.jpg",
+            "assets/images/house2_9.jpg",
+            "assets/images/house2_10.jpg",
+            "assets/images/house2_11.jpg",
+            "assets/images/house2_12.jpg"
+        ]
+    },
+    {
+        "name": "Домик №3",
+        "beds": "6",
+        "subDescription": "Дом №3: 35 м2. 1 этаж: 6 спальных мест (три двухъярусные 1,5-спальные кровати), красивый вид на озеро.",
+        "description": [
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник",
+            "В стоимость дома включены завтраки;"
+        ],
+        "images": [
+            "assets/images/house3_1.jpg",
+            "assets/images/house3_2.jpg",
+            "assets/images/house3_3.jpg",
+            "assets/images/house3_4.jpg",
+            "assets/images/house3_5.jpg",
+            "assets/images/house3_6.jpg",
+            "assets/images/house3_7.jpg",
+            "assets/images/house3_8.jpg",
+            "assets/images/house3_9.jpg",
+            "assets/images/house3_10.jpg",
+            "assets/images/house3_11.jpg",
+            "assets/images/house3_12.jpg",
+            "assets/images/house3_13.jpg"
+        ]
+    },
+    {
+        "name": "Домик №4",
+        "beds": "12",
+        "subDescription": "Дом № 4. 72 м2. 2 этажа, 12 спальных мест:",
+        "description": [
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник",
+            "В стоимость дома включены завтраки;"
+        ],
+        "images": [
+            "assets/images/house4_1.jpg",
+            "assets/images/house4_2.jpg",
+            "assets/images/house4_3.jpg"
+        ]
+    },
+    {
+        "name": "Домик №5",
+        "beds": "12",
+        "subDescription": "Дом № 5. 72 м2. 2 этажа, 12 спальных мест",
+        "description": [
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник",
+            "В стоимость дома включены завтраки;"
+        ],
+        "images": [
+            "assets/images/house5_1.jpg",
+            "assets/images/house5_2.jpg",
+            "assets/images/house5_3.jpg",
+            "assets/images/house5_4.jpg",
+            "assets/images/house5_5.jpg",
+            "assets/images/house5_6.jpg",
+            "assets/images/house5_7.jpg",
+            "assets/images/house5_8.jpg",
+            "assets/images/house5_9.jpg",
+            "assets/images/house5_10.jpg",
+            "assets/images/house5_11.jpg",
+            "assets/images/house5_12.jpg"
+        ]
+    },
+    {
+        "name": "Домик №6",
+        "beds": "10",
+        "subDescription": "Дом №6: 72 м2. 2 этажа:10 спальных мест. Расположен в 10 метрах от бассейна (три двухъярусные кровати и четырех односпальных кровати)",
+        "description": [
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник",
+            "В стоимость дома включены завтраки;"
+        ],
+        "images": [
+            "assets/images/house6_1.jpg",
+            "assets/images/house6_2.jpg",
+            "assets/images/house6_3.jpg",
+            "assets/images/house6_4.jpg",
+            "assets/images/house6_5.jpg",
+            "assets/images/house6_6.jpg",
+            "assets/images/house6_7.jpg",
+            "assets/images/house6_8.jpg",
+            "assets/images/house6_9.jpg",
+            "assets/images/house6_10.jpg",
+            "assets/images/house6_11.jpg"
+        ]
+    },
+    {
+        "name": "Домик №7",
+        "beds": "6",
+        "subDescription": "Дом №7, 2 этажа, 50 м2",
+        "description": [
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник",
+            "В стоимость дома включены завтраки;"
+        ],
+        "images": [
+            "assets/images/house7_1.jpg",
+            "assets/images/house7_2.jpg",
+            "assets/images/house7_3.jpg",
+            "assets/images/house7_4.jpg",
+            "assets/images/house7_5.jpg",
+            "assets/images/house7_6.jpg",
+            "assets/images/house7_7.jpg",
+            "assets/images/house7_8.jpg",
+            "assets/images/house7_9.jpg"
+        ]
+    },
+    {
+        "name": "Домик №8",
+        "beds": "4",
+        "subDescription": "Дом №8,  2-х этажный 50 м2, рассчитан на 4 персоны",
+        "description": [
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник",
+            "В стоимость дома включены завтраки;"
+        ],
+        "images": [
+            "assets/images/house8_1.jpg",
+            "assets/images/house8_2.jpg"
+        ]
+    },
+    {
+        "name": "Домик №9",
+        "beds": "4",
+        "subDescription": "Дом №8,  2-х этажный 50 м2, рассчитан на 4 персоны",
+        "description": [
+            "Телевизор",
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "3 спальные зоны (2- двухспальных кровати, 1 - двухъярусная, 1 - односпальная)",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник",
+            "В стоимость дома включены завтраки;",
+            "Мангальная зона"
+        ],
+        "images": [
+            "assets/images/house9_1.jpg",
+            "assets/images/house9_2.jpg",
+            "assets/images/house9_3.jpg",
+            "assets/images/house9_4.jpg",
+            "assets/images/house9_5.jpg",
+            "assets/images/house9_6.jpg",
+            "assets/images/house9_7.jpg",
+            "assets/images/house9_8.jpg",
+            "assets/images/house9_9.jpg",
+            "assets/images/house9_10.jpg",
+            "assets/images/house9_11.jpg",
+            "assets/images/house9_12.jpg"
+        ]
+    },
+    {
+        "name": "Домик №10",
+        "beds": "10",
+        "subDescription": "Номер 10: 2 этажа. 12 спальных мест.",
+        "description": [
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник",
+            "В стоимость дома включены завтраки;"
+        ],
+        "images": [
+            "assets/images/house10_1.jpg"
         ]
     }
 ]

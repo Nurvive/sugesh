@@ -16,4 +16,16 @@
             font-size: 22px;
         }
     }
+
+    & .seasons {
+        padding-top: 0;
+    }
+
+    &__scroll {
+        padding: 47px 0 100px 30px;
+
+        @include media($tablet) {
+            padding: 20px 0 30px 20px;
+        }
+    }
 }

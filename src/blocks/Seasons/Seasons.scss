@@ -1,6 +1,6 @@
-@import '../../../scss/colors';
-@import '../../../scss/mixins';
-@import '../../../scss/breakpoints';
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
 
 .seasons {
     background-color: $mainColor;
@@ -15,6 +15,11 @@
         font-weight: 700;
         font-size: 40px;
         color: $light;
+        display: none;
+
+        &_active {
+            display: revert;
+        }
 
         @include media($tablet) {
             font-size: 26px;

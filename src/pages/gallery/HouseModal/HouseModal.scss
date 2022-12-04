@@ -139,4 +139,39 @@
             line-height: 26px;
         }
     }
+
+    &__arrows {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+
+        @include media($tablet) {
+            display: none;
+        }
+
+        &-arrow {
+            cursor: pointer;
+            position: absolute;
+            bottom: 50%;
+            left: -50px;
+            background-color: $secondColor;
+            mask-image: url("../../../assets/img/arrow.svg");
+            mask-repeat: no-repeat;
+            width: 40px;
+            height: 60px;
+            mask-size: 85%;
+            transform: translateY(50%);
+
+            &_direction {
+                &_right {
+                    right: -50px;
+                    left: revert;
+                    transform: translateY(50%) rotate(180deg);
+                }
+            }
+        }
+    }
 }

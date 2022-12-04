@@ -1,18 +1,182 @@
 extends ../../templates/page-template
 include ./GalleryLinks/GalleryLinks
+include ../../blocks/SeasonCard/SeasonCard
+include ../../blocks/Seasons/Seasons
+include ./Scroll/Scroll
 
 block title
     title Галерея
 
 block content
     -
-        const links = [{
-            text: 'ДОМИК №1',
-            link: ''
-        }, {
-            text: 'ДОМИК №2',
-            link: ''
-        }]
+        const links = [
+            {
+                text: 'ДОМИК №1',
+                link: ''
+            },
+            {
+                text: 'ДОМИК №2',
+                link: ''
+            },
+            {
+                text: 'ДОМИК №3',
+                link: ''
+            },
+            {
+                text: 'ДОМИК №4',
+                link: ''
+            },
+            {
+                text: 'ДОМИК №5',
+                link: ''
+            },
+            {
+                text: 'ДОМИК №6',
+                link: ''
+            },
+            {
+                text: 'ДОМИК №7',
+                link: ''
+            },
+            {
+                text: 'ДОМИК №8',
+                link: ''
+            },
+            {
+                text: 'ДОМИК №9',
+                link: ''
+            },
+            {
+                text: 'ДОМИК №10',
+                link: ''
+            }
+        ]
+        const seasons = [
+            {name: "зима", img: '../../assets/img/winter.png', link: 'winter.html'},
+            {name: "весна", img: '../../assets/img/spring.png', link: 'spring.html'},
+            {name: "лето", img: '../../assets/img/summer.png', link: 'summer.html'},
+            {name: "осень", img: '../../assets/img/autumn.png', link: 'autumn.html'}
+        ]
+        const scrolls = [
+            [
+                '../../assets/img/houses/1/house1_1.jpg',
+                '../../assets/img/houses/1/house1_2.jpg',
+                '../../assets/img/houses/1/house1_3.jpg',
+                '../../assets/img/houses/1/house1_4.jpg',
+                '../../assets/img/houses/1/house1_5.jpg',
+                '../../assets/img/houses/1/house1_6.jpg',
+                '../../assets/img/houses/1/house1_7.jpg',
+                '../../assets/img/houses/1/house1_8.jpg',
+                '../../assets/img/houses/1/house1_9.jpg',
+                '../../assets/img/houses/1/house1_10.jpg',
+                '../../assets/img/houses/1/house1_11.jpg',
+                '../../assets/img/houses/1/house1_12.jpg',
+                '../../assets/img/houses/1/house1_13.jpg',
+                '../../assets/img/houses/1/house1_14.jpg',
+                '../../assets/img/houses/1/house1_15.jpg',
+                '../../assets/img/houses/1/house1_16.jpg',
+                '../../assets/img/houses/1/house1_17.jpg'
+            ],
+            [
+                '../../assets/img/houses/2/house2_1.jpg',
+                '../../assets/img/houses/2/house2_2.jpg',
+                '../../assets/img/houses/2/house2_3.jpg',
+                '../../assets/img/houses/2/house2_4.jpg',
+                '../../assets/img/houses/2/house2_5.jpg',
+                '../../assets/img/houses/2/house2_6.jpg',
+                '../../assets/img/houses/2/house2_7.jpg',
+                '../../assets/img/houses/2/house2_8.jpg',
+                '../../assets/img/houses/2/house2_9.jpg',
+                '../../assets/img/houses/2/house2_10.jpg',
+                '../../assets/img/houses/2/house2_11.jpg',
+                '../../assets/img/houses/2/house2_12.jpg',
+            ],
+            [
+                '../../assets/img/houses/3/house3_1.jpg',
+                '../../assets/img/houses/3/house3_2.jpg',
+                '../../assets/img/houses/3/house3_3.jpg',
+                '../../assets/img/houses/3/house3_4.jpg',
+                '../../assets/img/houses/3/house3_5.jpg',
+                '../../assets/img/houses/3/house3_6.jpg',
+                '../../assets/img/houses/3/house3_7.jpg',
+                '../../assets/img/houses/3/house3_8.jpg',
+                '../../assets/img/houses/3/house3_9.jpg',
+                '../../assets/img/houses/3/house3_10.jpg',
+                '../../assets/img/houses/3/house3_11.jpg',
+                '../../assets/img/houses/3/house3_12.jpg',
+                '../../assets/img/houses/3/house3_13.jpg',
+            ],
+            [
+                '../../assets/img/houses/4/house4_1.jpg',
+                '../../assets/img/houses/4/house4_2.jpg',
+                '../../assets/img/houses/4/house4_3.jpg',
+            ],
+            [
+                '../../assets/img/houses/5/house5_1.jpg',
+                '../../assets/img/houses/5/house5_2.jpg',
+                '../../assets/img/houses/5/house5_3.jpg',
+                '../../assets/img/houses/5/house5_4.jpg',
+                '../../assets/img/houses/5/house5_5.jpg',
+                '../../assets/img/houses/5/house5_6.jpg',
+                '../../assets/img/houses/5/house5_7.jpg',
+                '../../assets/img/houses/5/house5_8.jpg',
+                '../../assets/img/houses/5/house5_9.jpg',
+                '../../assets/img/houses/5/house5_10.jpg',
+                '../../assets/img/houses/5/house5_11.jpg',
+                '../../assets/img/houses/5/house5_12.jpg',
+            ],
+            [
+                '../../assets/img/houses/6/house6_1.jpg',
+                '../../assets/img/houses/6/house6_2.jpg',
+                '../../assets/img/houses/6/house6_3.jpg',
+                '../../assets/img/houses/6/house6_4.jpg',
+                '../../assets/img/houses/6/house6_5.jpg',
+                '../../assets/img/houses/6/house6_6.jpg',
+                '../../assets/img/houses/6/house6_7.jpg',
+                '../../assets/img/houses/6/house6_8.jpg',
+                '../../assets/img/houses/6/house6_9.jpg',
+                '../../assets/img/houses/6/house6_10.jpg',
+                '../../assets/img/houses/6/house6_11.jpg',
+            ],
+            [
+                '../../assets/img/houses/7/house7_1.jpg',
+                '../../assets/img/houses/7/house7_2.jpg',
+                '../../assets/img/houses/7/house7_3.jpg',
+                '../../assets/img/houses/7/house7_4.jpg',
+                '../../assets/img/houses/7/house7_5.jpg',
+                '../../assets/img/houses/7/house7_6.jpg',
+                '../../assets/img/houses/7/house7_7.jpg',
+                '../../assets/img/houses/7/house7_8.jpg',
+                '../../assets/img/houses/7/house7_9.jpg',
+            ],
+            [
+                '../../assets/img/houses/8/house8_1.jpg',
+                '../../assets/img/houses/8/house8_2.jpg',
+            ],
+            [
+                '../../assets/img/houses/9/house9_1.jpg',
+                '../../assets/img/houses/9/house9_2.jpg',
+                '../../assets/img/houses/9/house9_3.jpg',
+                '../../assets/img/houses/9/house9_4.jpg',
+                '../../assets/img/houses/9/house9_5.jpg',
+                '../../assets/img/houses/9/house9_6.jpg',
+                '../../assets/img/houses/9/house9_7.jpg',
+                '../../assets/img/houses/9/house9_8.jpg',
+                '../../assets/img/houses/9/house9_9.jpg',
+                '../../assets/img/houses/9/house9_10.jpg',
+                '../../assets/img/houses/9/house9_11.jpg',
+                '../../assets/img/houses/9/house9_12.jpg',
+            ],
+            [
+                '../../assets/img/houses/10/house10_1.jpg',
+            ]
+        ]
     .gallery
         +GalleryLinks({links})
         h1.gallery__title='ВЫБЕРИТЕ, В КАКОМ СЕЗОНЕ ВЫ ПЛАНИРУЕТЕ ОТДЫХ  В "СЮГЕШ"'
+        +Seasons({seasons, withTitle: false})
+        ul.gallery__scroll
+            each item, i in scrolls
+                li.gallery__Scroll-item
+                    +Scroll({images: item, title: links[i].text})
+

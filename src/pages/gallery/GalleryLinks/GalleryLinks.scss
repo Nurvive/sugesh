@@ -9,5 +9,11 @@
         flex-wrap: wrap;
         column-gap: 76px;
         row-gap: 22px;
+        justify-content: center;
+    }
+
+    &__item {
+        max-width: 360px;
+        width: 100%;
     }
 }

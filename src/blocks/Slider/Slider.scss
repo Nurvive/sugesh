@@ -28,7 +28,7 @@
 
     &__arrow {
         cursor: pointer;
-        border-radius: 0px 30px 30px 0px;
+        border-radius: 0 30px 30px 0;
         background-color: $mainColor;
         position: relative;
         padding: 2.7% 3% 2.7% 4.5%;
@@ -39,8 +39,40 @@
             height: 100%;
         }
 
-        &_direction_right {
-            transform: rotate(180deg);
+        &_direction {
+            &_right {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__bullets {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        flex-direction: row;
+
+        @include media($tablet) {
+            display: none;
+        }
+    }
+
+    &__bullet {
+        width: 17px;
+        height: 17px;
+        background-color: $warn50;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+
+        &--active {
+            background-color: $warn;
+            width: 21px;
+            height: 21px;
         }
     }
 }

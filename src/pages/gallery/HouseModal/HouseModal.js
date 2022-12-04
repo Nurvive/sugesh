@@ -1,6 +1,5 @@
 import houses from '../../../houses/houses.json';
 import Glide from '@glidejs/glide';
-import '../../../assets/img/houses';
 
 export class HouseModal {
     constructor() {
@@ -93,8 +92,27 @@ export class HouseModal {
         });
 
         track.append(slides);
-
+        this.createSliderControls(glide);
         this.modal.append(slider);
+    };
+
+    createSliderControls = (parent) => {
+        const arrows = document.createElement('div');
+        arrows.classList.add('houseModal__arrows');
+        arrows.dataset.glideEl = 'controls';
+
+
+        const leftButton = document.createElement('div');
+        leftButton.classList.add('houseModal__arrows-arrow');
+        leftButton.dataset.glideDir = '<';
+        arrows.append(leftButton);
+
+        const rightButton = document.createElement('div');
+        rightButton.classList.add('houseModal__arrows-arrow', 'houseModal__arrows-arrow_direction_right');
+        rightButton.dataset.glideDir = '>';
+        arrows.append(rightButton);
+
+        parent.append(arrows);
     };
 
     createContent = () => {

@@ -1,0 +1,53 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.scroll {
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 17px;
+        background-color: $secondColor;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $warn;
+        cursor: grab;
+        border-radius: 17px;
+    }
+
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 38px;
+        color: $secondColor;
+        margin-bottom: 5px;
+
+        @include media($tablet) {
+            font-size: 22px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 15px;
+
+        &-item {
+            & > img {
+                max-width: 430px;
+
+                @include media($tablet) {
+                    max-width: 280px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,2499 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Accordion/Accordion.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.accordion {
+  margin: 0;
+  max-width: 617px;
+  width: 100%;
+  background-color: #E7B96E;
+  border-radius: 13px;
+  padding: 2px 12px 5px 11px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  min-height: 100px;
+  align-items: center;
+}
+.accordion__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+  max-width: 490px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__title {
+    font-size: 26px;
+    line-height: unset;
+  }
+}
+.accordion__open-button {
+  flex-shrink: 0;
+  position: relative;
+  width: 80px;
+  cursor: pointer;
+  height: 55px;
+}
+.accordion__open-button::after, .accordion__open-button::before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  width: 9px;
+  height: 54px;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.accordion__open-button::after {
+  -webkit-transform: translateX(-50%) rotate(90deg);
+          transform: translateX(-50%) rotate(90deg);
+}
+.accordion__modal {
+  max-width: 1280px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  display: none;
+  border-radius: 35px;
+  border: 5px solid #E7B96E;
+  box-shadow: 0 4px 21px rgba(0, 0, 0, 0.8);
+  padding: 18px 18px 20px 27px;
+  justify-content: space-between;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 2;
+  gap: 10px;
+}
+.accordion__modal-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+.accordion__modal-text-link {
+  color: #7889F1;
+  font-weight: 700;
+}
+.accordion__modal-close-button {
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.accordion__modal-close-button::after, .accordion__modal-close-button::before {
+  width: 6px;
+  position: absolute;
+  height: 31px;
+  content: "";
+  background-color: #D9D9D9;
+  left: 50%;
+  top: 50%;
+}
+.accordion__modal-close-button::after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.accordion__modal-close-button::before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+.accordion_active .accordion__modal {
+  display: flex;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Burger/Burger.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1320px) {
+  .burger {
+    display: block;
+  }
+}
+.burger__open {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+.burger__open span {
+  width: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+}
+.burger__open span, .burger__open span::after, .burger__open span::before {
+  display: block;
+  position: absolute;
+  height: 2px;
+  background-color: black;
+}
+.burger__open span::after, .burger__open span::before {
+  width: 100%;
+  content: "";
+}
+.burger__open span::after {
+  top: -6px;
+}
+.burger__open span::before {
+  top: 6px;
+}
+.burger__nav {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  background-color: #E7B96E;
+  padding-block: 50px 15px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  z-index: 20;
+}
+.burger__nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.burger__nav-menu-item {
+  text-align: center;
+  transition: background-color 0.4s;
+  width: 100%;
+}
+.burger__nav-menu-item:hover {
+  background-color: #dc992c;
+}
+.burger__nav-menu-item-link {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  padding-block: 8px;
+}
+.burger__close {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  right: 20px;
+  top: 10px;
+}
+.burger__close::after, .burger__close::before {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 23px;
+  width: 2px;
+  background-color: black;
+}
+.burger__close::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.burger__close::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.burger_active .burger__nav {
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Button/Button.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.button {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding: 7px;
+  color: #FA5F29;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border-radius: 12px;
+  transition: border-color 0.4s ease;
+  border: 3px solid #ffffff;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+.button:hover {
+  border-color: #FA5F29;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/ButtonLine/ButtonLine.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.buttonLine {
+  background-color: #7889F1;
+  display: flex;
+  justify-content: center;
+  padding-block: 30px;
+  gap: 130px;
+  padding-inline: 20px;
+}
+@media screen and (max-width: 768px) {
+  .buttonLine {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Carousel/Carousel.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.carousel {
+  background-color: #67A65F;
+}
+.carousel__button {
+  padding-block: 20px;
+  margin-inline: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Footer/Footer.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.footer {
+  background-color: #67A65F;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.footer__left {
+  display: flex;
+  gap: 10px;
+}
+.footer__right .footer__promo-item {
+  text-align: right;
+}
+.footer__promo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__promo-item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+.footer__promo-item a {
+  color: #000000;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Header/Header.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.header {
+  background-color: #67A65F;
+  display: flex;
+  align-items: center;
+  padding: 8px 78px 8px 26px;
+  justify-content: space-between;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 8px 20px;
+  }
+}
+.header__nav-menu {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 1320px) {
+  .header__nav-menu {
+    display: none;
+  }
+}
+.header__nav-menu-item-link {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+.header__nav-menu-item-link::after, .header__nav-menu-item-link::before {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  transition: opacity 0.4s ease;
+  background-color: #ffffff;
+  bottom: -2px;
+}
+.header__nav-menu-item-link::after {
+  height: 1px;
+}
+.header__nav-menu-item-link::before {
+  height: 3px;
+}
+.header__nav-menu-item-link:hover::after {
+  opacity: 1;
+}
+.header__nav-menu-item-link:active::before {
+  opacity: 1;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/InfoCard/InfoCard.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.infoCard {
+  width: 100%;
+  background-color: #7889F1;
+  position: relative;
+  padding-left: 123px;
+  margin-block: 55px;
+  padding-block: 10px;
+}
+.infoCard__title {
+  left: 123px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+  color: #A87D37;
+  top: -52px;
+}
+@media screen and (max-width: 768px) {
+  .infoCard__title {
+    font-size: 30px;
+    line-height: 24px;
+    left: 20px;
+    top: 0;
+    position: static;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+}
+.infoCard__subtitle {
+  max-width: 700px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.infoCard__text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+  max-width: 568px;
+}
+@media screen and (max-width: 768px) {
+  .infoCard__text {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+.infoCard__img {
+  right: 55px;
+  top: 50%;
+  position: absolute;
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.33));
+          filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.33));
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 20px;
+}
+@media screen and (max-width: 1400px) {
+  .infoCard__img {
+    display: none;
+  }
+}
+.infoCard_direction_right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 123px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .infoCard_direction_right {
+    display: block;
+    padding-right: 20px;
+  }
+}
+.infoCard_direction_right .infoCard__wrapper {
+  order: 2;
+}
+.infoCard_direction_right .infoCard__img {
+  left: 123px;
+  order: 1;
+  top: 0;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+}
+.infoCard_textSize_small .infoCard__text {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 22px;
+}
+.infoCard_textSize_small .infoCard__img {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+}
+.infoCard_textPosition_center {
+  margin-block: 0;
+  padding-inline: 20px;
+}
+.infoCard_textPosition_center > div {
+  text-align: center;
+}
+.infoCard_textPosition_center .infoCard__text {
+  margin-inline: auto;
+  max-width: 700px;
+}
+.infoCard_textLength_medium .infoCard__text {
+  max-width: 700px;
+}
+.infoCard_textLength_medium .infoCard__img {
+  right: 110px;
+}
+.infoCard_textLength_medium.infoCard_direction_right .infoCard__img {
+  left: 110px;
+}
+.infoCard_imgFlat {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 123px;
+}
+.infoCard_imgFlat .infoCard__img {
+  position: static;
+  -webkit-filter: none;
+          filter: none;
+  box-shadow: none;
+  -webkit-transform: none;
+          transform: none;
+}
+.infoCard_subtitleSize_big .infoCard__subtitle {
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 49px;
+}
+@media screen and (max-width: 768px) {
+  .infoCard_subtitleSize_big .infoCard__subtitle {
+    font-size: 28px;
+    line-height: unset;
+  }
+}
+@media screen and (max-width: 768px) {
+  .infoCard {
+    margin-block: 0;
+    padding-inline: 20px;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/SeasonCard/SeasonCard.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.seasonCard {
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  max-width: 280px;
+  height: 100%;
+  position: relative;
+}
+.seasonCard__img {
+  width: 100%;
+  height: 100%;
+}
+.seasonCard__cover {
+  position: absolute;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 146px;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+.seasonCard__cover-text {
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 82px;
+  line-height: 105px;
+  text-transform: uppercase;
+}
+.seasonCard:hover .seasonCard__cover {
+  opacity: 0;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Seasons/Seasons.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.seasons {
+  background-color: #67A65F;
+  padding: 32px 70px 18px;
+}
+@media screen and (max-width: 768px) {
+  .seasons {
+    padding-inline: 30px;
+  }
+}
+.seasons__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+  display: none;
+}
+.seasons__title_active {
+  display: revert;
+}
+@media screen and (max-width: 768px) {
+  .seasons__title {
+    font-size: 26px;
+  }
+}
+.seasons__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.seasons__cards {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1320px) {
+  .seasons__cards {
+    flex-wrap: wrap;
+  }
+}
+.seasons__link {
+  display: block;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Slider/Slider.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.glide {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.glide * {
+  box-sizing: inherit;
+}
+.glide__track {
+  overflow: hidden;
+}
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+.glide__slides--dragging {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.glide__slide a {
+  -webkit-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.glide__arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.glide__bullets {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.glide--rtl {
+  direction: rtl;
+}
+
+.glide__slide {
+  max-height: 980px;
+}
+.glide__slide > img {
+  width: 100%;
+}
+.glide__arrows {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 17%;
+}
+@media screen and (max-width: 768px) {
+  .glide__arrows {
+    display: none;
+  }
+}
+.glide__arrow {
+  cursor: pointer;
+  border-radius: 0 30px 30px 0;
+  background-color: #67A65F;
+  position: relative;
+  padding: 2.7% 3% 2.7% 4.5%;
+  border: none;
+  height: 100%;
+}
+.glide__arrow > img {
+  height: 100%;
+}
+.glide__arrow_direction_right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.glide__bullets {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .glide__bullets {
+    display: none;
+  }
+}
+.glide__bullet {
+  width: 17px;
+  height: 17px;
+  background-color: rgba(250, 95, 41, 0.5);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.glide__bullet--active {
+  background-color: #FA5F29;
+  width: 21px;
+  height: 21px;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/autumn/Description/Description.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.description {
+  background-color: #ffffff;
+  padding-top: 86px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .description {
+    padding-top: 40px;
+  }
+}
+.description__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+  color: #ffffff;
+  display: block;
+  background-color: #7889F1;
+  width: 70%;
+  text-align: right;
+  padding-right: 20px;
+}
+@media screen and (max-width: 1320px) {
+  .description__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .description__title {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    padding-block: 10px;
+  }
+}
+.description__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding-top: 35px;
+}
+@media screen and (max-width: 1320px) {
+  .description__cards {
+    gap: 30px;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/autumn/autumn.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.autumn__text {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+  color: #D6A350;
+  max-width: 1280px;
+  margin: 20px auto 0;
+  text-align: center;
+  padding-inline: 20px;
+}
+@media screen and (max-width: 768px) {
+  .autumn__text {
+    font-size: 24px;
+    line-height: unset;
+  }
+}
+.autumn__link {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-block: 10px 63px;
+  padding-inline: 20px;
+  max-width: 550px;
+}
+.autumn__link > img {
+  width: 100%;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/cafe/CafePromo/CafePromo.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.cafePromo {
+  position: relative;
+}
+.cafePromo__title {
+  text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.65);
+  font-weight: 600;
+  font-size: 110px;
+  line-height: 141px;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 90px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1320px) {
+  .cafePromo__title {
+    font-size: 90px;
+    line-height: 110px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cafePromo__title {
+    font-size: 40px;
+    line-height: unset;
+  }
+}
+.cafePromo__img {
+  width: 100%;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/cafe/Kitchen/Kitchen.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.kitchen {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+  gap: 10px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1320px) {
+  .kitchen {
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kitchen {
+    margin-top: 30px;
+  }
+}
+.kitchen__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (max-width: 768px) {
+  .kitchen__wrapper {
+    gap: 20px;
+  }
+}
+.kitchen__img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .kitchen__img {
+    display: none;
+  }
+}
+.kitchen__title h2 {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 103px;
+  text-transform: uppercase;
+  color: #7889F1;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .kitchen__title h2 {
+    font-size: 26px;
+    line-height: unset;
+  }
+}
+.kitchen__cuisine {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.kitchen__item {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  color: #7889F1;
+}
+.kitchen__item::after {
+  content: " - ";
+  white-space: pre;
+}
+.kitchen__item:last-child::after {
+  display: none;
+}
+.kitchen__text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .kitchen__text {
+    font-size: 20px;
+    line-height: unset;
+  }
+}
+.kitchen__text:last-child {
+  max-width: 700px;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/cafe/Schedule/Schedule.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.schedule {
+  display: flex;
+  gap: 170px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1320px) {
+  .schedule {
+    gap: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .schedule {
+    gap: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.schedule__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .schedule__content {
+    gap: 20px;
+  }
+}
+.schedule__img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .schedule__img {
+    display: none;
+  }
+}
+.schedule__title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 77px;
+  color: #7889F1;
+}
+@media screen and (max-width: 1320px) {
+  .schedule__title {
+    font-size: 50px;
+    line-height: 67px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .schedule__title {
+    font-size: 26px;
+    line-height: unset;
+  }
+}
+.schedule__inner {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 51px;
+  color: #7889F1;
+}
+@media screen and (max-width: 768px) {
+  .schedule__inner {
+    font-size: 20px;
+    line-height: unset;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/cafe/cafe.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@media screen and (max-width: 768px) {
+  .cafe {
+    padding-bottom: 20px;
+  }
+}
+.cafe__inner {
+  padding-inline: 20px;
+}
+.cafe__subtitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+  color: #7889F1;
+  max-width: 800px;
+  margin: 30px auto 0;
+}
+@media screen and (max-width: 768px) {
+  .cafe__subtitle {
+    font-size: 26px;
+    margin-top: 20px;
+    line-height: unset;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/contacts/ContactIcon/ContactIcon.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.contactIcon {
+  border-right: 6px solid #FA5F29;
+  padding-right: 18px;
+  max-width: 120px;
+  width: 100%;
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .contactIcon {
+    display: none;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/contacts/contacts.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.contacts {
+  padding: 50px 20px 80px 120px;
+}
+@media screen and (max-width: 1320px) {
+  .contacts {
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding: 30px 20px 40px;
+  }
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+}
+@media screen and (max-width: 768px) {
+  .contacts__list {
+    gap: 20px;
+  }
+}
+.contacts__item {
+  display: flex;
+  gap: 13px;
+}
+.contacts__item:nth-child(2) > .contacts__item-content {
+  padding-bottom: 60px;
+}
+.contacts__item-content {
+  position: relative;
+}
+.contacts__item-content-title {
+  position: absolute;
+  top: -38px;
+}
+.contacts__item-content > p {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+}
+@media screen and (max-width: 768px) {
+  .contacts__item-content > p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.contacts__item-content > span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.contacts__item-content > div {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 51px;
+}
+.contacts__item-content > div:last-of-type {
+  margin-top: 38px;
+}
+@media screen and (max-width: 768px) {
+  .contacts__item-content > div {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/gallery/GalleryLinks/GalleryLinks.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.galleryLinks {
+  background-color: #67A65F;
+  padding: 32px 112px;
+}
+.galleryLinks__list {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-column-gap: 76px;
+     -moz-column-gap: 76px;
+          column-gap: 76px;
+  row-gap: 22px;
+  justify-content: center;
+}
+.galleryLinks__item {
+  max-width: 360px;
+  width: 100%;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/gallery/HouseModal/HouseModal.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.houseModal {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px 30px 40px;
+  z-index: 2;
+  max-width: 820px;
+  width: 100%;
+  max-height: 970px;
+  overflow: auto;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .houseModal {
+    padding: 15px;
+  }
+}
+.houseModal__wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  display: none;
+  padding: 15px;
+}
+.houseModal__wrapper_active {
+  display: flex;
+}
+.houseModal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.houseModal__content {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-bottom: 16px;
+  max-width: 700px;
+}
+.houseModal__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.houseModal__header-info {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.houseModal__header-close {
+  position: relative;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+@media screen and (max-width: 768px) {
+  .houseModal__header-close {
+    width: 20px;
+    height: 20px;
+  }
+}
+.houseModal__header-close::before, .houseModal__header-close::after {
+  width: 5px;
+  content: "";
+  height: 35px;
+  position: absolute;
+  background-color: #7889F1;
+  top: 0;
+  left: 50%;
+}
+@media screen and (max-width: 768px) {
+  .houseModal__header-close::before, .houseModal__header-close::after {
+    width: 4px;
+    height: 20px;
+  }
+}
+.houseModal__header-close::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.houseModal__header-close::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.houseModal__slider {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+.houseModal__slider img {
+  max-height: 380px;
+}
+.houseModal__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+@media screen and (max-width: 768px) {
+  .houseModal__title {
+    font-size: 18px;
+  }
+}
+.houseModal__title-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  margin-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  .houseModal__title-text {
+    font-size: 18px;
+  }
+}
+.houseModal__list {
+  display: flex;
+  list-style: initial;
+  flex-direction: column;
+  padding-left: 35px;
+}
+.houseModal__list-item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.houseModal__arrows {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .houseModal__arrows {
+    display: none;
+  }
+}
+.houseModal__arrows-arrow {
+  cursor: pointer;
+  position: absolute;
+  bottom: 50%;
+  left: -50px;
+  background-color: #7889F1;
+  -webkit-mask-image: url(assets/fonts/arrow.svg);
+          mask-image: url(assets/fonts/arrow.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  width: 40px;
+  height: 60px;
+  -webkit-mask-size: 85%;
+          mask-size: 85%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+.houseModal__arrows-arrow_direction_right {
+  right: -50px;
+  left: revert;
+  -webkit-transform: translateY(50%) rotate(180deg);
+          transform: translateY(50%) rotate(180deg);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/gallery/Scroll/Scroll.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.scroll {
+  overflow: auto;
+}
+.scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.scroll::-webkit-scrollbar-track {
+  border-radius: 17px;
+  background-color: #7889F1;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #FA5F29;
+  cursor: grab;
+  border-radius: 17px;
+}
+.scroll::-webkit-scrollbar-button {
+  display: none;
+}
+.scroll__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  color: #7889F1;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .scroll__title {
+    font-size: 22px;
+  }
+}
+.scroll__list {
+  display: flex;
+  gap: 15px;
+}
+.scroll__list-item > img {
+  max-width: 430px;
+}
+@media screen and (max-width: 768px) {
+  .scroll__list-item > img {
+    max-width: 280px;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/gallery/gallery.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.gallery__title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #7889F1;
+  text-transform: uppercase;
+  text-align: center;
+  padding-inline: 20px;
+  margin-block: 20px;
+}
+@media screen and (max-width: 768px) {
+  .gallery__title {
+    font-size: 22px;
+  }
+}
+.gallery .seasons {
+  padding-top: 0;
+}
+.gallery__scroll {
+  padding: 47px 0 100px 30px;
+}
+@media screen and (max-width: 768px) {
+  .gallery__scroll {
+    padding: 20px 0 30px 20px;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/index/Advantages/Advantages.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.advantages {
+  background-color: #ffffff;
+  padding: 122px 0 136px 68px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1320px) {
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    padding: 100px 60px 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages {
+    gap: 30px;
+    padding: 40px 20px 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.advantages__list-item {
+  font-weight: 500;
+  font-size: 49px;
+  line-height: 63px;
+  color: #E7B96E;
+  padding-left: 80px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .advantages__list-item {
+    font-size: 32px;
+    padding-left: 50px;
+    line-height: 32px;
+  }
+}
+.advantages__list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+@media screen and (max-width: 768px) {
+  .advantages__list-item::before {
+    width: 39px;
+    height: 30px;
+    background-size: cover;
+  }
+}
+.advantages__list-item:first-child::before {
+  background-image: url(assets/fonts/house.svg);
+}
+@media screen and (max-width: 768px) {
+  .advantages__list-item:first-child::before {
+    height: 37px;
+  }
+}
+.advantages__list-item:nth-child(2)::before {
+  background-image: url(assets/fonts/car.svg);
+}
+.advantages__list-item:last-child::before {
+  background-image: url(assets/fonts/wifi.svg);
+}
+.advantages__social {
+  border-radius: 28px 0 0 28px;
+  background-color: #7889F1;
+  max-height: 180px;
+  position: relative;
+  padding: 14px 0 14px 20px;
+  max-width: 520px;
+  width: 100%;
+}
+@media screen and (max-width: 1320px) {
+  .advantages__social {
+    border-radius: 28px;
+    padding-right: 20px;
+  }
+}
+.advantages__social-text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+  max-width: 250px;
+}
+@media screen and (max-width: 768px) {
+  .advantages__social-text {
+    max-width: 100%;
+  }
+}
+.advantages__social-text:nth-of-type(2) {
+  max-width: 150px;
+}
+@media screen and (max-width: 768px) {
+  .advantages__social-text:nth-of-type(2) {
+    max-width: 100%;
+  }
+}
+.advantages__social-img {
+  position: absolute;
+  right: 12px;
+  top: -96px;
+}
+@media screen and (max-width: 768px) {
+  .advantages__social-img {
+    display: none;
+  }
+}
+.advantages__social-link {
+  position: absolute;
+  bottom: -56px;
+  left: 0;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/index/Description/Description.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.description {
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+.description__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+  color: #ffffff;
+  display: block;
+  background-color: #7889F1;
+  width: 50%;
+  text-align: right;
+  padding-right: 20px;
+}
+@media screen and (max-width: 1320px) {
+  .description__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .description__title {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    padding-block: 10px;
+  }
+}
+.description__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding-top: 35px;
+}
+@media screen and (max-width: 768px) {
+  .description__cards {
+    gap: 20px;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/index/Index.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/index/Map/Map.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.map {
+  padding-top: 76px;
+}
+.map__inner {
+  background-color: #7889F1;
+  padding-block: 30px 40px;
+  padding-inline: 20px;
+}
+.map__button-wrapper {
+  margin: 0 auto 30px;
+  max-width: 330px;
+}
+.map__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.map__img {
+  width: 100%;
+  height: 100%;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/index/Promo/Promo.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.promo {
+  width: 100%;
+  height: 278px;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-image: url(assets/images/base.jpg);
+  position: relative;
+}
+.promo__title {
+  position: absolute;
+  white-space: nowrap;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 145px;
+  line-height: 186px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1320px) {
+  .promo__title {
+    font-size: 90px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo__title {
+    font-size: 38px;
+    line-height: unset;
+    bottom: 40px;
+  }
+}
+.promo__subtitle {
+  position: absolute;
+  top: 44px;
+  right: 159px;
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 60px;
+  color: #E7B96E;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .promo__subtitle {
+    top: 50px;
+    font-size: 32px;
+    line-height: unset;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/index/QnA/QnA.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.qna {
+  padding-top: 70px;
+  padding-inline: 20px;
+}
+.qna__title {
+  font-weight: 700;
+  font-size: 37.4742px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+.qna__list {
+  margin-block: 48px 130px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 50px;
+}
+@media screen and (max-width: 768px) {
+  .qna__list {
+    margin-bottom: 80px;
+  }
+}
+.qna__list-item {
+  max-width: 617px;
+  width: 100%;
+}
+.qna__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  max-width: 1180px;
+  margin: 0 auto;
+  align-items: center;
+}
+@media screen and (max-width: 1320px) {
+  .qna__inner {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+.qna__inner-left {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.qna__inner-text-big {
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 48px;
+  color: #FA5F29;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .qna__inner-text-big {
+    font-size: 28px;
+    line-height: unset;
+  }
+}
+.qna__inner-text-link > img {
+  width: 100%;
+}
+.qna__inner-text-small {
+  font-weight: 400;
+  font-size: 20.47px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.qna__inner-link {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.qna__inner-link > img {
+  width: 100%;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/path/Help/Help.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.help {
+  display: flex;
+  gap: 40px;
+}
+.help__img {
+  max-width: 225px;
+}
+@media screen and (max-width: 768px) {
+  .help__img {
+    display: none;
+  }
+}
+.help__img > img {
+  width: 100%;
+}
+.help__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.help__text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .help__text {
+    font-size: 20px;
+    line-height: unset;
+  }
+}
+.help__text > span {
+  font-weight: 500;
+}
+.help__link {
+  background-color: #FA5F29;
+  max-width: 410px;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 52px;
+  text-align: center;
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .help__link {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/path/Line/Line.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.line {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .line {
+    gap: 15px;
+  }
+}
+.line__imgs {
+  width: 120px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 768px) {
+  .line__imgs {
+    display: none;
+  }
+}
+.line__separator {
+  flex-shrink: 0;
+  width: 6px;
+  height: 170px;
+  border-radius: 6px;
+  background-color: #E7B96E;
+  margin-inline: 30px 50px;
+}
+@media screen and (max-width: 768px) {
+  .line__separator {
+    margin-inline: 0 10px;
+  }
+}
+.line__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  max-width: 900px;
+}
+@media screen and (max-width: 768px) {
+  .line__text {
+    font-size: 16px;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/path/Location/Location.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.location {
+  position: relative;
+  display: flex;
+  gap: 35px;
+  margin-top: 80px;
+}
+.location__icon {
+  position: absolute;
+  top: -80px;
+}
+.location__img > img {
+  width: 100%;
+  border: 8px solid #7889F1;
+  border-radius: 18px;
+}
+@media screen and (max-width: 768px) {
+  .location__img {
+    display: none;
+  }
+}
+.location__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 auto;
+  align-items: center;
+  flex-shrink: 0;
+}
+.location__button {
+  max-width: 584px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 52px;
+  color: #000000;
+  background-color: #7889F1;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 1320px) {
+  .location__button {
+    font-size: 26px;
+  }
+}
+.location__button_color_green {
+  background-color: #67A65F;
+}
+.location__qr {
+  max-width: 280px;
+}
+@media screen and (max-width: 768px) {
+  .location__qr {
+    display: none;
+  }
+}
+.location__modal {
+  border-radius: 14px;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 29px;
+  color: #000000;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  display: none;
+  padding-block: 30px;
+}
+.location__modal_active {
+  display: block;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/path/path.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.path {
+  padding: 95px 50px 85px;
+}
+@media screen and (max-width: 768px) {
+  .path {
+    padding: 50px 20px 40px;
+  }
+}
+.path__lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.path__location {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 44px;
+}
+.path__location-title {
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 52px;
+  color: #000000;
+  max-width: 744px;
+}
+@media screen and (max-width: 768px) {
+  .path__location-title {
+    font-size: 30px;
+    line-height: unset;
+  }
+}
+.path__help {
+  margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .path__help {
+    margin-top: 30px;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/price/Cost/Cost.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.cost {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .cost {
+    gap: 20px;
+  }
+}
+.cost__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+}
+@media screen and (max-width: 768px) {
+  .cost__title {
+    font-size: 28px;
+  }
+}
+.cost__img > img {
+  width: 100%;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/price/price.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.price {
+  padding-block: 30px 70px;
+}
+.price > .buttonLine {
+  padding-block: 18px;
+}
+.price__inner {
+  margin-top: 80px;
+  padding-inline: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .price__inner {
+    padding-inline: 20px;
+    margin-top: 30px;
+    gap: 20px;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/souvenirs/Description/Description.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.souvenirsDescription {
+  background-color: #ffffff;
+  padding-bottom: 150px;
+  padding-top: 0;
+}
+@media screen and (max-width: 1320px) {
+  .souvenirsDescription {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .souvenirsDescription {
+    padding-bottom: 40px;
+  }
+}
+.souvenirsDescription__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-top: 0;
+}
+@media screen and (max-width: 1320px) {
+  .souvenirsDescription__cards {
+    gap: 30px;
+  }
+}
+.souvenirsDescription__cards-item:first-child > .infoCard, .souvenirsDescription__cards-item:nth-child(2) > .infoCard {
+  margin: 0;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/souvenirs/Present/Present.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.present {
+  padding: 40px 100px 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media screen and (max-width: 1320px) {
+  .present {
+    padding: 40px 80px 0 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .present {
+    padding: 30px 20px 10px;
+  }
+}
+.present__content {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+@media screen and (max-width: 1320px) {
+  .present__content {
+    gap: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .present__content {
+    gap: 20px;
+  }
+}
+.present__text, .present__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 64px;
+  color: #7889F1;
+  max-width: 940px;
+}
+@media screen and (max-width: 1320px) {
+  .present__text, .present__title {
+    font-size: 42px;
+    line-height: 58px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .present__text, .present__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+.present__img {
+  max-width: 262px;
+}
+@media screen and (max-width: 768px) {
+  .present__img {
+    display: none;
+  }
+}
+.present__img > img {
+  width: 100%;
+  display: block;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/souvenirs/Team/Team.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.team {
+  position: relative;
+}
+.team__title {
+  font-weight: 600;
+  font-size: 59px;
+  line-height: 75px;
+  color: #ffffff;
+  text-shadow: 0 0 17px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+}
+@media screen and (max-width: 1320px) {
+  .team__title {
+    font-size: 48px;
+    line-height: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.team__img {
+  width: 100%;
+  display: block;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/souvenirs/souvenirs.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/spring/Description/Description.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.description {
+  background-color: #ffffff;
+  padding-top: 86px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .description {
+    padding-top: 40px;
+  }
+}
+.description__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+  color: #ffffff;
+  display: block;
+  background-color: #7889F1;
+  width: 70%;
+  text-align: right;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1320px) {
+  .description__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .description__title {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    padding-block: 10px;
+  }
+}
+.description__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding-top: 35px;
+}
+@media screen and (max-width: 1320px) {
+  .description__cards {
+    gap: 30px;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/spring/spring.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.spring__text {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+  color: #D6A350;
+  max-width: 1280px;
+  margin: 20px auto 0;
+  text-align: center;
+  padding-inline: 20px;
+}
+@media screen and (max-width: 768px) {
+  .spring__text {
+    font-size: 24px;
+    line-height: unset;
+  }
+}
+.spring__link {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-block: 45px 63px;
+  padding-inline: 20px;
+  max-width: 550px;
+}
+.spring__link > img {
+  width: 100%;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/summer/Description/Description.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.description {
+  background-color: #ffffff;
+  padding-top: 86px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .description {
+    padding-top: 40px;
+  }
+}
+.description__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+  color: #ffffff;
+  display: block;
+  background-color: #7889F1;
+  width: 70%;
+  text-align: right;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1320px) {
+  .description__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .description__title {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    padding-block: 10px;
+    margin-bottom: 20px;
+  }
+}
+.description__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding-top: 35px;
+}
+@media screen and (max-width: 1320px) {
+  .description__cards {
+    gap: 30px;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/summer/summer.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.summer__text {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+  color: #D6A350;
+  max-width: 1280px;
+  margin: 20px auto 0;
+  text-align: center;
+  padding-inline: 20px;
+}
+@media screen and (max-width: 768px) {
+  .summer__text {
+    font-size: 24px;
+    line-height: unset;
+  }
+}
+.summer__link {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-block: 10px 63px;
+  padding-inline: 20px;
+  max-width: 550px;
+}
+.summer__link > img {
+  width: 100%;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/winter/Description/Description.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.description {
+  background-color: #ffffff;
+  padding-top: 86px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .description {
+    padding-top: 40px;
+  }
+}
+.description__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+  color: #ffffff;
+  display: block;
+  background-color: #7889F1;
+  width: 70%;
+  text-align: right;
+  padding-right: 20px;
+}
+@media screen and (max-width: 1320px) {
+  .description__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .description__title {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    padding-block: 10px;
+  }
+}
+.description__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding-top: 35px;
+}
+@media screen and (max-width: 1320px) {
+  .description__cards {
+    gap: 30px;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/winter/NewYear/NewYear.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.newYear {
+  text-align: center;
+}
+.newYear__inner {
+  padding-inline: 20px;
+}
+.newYear__link {
+  max-width: 550px;
+  display: block;
+  margin: 0 auto;
+}
+.newYear__link > img {
+  width: 100%;
+}
+.newYear__title {
+  font-weight: 700;
+  font-size: 76px;
+  color: #EF3434;
+  margin-top: 85px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .newYear__title {
+    font-size: 44px;
+    margin-top: 30px;
+  }
+}
+.newYear__question {
+  background-color: #67A65F;
+  padding: 16px 20px 20px;
+  text-align: center;
+  max-width: 950px;
+  border-radius: 20px;
+  margin: 55px auto 0;
+}
+@media screen and (max-width: 768px) {
+  .newYear__question {
+    margin-top: 30px;
+  }
+}
+.newYear__question-text {
+  font-weight: 500;
+  font-size: 49px;
+  line-height: 43px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .newYear__question-text {
+    font-size: 32px;
+  }
+}
+.newYear__info {
+  margin-top: 60px;
+  background-image: url(assets/images/newYearBackground.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  padding-bottom: 500px;
+}
+@media screen and (max-width: 1320px) {
+  .newYear__info {
+    padding-bottom: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newYear__info {
+    padding-bottom: 100px;
+  }
+}
+.newYear__info-inner {
+  margin-inline: auto;
+  max-width: 1080px;
+  text-align: center;
+  padding-inline: 20px;
+}
+.newYear__info-text {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: #EF3434;
+}
+@media screen and (max-width: 768px) {
+  .newYear__info-text {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/scss/breakpoints.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/scss/colors.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/scss/common.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: FuturaPT, serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/scss/fonts.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: FuturaPT;
+  src: url(c1c93dd4b376a2f9e912.eot) format("embedded-opentype"), url(assets/fonts/FuturaPT-Bold.ttf) format("truetype"), url(assets/fonts/FuturaPT-Bold.woff) format("woff");
+  font-weight: bold;
+  font-display: block;
+}
+@font-face {
+  font-family: FuturaPT;
+  src: url(55bc418ad8b9ed8d577c.eot) format("embedded-opentype"), url(assets/fonts/FuturaPT-Book.ttf) format("truetype"), url(assets/fonts/FuturaPT-Book.woff) format("woff");
+  font-weight: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: FuturaPT;
+  src: url(f24dc6ae7df8e317848f.eot) format("embedded-opentype"), url(assets/fonts/FuturaPT-Light.ttf) format("truetype"), url(assets/fonts/FuturaPT-Light.woff) format("woff");
+  font-weight: 300;
+  font-display: block;
+}
+@font-face {
+  font-family: FuturaPT;
+  src: url(6546797acac1a68aa930.eot) format("embedded-opentype"), url(assets/fonts/FuturaPT-Medium.ttf) format("truetype"), url(assets/fonts/FuturaPT-Medium.woff) format("woff");
+  font-weight: 500;
+  font-display: block;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/scss/mixins.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+

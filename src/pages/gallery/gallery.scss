@@ -23,6 +23,9 @@
 
     &__scroll {
         padding: 47px 0 100px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
 
         @include media($tablet) {
             padding: 20px 0 30px 20px;

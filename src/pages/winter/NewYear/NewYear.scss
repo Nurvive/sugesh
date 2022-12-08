@@ -27,7 +27,7 @@
         text-transform: uppercase;
 
         @include media($tablet) {
-            font-size: 44px;
+            font-size: 30px;
             margin-top: 30px;
         }
     }
@@ -51,7 +51,8 @@
             color: $light;
 
             @include media($tablet) {
-                font-size: 32px;
+                font-size: 24px;
+                line-height: 30px;
             }
         }
     }
@@ -65,11 +66,12 @@
         padding-bottom: 500px;
 
         @include media($desktopBig) {
-            padding-bottom: 200px
+            padding-bottom: 200px;
         }
 
         @include media($tablet) {
-            padding-bottom: 100px
+            padding-bottom: 100px;
+            margin-top: 30px;
         }
 
         &-inner {
@@ -86,7 +88,7 @@
             color: $newYearText;
 
             @include media($tablet) {
-                font-size: 32px;
+                font-size: 24px;
                 line-height: 36px;
             }
         }

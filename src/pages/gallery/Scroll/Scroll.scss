@@ -4,6 +4,8 @@
 
 .scroll {
     overflow: auto;
+    scrollbar-color: $warn $secondColor;
+    scrollbar-width: thin;
 
     &::-webkit-scrollbar {
         height: 8px;

@@ -1,8 +1,14 @@
 @import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
 
 .galleryLinks {
     background-color: $mainColor;
     padding: 32px 112px;
+
+    @include media($tablet) {
+        padding-inline: 20px;
+    }
 
     &__list {
         display: flex;
@@ -10,10 +16,18 @@
         column-gap: 76px;
         row-gap: 22px;
         justify-content: center;
+
+        @include media($tablet) {
+            gap: 20px;
+        }
     }
 
     &__item {
         max-width: 360px;
         width: 100%;
+
+        @include media($tablet) {
+            max-width: 160px;
+        }
     }
 }

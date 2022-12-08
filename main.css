@@ -305,6 +305,12 @@
   font-size: 20px;
   line-height: 26px;
   color: #000000;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .footer__promo-item {
+    white-space: revert;
+  }
 }
 .footer__promo-item a {
   color: #000000;
@@ -544,6 +550,12 @@
   opacity: 1;
   transition: opacity 0.4s ease;
 }
+@media screen and (max-width: 768px) {
+  .seasonCard__cover {
+    border-radius: 10px;
+    padding-top: 74px;
+  }
+}
 .seasonCard__cover-text {
   color: #ffffff;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
@@ -551,6 +563,12 @@
   font-size: 82px;
   line-height: 105px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .seasonCard__cover-text {
+    font-size: 26px;
+    line-height: initial;
+  }
 }
 .seasonCard:hover .seasonCard__cover {
   opacity: 0;
@@ -597,10 +615,16 @@
 @media screen and (max-width: 1320px) {
   .seasons__cards {
     flex-wrap: wrap;
+    gap: 20px;
   }
 }
 .seasons__link {
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .seasons__link {
+    max-width: 132px;
+  }
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Slider/Slider.scss ***!
@@ -1128,6 +1152,11 @@
   background-color: #67A65F;
   padding: 32px 112px;
 }
+@media screen and (max-width: 768px) {
+  .galleryLinks {
+    padding-inline: 20px;
+  }
+}
 .galleryLinks__list {
   display: flex;
   flex-wrap: wrap;
@@ -1137,9 +1166,19 @@
   row-gap: 22px;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .galleryLinks__list {
+    gap: 20px;
+  }
+}
 .galleryLinks__item {
   max-width: 360px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .galleryLinks__item {
+    max-width: 160px;
+  }
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/gallery/HouseModal/HouseModal.scss ***!
@@ -1315,6 +1354,8 @@
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .scroll {
   overflow: auto;
+  scrollbar-color: #FA5F29 #7889F1;
+  scrollbar-width: thin;
 }
 .scroll::-webkit-scrollbar {
   height: 8px;
@@ -1377,6 +1418,9 @@
 }
 .gallery__scroll {
   padding: 47px 0 100px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 @media screen and (max-width: 768px) {
   .gallery__scroll {
@@ -1423,7 +1467,7 @@
 }
 @media screen and (max-width: 768px) {
   .advantages__list-item {
-    font-size: 32px;
+    font-size: 30px;
     padding-left: 50px;
     line-height: 32px;
   }
@@ -2368,7 +2412,7 @@
 }
 @media screen and (max-width: 768px) {
   .newYear__title {
-    font-size: 44px;
+    font-size: 30px;
     margin-top: 30px;
   }
 }
@@ -2393,7 +2437,8 @@
 }
 @media screen and (max-width: 768px) {
   .newYear__question-text {
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 .newYear__info {
@@ -2412,6 +2457,7 @@
 @media screen and (max-width: 768px) {
   .newYear__info {
     padding-bottom: 100px;
+    margin-top: 30px;
   }
 }
 .newYear__info-inner {
@@ -2428,7 +2474,7 @@
 }
 @media screen and (max-width: 768px) {
   .newYear__info-text {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 36px;
   }
 }

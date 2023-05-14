@@ -1,11 +1,30 @@
-mixin Location({link = '', qr = '', icon = '', img = ''} = {})
-    .location
-        img.location__icon(src=icon)
-        .location__img
-            img(src=img)
-        .location__inner
-            .location__button.js-location__button(data-link=link)="Получить ссылку"
-            a.location__button.location__button_color_green(href=link)="Перейти по ссылке"
-            img.location__qr(src=qr)
-            .location__modal.js-location__modal="Ссылка скопирована"
+include ../../../blocks/Button/Button
 
+mixin Location()
+    -
+        const locations = [
+            {
+                link: 'https://go.2gis.com/3v4qic',
+                img: '../../assets/img/map/2gis-map.jpg',
+                icon: '../../assets/img/2gisLogo.svg',
+                text: 'Посмотреть маршрут в 2GIS'
+            }, {
+                link: 'https://yandex.ru/maps/-/CCUR7GXT1A',
+                img: '../../assets/img/map/yandex-map.jpg',
+                icon: '../../assets/img/yaLogo.svg',
+                text: 'Посмотреть маршрут в Яндекс'
+            }, {
+                link: 'https://goo.gl/maps/tWTqHCQhDmZw75os5',
+                img: '../../assets/img/map/google-map.jpg',
+                icon: '../../assets/img/googleLogo.svg',
+                text: 'Посмотреть маршрут в Google'
+            }
+        ]
+    .location
+        p.location__title='Для вашего удобства мы подготовили для вас отметки для построения маршрута'
+        .location__maps
+            each location in locations
+                .location__map
+                    img(src=location.icon)
+                    img.location__map-map(src=location.img)
+                    +Button({link: location.link, text: location.text})

@@ -1,25 +1,35 @@
 extends ../../templates/page-template
-include ./Promo/Promo
 include ../../blocks/Seasons/Seasons
+include ../../blocks/Results/Results
+include ../../blocks/GalleryBlock/GalleryBlock
+include ../../blocks/Spray/Spray
+include ./Promo/Promo
 include ./Advantages/Advantages
-include ./Description/Description
+include ./Checks/Checks
+include ./Responses/Responses
 include ./Map/Map
+include ./Who/Who
 include ./QnA/QnA
 
 block title
     title Главная
 
 block content
+    +Spray()
     +Promo()
     -
         const seasons = [
-            {name: "зима", img: '../../assets/img/winter.png', link: 'winter.html'},
-            {name: "весна", img: '../../assets/img/spring.png', link: 'spring.html'},
-            {name: "лето", img: '../../assets/img/summer.png', link: 'summer.html'},
-            {name: "осень", img: '../../assets/img/autumn.png', link: 'autumn.html'}
+            {name: "зима", img: '../../assets/img/winter.png', link: 'winter.html', isWinter: true, icon: '../../assets/img/snowflake.svg'},
+            {name: "весна", img: '../../assets/img/spring.png', link: 'spring.html', icon: '../../assets/img/flower.svg'},
+            {name: "лето", img: '../../assets/img/summer.png', link: 'summer.html', icon: '../../assets/img/sun.svg'},
+            {name: "осень", img: '../../assets/img/autumn.png', link: 'autumn.html', icon: '../../assets/img/leafAutumn.svg'}
         ]
+    +Map()
     +Seasons({seasons})
     +Advantages()
-    +Description()
-    +Map()
+    +Checks()
+    +Responses()
+    +Who()
+    +GalleryBlock(images)
     +QnA()
+    +Results()

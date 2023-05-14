@@ -1,0 +1,10 @@
+include ../Slider/Slider
+
+mixin CloseEvents({title = 'Наши ближайшие события', text = '', slides = []} = {})
+    .closeEvents
+        +Slider({slides, alternateColor: true})
+        .closeEvents__content
+            p.closeEvents__title=title
+            p.closeEvents__text=text
+
+

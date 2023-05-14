@@ -1,0 +1,29 @@
+@import '../../../scss/colors';
+@import '../../../scss/breakpoints';
+@import '../../../scss/mixins';
+
+.gallery-greeting {
+    display: flex;
+
+    &-text {
+        max-width: 594px;
+        padding-block-start: 60px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: $sogesh;
+
+        @include media($tablet) {
+            padding-block-start: 20px;
+            font-size: 20px;
+            line-height: 33px;
+        }
+    }
+
+    &-img {
+        margin-top: -100px;
+        @include media($desktopBig) {
+            display: none;
+        }
+    }
+}

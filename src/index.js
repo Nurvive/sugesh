@@ -6,3 +6,4 @@ function importAll(resolve) {
 
 importAll(require.context('./', true, /\.js$/));
 importAll(require.context('./', true, /\.scss$/));
+importAll(require.context('./assets/img/gallery', true, /\.(png)$/));

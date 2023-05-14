@@ -1,8 +1,14 @@
 extends ../../templates/page-template
-include ./GalleryLinks/GalleryLinks
+include ../../blocks/Spray/Spray
 include ../../blocks/SeasonCard/SeasonCard
 include ../../blocks/Seasons/Seasons
+include ../../blocks/SPAForm/SPAForm
+include ../../blocks/Button/Button
+include ../../blocks/GalleryBlock/GalleryBlock
+include ./GalleryLinks/GalleryLinks
 include ./Scroll/Scroll
+include ./Greeting/Greeting
+include ./Houses/Houses
 
 block title
     title Галерея
@@ -11,51 +17,57 @@ block content
     -
         const links = [
             {
-                text: 'ДОМИК №1',
+                title: 'Домик 1',
+                link: '',
+                text: 'Возможное описание. Что входит в домик? Количество комнат. Количество человек вместимость.'
+            },
+            {
+                title: 'Домик 2',
+                link: '',
+                text: 'Возможное описание. Что входит в домик? Количество комнат. Количество человек вместимость.'
+            },
+            {
+                title: 'Домик 3',
+                link: '',
+                text: 'Возможное описание. Что входит в домик? Количество комнат. Количество человек вместимость.'
+            },
+            {
+                title: 'Домик 4',
+                link: '',
+                text: 'Возможное описание. Что входит в домик? Количество комнат. Количество человек вместимость.'
+            },
+            {
+                title: 'Домик 5',
+                link: '',
+                text: 'Возможное описание. Что входит в домик? Количество комнат. Количество человек вместимость.'
+            },
+            {
+                title: 'Домик 6',
+                link: '',
+                text: 'Возможное описание. Что входит в домик? Количество комнат. Количество человек вместимость.'
+            },
+            {
+                title: 'Домик 7',
                 link: ''
             },
             {
-                text: 'ДОМИК №2',
+                title: 'Домик 8',
                 link: ''
             },
             {
-                text: 'ДОМИК №3',
+                title: 'Домик 9',
                 link: ''
             },
             {
-                text: 'ДОМИК №4',
-                link: ''
-            },
-            {
-                text: 'ДОМИК №5',
-                link: ''
-            },
-            {
-                text: 'ДОМИК №6',
-                link: ''
-            },
-            {
-                text: 'ДОМИК №7',
-                link: ''
-            },
-            {
-                text: 'ДОМИК №8',
-                link: ''
-            },
-            {
-                text: 'ДОМИК №9',
-                link: ''
-            },
-            {
-                text: 'ДОМИК №10',
+                title: 'Домик 10',
                 link: ''
             }
         ]
         const seasons = [
-            {name: "зима", img: '../../assets/img/winter.png', link: 'winter.html'},
-            {name: "весна", img: '../../assets/img/spring.png', link: 'spring.html'},
-            {name: "лето", img: '../../assets/img/summer.png', link: 'summer.html'},
-            {name: "осень", img: '../../assets/img/autumn.png', link: 'autumn.html'}
+                {name: "зима", img: '../../assets/img/winter.png', link: 'winter.html', isWinter: true, icon: '../../assets/img/snowflake.svg'},
+                {name: "весна", img: '../../assets/img/spring.png', link: 'spring.html', icon: '../../assets/img/flower.svg'},
+                {name: "лето", img: '../../assets/img/summer.png', link: 'summer.html', icon: '../../assets/img/sun.svg'},
+                {name: "осень", img: '../../assets/img/autumn.png', link: 'autumn.html', icon: '../../assets/img/leafAutumn.svg'}
         ]
         const scrolls = [
             [
@@ -171,12 +183,11 @@ block content
                 '../../assets/img/houses/10/house10_1.jpg',
             ]
         ]
-    .gallery
-        +GalleryLinks({links})
-        h1.gallery__title='ВЫБЕРИТЕ, В КАКОМ СЕЗОНЕ ВЫ ПЛАНИРУЕТЕ ОТДЫХ  В "СЮГЕШ"'
-        +Seasons({seasons, withTitle: false})
-        ul.gallery__scroll
-            each item, i in scrolls
-                li.gallery__scroll-item
-                    +Scroll({images: item, title: links[i].text})
-
+    +Spray()
+    +Greeting()
+    +SPAForm('Запросить консультацию')
+    +GalleryLinks({links})
+    +Houses(scrolls)
+    +Seasons({seasons})
+    +Button({text: 'Забронировать дом', link: 'mock-me'}).gallery__button
+    +GalleryBlock()

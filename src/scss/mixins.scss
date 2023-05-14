@@ -1,5 +1,45 @@
+@import "colors";
+@import "breakpoints";
+
 @mixin media($breakpoint) {
     @media screen and (max-width: $breakpoint){
         @content;
+    }
+}
+
+@mixin desktop() {
+    @media screen and (min-width: $tablet){
+        @content
+    }
+}
+
+@mixin commonContainer() {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+@mixin custom-scrollbar($track: $mainColor) {
+    &::-webkit-scrollbar {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: $track;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #cdcdcd80;
+        border: 2px solid $track;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #b4b4b480;
     }
 }

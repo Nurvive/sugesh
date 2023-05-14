@@ -1,0 +1,11 @@
+include ../TextIcon/TextIcon
+include ../Button/Button
+
+mixin SeasonGreeting({title = '', text = '', link = '', buttonText = '', icon = '', iconText = ''} = {})
+    .seasonGreeting
+        +TextIcon({icon, text: iconText})
+        if title
+            h2.seasonGreeting__title!=title
+        p.seasonGreeting__text!=text
+        if buttonText
+            +Button({link: link, text: buttonText})

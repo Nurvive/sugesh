@@ -1,0 +1,68 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.responses {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 65px;
+    padding-top: 140px;
+    padding-inline: 20px;
+    height: 680px;
+    background-image: url("../../../assets/img/responses.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media($desktop) {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 140px;
+        gap: 50px;
+    }
+
+    @include media($tablet) {
+        padding-block: 60px;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        max-width: 380px;
+        text-align: center;
+
+        @include media($desktop) {
+            flex-basis: 100%;
+            gap: 50px;
+            max-width: revert;
+        }
+
+        @include media($tablet) {
+            gap: 30px;
+        }
+
+        &-img {
+            max-width: 170px;
+
+            @include media($tablet) {
+                max-width: 130px;
+
+            }
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $light;
+
+            @include media($tablet) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}

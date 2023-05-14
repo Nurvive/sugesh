@@ -1,0 +1,98 @@
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+@import '../../../scss/colors';
+
+.agency {
+    @include commonContainer();
+
+    padding-block-start: 120px;
+    padding-inline: 50px;
+
+    @include media($tablet) {
+        padding-block-start: 50px;
+        padding-inline: 20px;
+    }
+
+    &__title {
+        margin-block-end: 108px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+        color: $sogesh;
+
+        @include media($tablet) {
+            margin-block-end: 30px;
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+
+        @include media($desktop) {
+            flex-direction: column;
+        }
+
+        @include media($mobileBig) {
+            gap: 30px;
+        }
+
+        &-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 600px;
+            padding-inline-start: 130px;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 75px;
+                height: 75px;
+                content: "";
+                background-size: cover;
+                background-image: url("../../../assets/img/green-house.svg");
+            }
+
+            @include media($mobileBig) {
+                gap: 20px;
+                padding-inline-start: 70px;
+
+                &::before {
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 37px;
+
+            @include media($mobileBig) {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+
+            @include media($mobileBig) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}

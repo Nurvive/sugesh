@@ -1,0 +1,49 @@
+@import '../../scss/colors';
+@import '../../scss/breakpoints';
+@import '../../scss/mixins';
+
+.spa-form {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 100px 20px 20px;
+
+    @include media($desktop) {
+        flex-direction: column;
+    }
+
+    @include media($tablet) {
+        padding: 40px;
+        gap: 20px;
+    }
+
+    @include media($mobileBig) {
+        padding: 20px;
+    }
+
+    &__button {
+        display: block;
+        width: 100%;
+        padding: 22px 50px;
+        background: linear-gradient(101.27deg, rgba(0, 83, 64, 0.8) 13.04%, #447A43 99.61%);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        border: none;
+        border-radius: 40px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $light;
+        cursor: pointer;
+
+        @include media($tablet) {
+            padding: 18px 40px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}

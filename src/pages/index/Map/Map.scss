@@ -3,22 +3,44 @@
 @import '../../../scss/breakpoints';
 
 .map {
-    padding-top: 76px;
+    padding-block-start: 30px;
 
-    &__inner {
-        background-color: $secondColor;
-        padding-block: 30px 40px;
-        padding-inline: 20px;
+    @include media($desktopBig) {
+        padding: 0;
     }
 
-    &__button-wrapper {
-        margin: 0 auto 30px;
-        max-width: 330px;
+    &__inner {
+        padding: 0 40px 100px;
+        padding-inline: 20px;
+
+        @include media($tablet) {
+            padding-bottom: 60px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 100px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: $sogesh;
+
+        @include media($tablet) {
+            margin-bottom: 80px;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        @include media($mobile) {
+            margin-bottom: 60px;
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 
     &__wrapper {
-        max-width: 1280px;
-        margin: 0 auto;
+        @include commonContainer;
     }
 
     &__img {

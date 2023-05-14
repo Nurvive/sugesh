@@ -1,11 +1,18 @@
 @import '../../scss/mixins';
 @import '../../scss/breakpoints';
 
-.price {
-    padding-block: 30px 70px;
+.price-page {
+    @include commonContainer();
 
-    & > .buttonLine {
-        padding-block: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    padding-block: 160px 50px;
+    padding-inline: 20px;
+
+    @include media($tablet) {
+        padding-block-start: 50px;
+        gap: 30px;
     }
 
     &__inner {

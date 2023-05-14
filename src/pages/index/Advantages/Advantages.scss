@@ -3,133 +3,55 @@
 @import '../../../scss/breakpoints';
 
 .advantages {
-    background-color: $light;
-    padding: 122px 0 136px 68px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    height: 555px;
+    background-image: url("../../../assets/img/opacityHouse.jpg");
 
-    @include media($desktopBig) {
+    @include media($desktop) {
         flex-direction: column;
-        align-items: center;
-        gap: 120px;
-        padding: 100px 60px 150px;
+        gap: 6px;
     }
 
-    @include media($tablet) {
-        gap: 30px;
-        padding: 40px 20px 80px;
+    @include media($mobileBig) {
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    &__list {
+    &__title {
+        max-width: 680px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 85px;
+        color: $light;
+
+        @include media($desktop) {
+            font-size: 65px;
+            line-height: 79px;
+            text-align: center;
+        }
+
         @include media($tablet) {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+            font-size: 26px;
+            line-height: 32px;
         }
-        &-item {
-            font-weight: 500;
-            font-size: 49px;
-            line-height: 63px;
-            color: $sand;
-            padding-left: 80px;
-            position: relative;
+
+        &_number {
+            font-size: 250px;
+            line-height: 304px;
+
+            @include media($desktop) {
+                line-height: 200px;
+            }
 
             @include media($tablet) {
-                font-size: 30px;
-                padding-left: 50px;
-                line-height: 32px;
+                font-size: 100px;
+                line-height: 122px;
             }
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                width: 60px;
-                height: 60px;
-                background-repeat: no-repeat;
-                bottom: 50%;
-                transform: translateY(50%);
-
-                @include media($tablet) {
-                    width: 39px;
-                    height: 30px;
-                    background-size: cover;
-
-                }
-            }
-
-            &:first-child {
-                &::before {
-                    @include media($tablet) {
-                        height: 37px;
-                    }
-                    background-image: url("../../../assets/img/house.svg");
-                }
-            }
-
-            &:nth-child(2) {
-                &::before {
-                    background-image: url("../../../assets/img/car.svg");
-                }
-            }
-
-            &:last-child {
-                &::before {
-                    background-image: url("../../../assets/img/wifi.svg");
-                }
-            }
-        }
-    }
-
-    &__social {
-        border-radius: 28px 0 0 28px;
-        background-color: $secondColor;
-        max-height: 180px;
-        position: relative;
-        padding: 14px 0 14px 20px;
-        max-width: 520px;
-        width: 100%;
-
-        @include media($desktopBig) {
-            border-radius: 28px;
-            padding-right: 20px;
-        }
-
-        &-text {
-            text-transform: uppercase;
-            font-weight: 500;
-            font-size: 30px;
-            line-height: 38px;
-            color: $light;
-            max-width: 250px;
-
-            @include media($tablet) {
-                max-width: 100%;
-            }
-
-            &:nth-of-type(2) {
-                max-width: 150px;
-
-                @include media($tablet) {
-                    max-width: 100%;
-                }
-            }
-        }
-
-        &-img {
-            position: absolute;
-            right: 12px;
-            top: -96px;
-
-            @include media($tablet) {
-                display: none;
-            }
-        }
-
-        &-link {
-            position: absolute;
-            bottom: -56px;
-            left: 0;
         }
     }
 }

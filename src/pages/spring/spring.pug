@@ -1,13 +1,66 @@
 extends ../../templates/page-template
-include ../../blocks/Carousel/Carousel
-include ./Description/Description
+include ../../blocks/SeasonGreeting/SeasonGreeting
+include ../../blocks/QuickLinks/QuickLinks
+include ../../blocks/Results/Results
+include ../../blocks/Slider/Slider
+include ../../blocks/SPAForm/SPAForm
+include ../../blocks/GreetingWrapper/GreetingWrapper
+include ../../blocks/Description/Description
+include ../../blocks/Spray/Spray
 
 block title
     title Весна
 
 block content
-    +Carousel({slides: ['../../assets/img/spring/spring1.jpg', '../../assets/img/spring/spring2.jpg', '../../assets/img/spring/spring3.jpg', '../../assets/img/spring/spring4.jpg', '../../assets/img/spring/spring5.jpg']})
-    p.spring__text!="Многие отказываются от путешествий весной думая, что будет нечем заняться: слякоть, сырость, переменчивая погода. Но все это предрассудки!</br></br> Мы оборудовали Сюгеш так, чтобы наши гости могли приехать к нам в любое время года и насладиться отдыхом в Хакасии."
-    +Description()
-    a(href="https://vk.com/sugesh" target="_blank" rel="noopener noreferrer").spring__link
-        img(src="../../assets/img/sugeshVK.svg")
+    -
+        const greeting = {
+            text: 'Многие отказываются от путешествий весной, думая, что будет нечем заняться: слякоть, сырость, переменчивая погода. Но всё это предрассудки! </br></br> Мы оборудовали «Сюгеш» так, чтобы наши гости <strong>могли приехать в любое время года и насладиться отдыхом в Хакасии.</strong>',
+            buttonText: 'Забронировать дом',
+            link: 'mock-me',
+            iconText: 'ВЕСНА',
+            icon: '../../assets/img/flower-brown.svg'
+        }
+        const cards = [
+            {
+                title: "Вдохновляющие пешие прогулки, любуясь природой Хакасии или тренировки на свежем воздухе.",
+                text: "На территории базы отдыха регулярно проводится уборка, поэтому вы сможете насладиться прогулкой по чистым пешим дорожкам. </br></br>Прогулки или занятия спортом на свежем весеннем воздухе — лучший подарок для организма после холодной зимы.",
+                img: '../../assets/img/infoCardSpring/infoCardSpring1.jpg',
+                isRight: true,
+                defaultCover: false,
+            },
+            {
+                title: "Катание на моторной или аэролодке",
+                text: "Прокатитесь на моторной или аэролодке по реке, и насладитесь пейзажами Хакасии с другого ракурса. </br></br>Вдохните свежий речной воздух, перемешанный с влагой от реки и насладитесь прекрасным отдыхом! Подробности уточняйте у администратора.",
+                img: '../../assets/img/infoCardSpring/infoCardSpring2.jpg'
+            },
+            {
+                title: 'Вкусные трапезы в кафе "Братец кролик"',
+                text: "Детское меню, горячие напитки и вкусные блюда — все для вашего гастрономического наслаждения. </br></br>Забудьте о хлопотах, наслаждайтесь отдыхом и закажите вкусные блюд в кафе Сюгеш (при аренде дома завтрак и ужин входят в стоимость проживания).",
+                img: '../../assets/img/infoCardSpring/infoCardSpring3.jpg',
+                isRight: true
+            },
+            {
+                title: 'Сауна с бассейном',
+                text: "Вы всегда можете забронировать сауну с бассейном и отлично провести время",
+                img: '../../assets/img/infoCardSpring/infoCardSpring4.jpg'
+            },
+            {
+                title: 'Русская банька, чан и прорубь',
+                text: "Да, с таким развлечением скучать точно не придётся! </br></br>Не беспокойтесь за безопасность — наши трассы оборудованы по всем техническим правилам. Трасса освещена в тёмное время суток, имеется подъёмник.",
+                img: '../../assets/img/infoCardSpring/infoCardSpring5.jpg',
+                isRight: true
+            },
+            {
+                title: "Расслабляющие процедуры в SPA-центре</br><p class='infoCard__subtitle'>(массаж для детей и взрослых, обёртывание и другие услуги)</p>",
+                text: "Телу нужно расслабляться. Поставьте динамичную жизнь на паузу, приезжайте в Сюгеш и после насыщенного дня посетите баньку или кедровую фитобочку, а после — расслабляющий массаж. После процедуры вас напоят вкусным горячим травяным чаем с мёдом.",
+                img: '../../assets/img/infoCardSpring/infoCardSpring6.jpg'
+            }
+        ]
+    +Spray()
+    +GreetingWrapper.spring()
+        +SeasonGreeting(greeting)
+        +Slider({slides: ['../../assets/img/spring/spring1.jpg', '../../assets/img/spring/spring2.jpg', '../../assets/img/spring/spring3.jpg', '../../assets/img/spring/spring4.jpg', '../../assets/img/spring/spring5.jpg']})
+    +SPAForm()
+    +Description({title: 'Чем заняться в Сюгеше весной?', cards})
+    +QuickLinks()
+    +Results()

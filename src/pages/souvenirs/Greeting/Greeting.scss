@@ -1,0 +1,39 @@
+@import '../../../scss/colors';
+@import '../../../scss/breakpoints';
+@import '../../../scss/mixins';
+
+.souvenirs-greeting {
+    display: flex;
+
+    &-text {
+        max-width: 594px;
+        padding-block-start: 60px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: $sogesh;
+
+        @include media($tablet) {
+            padding-block-start: 20px;
+            font-size: 20px;
+            line-height: 33px;
+        }
+    }
+
+    &-inner {
+        min-width: 450px;
+
+        @include media($tablet) {
+            min-width: unset;
+        }
+    }
+
+    &-img {
+        object-fit: contain;
+        max-width: 830px;
+
+        @include media($desktopBig) {
+            display: none;
+        }
+    }
+}

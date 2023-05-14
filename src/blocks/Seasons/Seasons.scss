@@ -3,53 +3,50 @@
 @import '../../scss/breakpoints';
 
 .seasons {
-    background-color: $mainColor;
-    padding: 32px 70px 18px;
+    padding: 0 52px 160px;
 
     @include media($tablet) {
-        padding-inline: 30px;
+        padding-inline: 16px;
+        padding-bottom: 220px;
+    }
+
+    @include media($mobileBig) {
+        padding-bottom: 60px;
     }
 
     &__title {
+        margin: 0 auto 100px;
+        max-width: 830px;
         text-align: center;
         font-weight: 700;
         font-size: 40px;
-        color: $light;
-        display: none;
-
-        &_active {
-            display: revert;
-        }
+        line-height: 49px;
+        color: $sogesh;
 
         @include media($tablet) {
-            font-size: 26px;
+            margin-bottom: 60px;
+            font-size: 32px;
+            line-height: 39px;
         }
-    }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 28px;
+        @include media($mobile) {
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 
     &__cards {
         display: flex;
-        gap: 50px;
+        flex-wrap: wrap;
+        gap: 40px;
         justify-content: center;
-        margin-top: 30px;
 
-        @include media($desktopBig) {
-            flex-wrap: wrap;
-            gap: 20px;
+        @include media($mobile) {
+            gap: 30px;
         }
     }
 
     &__link {
         display: block;
-
-        @include media($tablet) {
-            max-width: 132px;
-        }
     }
 }

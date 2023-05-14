@@ -1,0 +1,30 @@
+@import '../../scss/breakpoints';
+@import '../../scss/mixins';
+
+.greeting-wrapper {
+    @include commonContainer;
+
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding-top: 192px;
+    padding-inline: 20px;
+
+    @include media($desktopBig) {
+        flex-direction: column;
+    }
+
+    @include media($tablet) {
+        padding-top: 40px;
+    }
+
+    & > .glide {
+        margin-top: -74px;
+
+        @include media($desktopBig) {
+            margin-top: 0;
+        }
+    }
+}

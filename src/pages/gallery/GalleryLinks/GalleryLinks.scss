@@ -3,11 +3,13 @@
 @import '../../../scss/breakpoints';
 
 .galleryLinks {
-    background-color: $mainColor;
-    padding: 32px 112px;
+    @include commonContainer();
+
+    padding-block-start: 100px;
 
     @include media($tablet) {
         padding-inline: 20px;
+        padding-block-start: 50px;
     }
 
     &__list {
@@ -27,7 +29,11 @@
         width: 100%;
 
         @include media($tablet) {
-            max-width: 160px;
+            max-width: 220px;
+        }
+
+        @include media($mobileBig) {
+            max-width: 100%;
         }
     }
 }

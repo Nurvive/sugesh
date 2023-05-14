@@ -1,4 +1,4 @@
-import houses from '../../../houses/houses.json';
+import houses from '../../../static/houses/houses.json';
 import Glide from '@glidejs/glide';
 
 export class HouseModal {
@@ -39,6 +39,7 @@ export class HouseModal {
         this.createHeader();
         this.createSlider();
         this.createContent();
+        this.createBottomButtons();
     };
 
     createHeader = () => {
@@ -183,6 +184,31 @@ export class HouseModal {
 
         this.modalContent.append(descriptionWrapper);
     };
+
+    createBottomButtons = () => {
+        this.bottomButtons = document.createElement('div');
+        this.bottomButtons.classList.add('houseModal__bottom');
+        this.createBookButton();
+        this.createOkButton();
+        this.modal.append(this.bottomButtons);
+    }
+
+    createOkButton = () => {
+        const button = document.createElement('div');
+        button.textContent = 'Ок';
+        button.classList.add('houseModal__bottom-button');
+        button.addEventListener('click', this.handleCloseModal)
+
+        this.bottomButtons.append(button);
+    }
+
+    createBookButton = () => {
+        const button = document.createElement('div');
+        button.textContent = 'Забронировать домик';
+        button.classList.add('houseModal__bottom-button');
+
+        this.bottomButtons.append(button);
+    }
 
     handleCloseModal = () => {
         this.modalWrapper.classList.remove('houseModal__wrapper_active');

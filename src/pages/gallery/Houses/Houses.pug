@@ -1,0 +1,7 @@
+mixin Houses(scrolls=[])
+    ul.houses
+        each item, i in scrolls
+            li.houses-item
+                .houses__title=links[i].title
+                .houses__text=links[i].text
+                +Scroll({images: item, title: links[i].title, text: links[i].text})

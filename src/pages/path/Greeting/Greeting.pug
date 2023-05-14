@@ -1,0 +1,10 @@
+include ../../../blocks/GreetingWrapper/GreetingWrapper
+include ../../../blocks/TextIcon/TextIcon
+
+mixin Greeting()
+    +GreetingWrapper()
+        .path-greeting
+            .path-greeting-inner
+                +TextIcon({icon: '../../assets/img/map-brown.svg', text: 'Как добраться'})
+                p.path-greeting-text='Удобно добраться от Абакана (150 км.)'
+            img.path-greeting-img(src='../../assets/img/big-pin.png')

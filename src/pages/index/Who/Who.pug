@@ -1,0 +1,29 @@
+mixin Who()
+    -
+        const items = [
+            {
+                img: '../../assets/img/who/who1.png',
+                text: 'Для детей любых возрастов'
+            },
+            {
+                img: '../../assets/img/who/who2.png',
+                text: 'Для родителей и детей'
+            },
+            {
+                img: '../../assets/img/who/who3.png',
+                text: 'Для начинающих горнолыжников'
+            },
+            {
+                img: '../../assets/img/who/who4.png',
+                text: 'Для всех доброжелательных людей, которые хотят отдохнуть'
+            },
+        ]
+    .who
+        div
+            h3.who__title="Кому подойдёт"
+            h3.who__title="«Сюгеш. Кроличья нора»?"
+        .who__container
+            each item in items
+                .who__item
+                    img(src=item.img).who__item-img
+                    .who__item-text=item.text

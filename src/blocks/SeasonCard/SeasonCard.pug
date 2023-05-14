@@ -1,5 +1,9 @@
-mixin SeasonCard({name, img} = {})
+mixin SeasonCard({name, img, icon, isWinter = false} = {})
+    -
+        const isWinterClass = isWinter ? 'seasonCard__cover_isWinter' : ''
     .seasonCard
         img.seasonCard__img(src=img)
-        .seasonCard__cover
-            span.seasonCard__cover-text=name
+        .seasonCard__cover(class=isWinterClass)
+            .seasonCard__icon
+                img(src=icon)
+                div.seasonCard__cover-text=name

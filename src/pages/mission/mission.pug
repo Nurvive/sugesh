@@ -1,0 +1,24 @@
+extends ../../templates/page-template
+include ../../blocks/Spray/Spray
+include ../../blocks/GreetingWrapper/GreetingWrapper
+include ../../blocks/SeasonGreeting/SeasonGreeting
+include ../../blocks/Results/Results
+include ../../blocks/Slider/Slider
+
+block title
+    title Наша миссия
+
+block content
+    -
+        const greeting = {
+            text: 'Мы хотим, чтобы каждый человек получал удовольствие, отдыхая на курорте “Сюгеш”. Нам важно, чтобы каждый гость испытал массу впечатлений, отдохнул и зарядился отличным настроением!',
+            buttonText: 'Забронировать домик',
+            link: 'mock-me',
+            iconText: 'НАША МИССИЯ',
+            icon: '../../assets/img/mission-brown.svg'
+        }
+    +Spray(true)
+    +GreetingWrapper()
+        +SeasonGreeting(greeting)
+        +Slider({slides: ['../../assets/img/winter/house.jpg', '../../assets/img/winter/inventory.jpg', '../../assets/img/winter/bath.jpg']})
+    +Results()

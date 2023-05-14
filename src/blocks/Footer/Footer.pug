@@ -1,17 +1,30 @@
 mixin Footer()
     footer.footer
-       .footer__left
-            img(src='../../assets/img/footerLogo.svg').footer__logo
-            ul.footer__promo
-                li.footer__promo-item='Используем продукты “Прибавка”'
-                li.footer__promo-item
-                    a(href="https://pribavka.su" target="_blank" rel="noopener noreferrer")="www.pribavka.su"
-                li.footer__promo-item
-                    a(href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer")="vk.com/pribavka_bio"
-       .footer__right
-           ul.footer__promo
-               li.footer__promo-item='© 2022 Горнолыжный комплекс Сюгеш'
-               li.footer__promo-item
-                   a(href="tel:89833779577")="8-983-377-95-77"
-               li.footer__promo-item
-                   a(href="mailto:sugeshbron@gmail.com")="sugeshbron@gmail.com"
+        .footer__container
+            .footer__column
+                .footer__inner
+                    img(src='../../assets/img/logo.svg').footer__logo
+                    .footer__desktop-text
+                        .footer__questions="Остались вопросы?"
+                        a(href="mailto:sugeshbron@gmail.com").footer__feedback="Обратная связь"
+            .footer__column
+                .footer__subtitle="E-mail:"
+                a(href="mailto:sugeshbron@gmail.com").footer__email="sugeshbron@gmail.com"
+                .footer__socials-wrapper
+                    a(href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer")
+                        img(src="../../assets/img/VK.svg")
+                    a(href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer")
+                        img(src="../../assets/img/OK.svg")
+                    a(href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer")
+                        img(src="../../assets/img/Whatsapp.svg")
+            .footer__column.footer__column_phone
+                .footer__subtitle="Телефон:"
+                a(href="tel:+73902313506").footer__number!="+7 390 231-35-06<br/>(Единый номер отдела заботы)"
+                a(href="tel:+79833779577").footer__number!="+7 983 377-95 77<br/>(Единый номер отдела бронирования)"
+            .footer__column.footer__column_right
+                .footer__responsive-text
+                    .footer__questions="Остались вопросы?"
+                    a(href="mailto:sugeshbron@gmail.com").footer__feedback="Обратная связь"
+                .footer__promo='Используем продукты “Прибавка”'
+                a(href="https://pribavka.su" target="_blank" rel="noopener noreferrer").footer__external="www.pribavka.su"
+                a(href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer").footer__external="vk.com/pribavka_bio"

@@ -1,0 +1,30 @@
+include ../Button/Button
+
+mixin QuickLinks(isFull=false)
+    -
+        const defaultLinks = [{
+            text: 'Посмотреть прайс',
+            link: '/mock-me',
+            img: '../../assets/img/price-big-image.svg'
+        }, {
+            text: 'Забронировать дом',
+            link: '/mock-me',
+            img: '../../assets/img/house-big-image.svg'
+        }, {
+            text: 'Как добраться до Сюгеша',
+            link: '/mock-me',
+            img: '../../assets/img/map-big-image.svg'
+        }]
+        const lastLink = [{
+            text: 'Записаться на экскурсию',
+            link: '/mock-me',
+            img: '../../assets/img/hike-big-image.svg'
+        }]
+        const links = isFull ? [...defaultLinks, ...lastLink] : [...defaultLinks]
+        const fullClass = isFull ? 'quickLinks_full' : ''
+    .quickLinks(class=fullClass)
+        ul.quickLinks__list
+            each link in links
+                li.quickLinks__item
+                    img(src=link.img)
+                    +Button({text: link.text, link: link.link})

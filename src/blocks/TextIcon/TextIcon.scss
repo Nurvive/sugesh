@@ -1,0 +1,47 @@
+@import '../../scss/colors';
+@import '../../scss/breakpoints';
+@import '../../scss/mixins';
+
+.textIcon {
+    display: flex;
+    gap: 68px;
+    align-items: center;
+    min-height: 100px;
+    margin-block-end: 86px;
+
+    @include media($tablet) {
+        gap: 50px;
+        min-height: 80px;
+        margin-block-end: 24px;
+    }
+
+    &__text {
+        position: relative;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        text-transform: uppercase;
+        color: $sogesh;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: -32px;
+            width: 6px;
+            height: 100px;
+            background: $sogesh;
+            border-radius: 40px;
+            content: "";
+            transform: translateY(-50%);
+        }
+
+        @include media($tablet) {
+            font-size: 24px;
+            line-height: 30px;
+
+            &::before {
+                height: 80px;
+            }
+         }
+    }
+}

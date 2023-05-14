@@ -2,8 +2,9 @@ import Glide from '@glidejs/glide';
 
 export class Slider {
     constructor() {
-        if (document.querySelector('.js-glide')) {
-            new Glide('.js-glide').mount();
+        const sliders = document.querySelectorAll('.js-glide');
+        if (sliders.length) {
+            sliders.forEach((slider) => new Glide(slider).mount());
         }
     }
 }

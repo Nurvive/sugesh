@@ -1,50 +1,219 @@
 @import '../../scss/colors';
 @import '../../scss/mixins';
 @import '../../scss/breakpoints';
+
 .footer {
     background-color: $mainColor;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
+    padding: 40px 10px 50px;
 
-    @include media($tablet) {
-        flex-direction: column;
-        gap: 20px;
+    @include media($desktopBig) {
+        padding-inline: 20px;
     }
 
-    &__left {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin-inline: auto;
+
+        @include media($desktopBig) {
+            flex-wrap: wrap;
+            row-gap: 50px;
+        }
+
+        @include media($tablet) {
+            row-gap: 30px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        &_right {
+            text-align: right;
+
+            @include media($desktopBig) {
+                text-align: left;
+            }
+        }
+
+        &_phone {
+            @include media($desktopBig) {
+                order: 1;
+            }
+            @include media($tablet) {
+                order: revert;
+            }
+        }
+
+        @include media($desktopBig) {
+            flex-basis: 50%;
+            align-items: center;
+        }
+
+        @include media($tablet) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 250px;
+
+        @include media($desktopBig) {
+            text-align: left;
+        }
+
+        @include media($tablet) {
+            text-align: center;
+        }
+    }
+
+    &__responsive-text {
+        display: none;
+        text-align: center;
+
+        @include media($tablet) {
+            display: block;
+        }
+    }
+
+    &__desktop-text {
+        text-align: left;
+        display: block;
+
+        @include media($tablet) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        max-width: 180px;
+        margin-inline: auto;
+    }
+
+    &__questions {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $light;
+        margin-block: 22px;
+    }
+
+    &__feedback {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: $light;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $light;
+        margin-bottom: 30px;
+
+        @include media($tablet) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__email {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $light;
+    }
+
+    &__socials-wrapper {
         display: flex;
         gap: 10px;
+        justify-content: center;
+        margin-top: 60px;
+
+        @include media($tablet) {
+            margin-top: 30px;
+        }
     }
 
-    &__right {
-        .footer__promo  {
-            &-item{
-                text-align: right;
+    &__number {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $light;
 
-            }
+        &:last-child {
+            margin-top: 20px;
         }
     }
 
     &__promo {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+        position: relative;
+        max-width: 250px;
+        margin-bottom: 30px;
+        padding-right: 35px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        color: $light;
 
-        &-item {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 26px;
-            color: $dark;
-            white-space: nowrap;
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25px;
+            height: 38px;
+            background-image: url("../../assets/img/pribavka.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            content: "";
+        }
 
-            @include media($tablet) {
-                white-space: revert;
+        @include media($desktopBig) {
+            text-align: left;
+            padding-right: 0;
+            padding-top: 100px;
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 90px;
             }
+        }
 
-            & a {
-                color: $dark;
+        @include media($tablet) {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 0;
+
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
             }
+        }
+    }
+
+    &__external {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: $light;
+
+        &:last-child {
+            margin-top: 20px;
+        }
+
+        @include media($desktopBig) {
+            display: none;
         }
     }
 }

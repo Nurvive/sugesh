@@ -1,0 +1,78 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.who {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 1320px;
+    margin-inline: auto;
+    padding: 140px 20px 30px;
+
+    @include media($tablet) {
+        padding-top: 60px;
+        gap: 60px;
+    }
+
+    &__title {
+        max-width: 568px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: $sogesh;
+        text-align: center;
+
+        @include media($tablet) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        row-gap: 80px;
+        column-gap: 40px;
+
+        @include media($tablet) {
+            row-gap: 40px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+
+        @include media($desktopBig) {
+            flex-basis: 100%;
+            justify-content: center;
+        }
+
+        @include media($tablet) {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &-img {
+            border-bottom-right-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        &-text {
+            max-width: 290px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: $sogesh;
+
+            @include media($tablet) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}

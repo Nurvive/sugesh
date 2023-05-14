@@ -1,0 +1,11 @@
+@import '../../scss/breakpoints';
+@import '../../scss/mixins';
+
+.form-wrapper {
+    padding-top: 120px;
+    padding-inline: 20px;
+
+    @include media($tablet) {
+        padding-top: 50px;
+    }
+}

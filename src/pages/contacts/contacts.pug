@@ -1,28 +1,20 @@
 extends ../../templates/page-template
+include ../../blocks/Spray/Spray
+include ../path/Location/Location
+include ../path/Help/Help
+include ./Greeting/Greeting
 include ./ContactIcon/ContactIcon
+include ./Data/Data
+include ./Agency/Agency
 
 block title
     title Контакты
 
 block content
-    .contacts
-        ul.contacts__list
-            li.contacts__item
-                +ContactIcon({img: "../../assets/img/phone.svg"})
-                .contacts__item-content
-                    p="Рабочий телефон: 8(390)462-21-11"
-                    p="Администратор и отдел бронирования домов: 8-983-377-9577"
-                    span="Вы можете позвонить по указанным телефонам  с 10:00 до 17:00 в любой день."
-            li.contacts__item
-                +ContactIcon({img: "../../assets/img/mail.svg"})
-                .contacts__item-content
-                    p="Наш e-mail: sugeshbron@gmail.com"
-            li.contacts__item
-                +ContactIcon({img: "../../assets/img/home.svg"})
-                .contacts__item-content
-                    p.contacts__item-content-title="представительство"
-                    div="г. Абакан:"
-                    p!="ул. Белоярская стр.50, 2 этаж, офис 4.</br> телефоны: 8-983-054-0876; 8-902-012-0262."
-                    div="г. Саяногорск:"
-                    p!="ул. Шушенская, стр. 18 ТРЦ «Спутник» 2 этаж, </br>телефон: 8-983-278-3888"
+    +Spray()
+    +Greeting()
+    +Data()
+    +Agency()
+    +Location()
+    +Help()
 

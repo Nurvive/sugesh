@@ -1,13 +1,77 @@
 extends ../../templates/page-template
-include ../../blocks/Carousel/Carousel
-include ./Description/Description
+include ../../blocks/SeasonGreeting/SeasonGreeting
+include ../../blocks/QuickLinks/QuickLinks
+include ../../blocks/Results/Results
+include ../../blocks/Slider/Slider
+include ../../blocks/SPAForm/SPAForm
+include ../../blocks/GreetingWrapper/GreetingWrapper
+include ../../blocks/Description/Description
+include ../../blocks/CloseEvents/CloseEvents
+include ../../blocks/Spray/Spray
 
 block title
     title Осень
 
 block content
-    +Carousel({slides: ['../../assets/img/autumn/autumn1.jpg', '../../assets/img/autumn/autumn2.jpg', '../../assets/img/autumn/autumn3.jpg']})
-    p.autumn__text="Многие отказываются от путешествий осенью думая, что будет нечем заняться: слякоть, сырость, переменчивая погода. Но все это предрассудки! Мы оборудовали Сюгеш так, чтобы наши гости могли приехать к нам в любое время года и насладиться отдыхом в Хакасии."
-    +Description()
-    a(href="https://vk.com/sugesh" target="_blank" rel="noopener noreferrer").autumn__link
-        img(src="../../assets/img/sugeshVK.svg")
+    -
+        const greeting = {
+            text: 'Многие отказываются от путешествий весной, думая, что будет нечем заняться: слякоть, сырость, переменчивая погода. Но всё это предрассудки! </br></br>«Сюгеш» будет, чем заняться и в этот сезон. <strong>Устройте для себя и своей семьи «Осеннюю перезагрузку».</strong>',
+            buttonText: 'Забронировать дом',
+            link: 'mock-me',
+            iconText: 'ОСЕНЬ',
+            icon: '../../assets/img/leaf-brown.svg'
+        }
+        const cards = [
+            {
+                title: 'Вкусные трапезы в кафе "Братец кролик"',
+                text: "Детское меню, горячие напитки и вкусные блюда - все для вашего гастрономического наслаждения. </br></br>Забудьте о хлопотах, наслаждайтесь отдыхом и закажите вкусные блюда в кафе Сюгеш (при аренде дома завтрак и ужин входят в стоимость проживания).",
+                img: '../../assets/img/infoCardAutumn/infoCardAutumn1.jpg',
+                isRight: true,
+                defaultCover: false
+            },
+            {
+                title: "Вдохновляющие пешие прогулки в окружении пейзажей Хакасии и медитации под звуки природы",
+                text: "На территории базы отдыха регулярно проводится уборка, поэтому вы сможете насладиться прогулкой по чистым пешим дорожкам. </br></br>Прогулки или занятия спортом на свежем весеннем воздухе - лучший подарок для организма после холодной зимы. ",
+                img: '../../assets/img/infoCardAutumn/infoCardAutumn2.jpg'
+            },
+            {
+                title: 'Занятия спортом на свежем воздухе',
+                text: "Огромное пространство для комфортных занятий спортом на свежем воздухе в окружении кедрового леса.",
+                img: '../../assets/img/infoCardAutumn/infoCardAutumn3.jpg',
+                isRight: true
+            },
+            {
+                title: 'Увлекательные мастер-классы для детей и взрослых',
+                text: "Описание увлекательных мастер-классов для детей и взрослых",
+                img: '../../assets/img/infoCardAutumn/infoCardAutumn4.jpg'
+            },
+            {
+                title: "Экскурсии на Саяно-Шушенскую ГЭС</br><p class='infoCard__subtitle'>(одну из крупнейших станций в России) или форелевое хозяйство</p>",
+                text: "По вашему запросу мы можем организовать экскурсию на 3-5 человек на Саяно-Шушенскую ГЭС - одну из крупнейших станций в России. Или на форелевое хозяйство. Там вы сможете приобрести форель, которую  поймают прям при вас. Рыбу можно приготовить там,на самой ферме, либо привезти на базу отдыха Сюгеш и повара нашего кафе приготовят блюдо для вас. <strong>Подробности уточняйте у администратора.</strong>",
+                img: '../../assets/img/infoCardAutumn/infoCardAutumn5.jpg',
+                isRight: true,
+            },
+            {
+                title: 'Катание на моторной или аэролодке',
+                text: "Прокатитесь на моторной или аэролодке по реке, и насладитесь пейзажами Хакасии с другого ракурса. </br></br>Вдохните свежий речной воздух, перемешанный с влагой от реки и насладитесь прекрасным отдыхом! Подробности уточняйте у администратора. ",
+                img: '../../assets/img/infoCardAutumn/infoCardAutumn6.jpg'
+            },
+            {
+                title: 'Сбор опят и мастер-класс по приготовлению блюд из них',
+                text: "По вашему запросу мы можем организовать общий сбор опят, а после привезти их нашим поварам кафе Сюгеш - они приготовят свежие блюда из грибов специально для вас!",
+                img: '../../assets/img/infoCardAutumn/infoCardAutumn7.jpg',
+                isRight: true,
+            }
+        ]
+    +Spray()
+    +GreetingWrapper.autumn()
+        +SeasonGreeting(greeting)
+        +Slider({slides: ['../../assets/img/autumn/autumn1.jpg', '../../assets/img/autumn/autumn2.jpg', '../../assets/img/autumn/autumn3.jpg']})
+    +SPAForm()
+    +Description({title: 'Чем заняться в Сюгеше осенью?', cards})
+    +QuickLinks(true)
+    +CloseEvents({
+        text: 'Вобщем эта вкладка сделана так, чтобы можно было потом легко заменять информацию и ставить несколько разных событий в слайдер',
+        slides: ['../../assets/img/autumn/autumn1.jpg', '../../assets/img/autumn/autumn2.jpg', '../../assets/img/autumn/autumn3.jpg']
+    })
+    +Results()

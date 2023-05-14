@@ -1,12 +1,76 @@
 extends ../../templates/page-template
 include ../../blocks/Carousel/Carousel
-include ./Description/Description
-include ./NewYear/NewYear
+include ../../blocks/QuickLinks/QuickLinks
+include ../../blocks/RequestFormSport/RequestFormSport
+include ../../blocks/Results/Results
+include ../../blocks/SeasonGreeting/SeasonGreeting
+include ../../blocks/Slider/Slider
+include ../../blocks/GreetingWrapper/GreetingWrapper
+include ../../blocks/Description/Description
+include ../../blocks/Spray/Spray
 
 block title
     title Зима
 
 block content
-    +Carousel({slides: ['../../assets/img/winter/house.jpg', '../../assets/img/winter/inventory.jpg', '../../assets/img/winter/bath.jpg', '../../assets/img/winter/board.jpg', '../../assets/img/winter/fito.jpg', '../../assets/img/winter/rock.jpg', '../../assets/img/winter/trener.jpg']})
-    +Description()
-    +NewYear()
+    -
+        const greeting = {
+            title: 'Сюгеш.</br> Кроличья нора.',
+            text: 'Детский горнолыжный курорт. Всё для семейного отдыха.',
+            buttonText: 'Забронировать дом',
+            link: 'mock-me',
+            iconText: 'ЗИМА',
+            icon: '../../assets/img/snowflake-brown.svg'
+        }
+        const cards = [
+            {
+                title: "Катание на горных лыжах, сноуборде, тюбинге или коньках",
+                text: "Для вас оборудован бугельный подъёмник на гору 600 метров в длину (кстати, при аренде дома и амуниции, поездки на подъёмнике в подарок). Сможете прокатиться на горных лыжах, сноуборде. </br></br> Вы можете приехать как на один день, так и забронировать дом, чтобы насладиться отдыхом в Хакасии подольше. В скором времени мы запустим вторую гору 1200 метров в длину! Также на территории Сюгеш есть беговые профессиональные лыжные трассы на 2, 3 и 5 км.",
+                img: '../../assets/img/infoCardWinter/infoCardWinter1.jpg',
+                isRight: true,
+                defaultCover: false,
+            },
+            {
+                title: "Прогулки по сказочному зимнему лесу Хакасии",
+                text: "Вы сможете пройтись и насладиться зимними пейзажами Хакасии, взяв ароматный горячий кофе в кафе Сюгеша. </br></br>Можно приехать как на один день, так и забронировать домик, чтобы насладиться природой Хакасии подольше.",
+                img: '../../assets/img/infoCardWinter/infoCardWinter2.jpg',
+            },
+            {
+                title: "Вкусные трапезы в кафе “Братец кролик”",
+                text: "Детское меню, горячие напитки и вкусные блюда — все для вашего гастрономического наслаждения.</br></br> Забудьте о хлопотах, наслаждайтесь отдыхом и закажите вкусные блюда в кафе Сюгеш (при аренде дома завтрак и ужин входят в стоимость проживания).",
+                img: '../../assets/img/infoCardWinter/infoCardWinter3.jpg',
+                isRight: true
+            },
+            {
+                title: "Занятия с инструктором для детей и взрослых",
+                text: "Да, с таким развлечением скучать точно не придется! </br></br>Не беспокойтесь за безопасность - наши трассы оборудованы по всем техническим правилам. Трасса освещена в темное время суток, имеется подъемник.",
+                img: '../../assets/img/infoCardWinter/infoCardWinter4.jpg',
+
+            },
+            {
+                title: "Сауна с бассейном",
+                text: "Вы всегда можете забронировать сауну с бассейном и отлично провести время",
+                img: '../../assets/img/infoCardWinter/infoCardWinter5.jpg',
+                isRight: true
+            },
+            {
+                title: "Русская банька, чан и прорубь",
+                text: "Отдых нужен для полного релакса и Сюгеш его обеспечит. После активного отдыха на зимнем морозце погрейтесь в бане, кедровой фитобочке и посетите расслабляющий массаж. После процедуры вас напоят горячим травяным чаем с медом. Кстати, при аренде дома русская банька и фитобочка входят в стоимость проживания.",
+                img: '../../assets/img/infoCardWinter/infoCardWinter6.jpg',
+            },
+            {
+                title: "Расслабляющие процедуры в SPA-центре</br><p class='infoCard__subtitle'>(массаж для детей и взрослых, обёртывание и другие услуги)</p>",
+                text: "Телу нужно расслабляться. Поставьте динамичную жизнь на паузу, приезжайте в Сюгеш и после насыщенного дня посетите баньку или кедровую фитобочку, а после — расслабляющий массаж. </br></br>После процедуры вас напоят вкусным горячим травяным чаем с мёдом.",
+                img: '../../assets/img/infoCardWinter/infoCardWinter7.jpg',
+                isRight: true
+            }
+        ]
+    +Spray()
+    +GreetingWrapper()
+        +SeasonGreeting(greeting)
+        +Slider({slides: ['../../assets/img/winter/house.jpg', '../../assets/img/winter/inventory.jpg', '../../assets/img/winter/bath.jpg', '../../assets/img/winter/board.jpg', '../../assets/img/winter/fito.jpg', '../../assets/img/winter/rock.jpg', '../../assets/img/winter/trener.jpg']})
+    .form-wrapper
+        +RequestFormSport()
+    +Description({cards, title: "Чем заняться в Сюгеше зимой?"})
+    +QuickLinks()
+    +Results()

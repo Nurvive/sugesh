@@ -1,14 +1,10 @@
 include ../SeasonCard/SeasonCard
 include ../Button/Button
 
-mixin Seasons({seasons, withTitle = true} = {})
-    -
-        const isWithTitle = withTitle ? 'seasons__title_active' : ''
+mixin Seasons({seasons} = {})
     section.seasons#seasons
-        h2.seasons__title(class=isWithTitle)='ВЫБЕРИТЕ, В КАКОМ СЕЗОНЕ ВЫ ПЛАНИРУЕТЕ ОТДЫХ  В "СЮГЕШ"'
-        .seasons__content
-            .seasons__cards
-                each card in seasons
-                    a.seasons__link(href=card.link)
-                        +SeasonCard({name: card.name, img: card.img})
-            +Button({text: 'ЗАБРОНИРОВАТЬ ДОМ', link: 'https://booking.sugesh.ru/'})
+        h2.seasons__title='В каком сезоне вы планируете отдых в «Сюгеш. Кроличья нора»?'
+        .seasons__cards
+            each card in seasons
+                a.seasons__link(href=card.link)
+                    +SeasonCard({name: card.name, img: card.img, icon: card.icon, isWinter: card.isWinter})

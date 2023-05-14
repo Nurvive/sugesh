@@ -1,0 +1,38 @@
+@import '../../scss/colors';
+@import '../../scss/breakpoints';
+@import '../../scss/mixins';
+
+.seasonGreeting {
+    display: flex;
+    flex-direction: column;
+    max-width: 520px;
+    width: 100%;
+
+    &__title {
+        margin-block: 0 30px;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 73px;
+        color: $sogesh;
+
+        @include media($tablet) {
+            margin-block: 0 24px;
+            font-size: 42px;
+            line-height: 51px;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: $sogesh;
+        margin-block: 0 130px;
+
+        @include media($tablet) {
+            margin-block: 0 30px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

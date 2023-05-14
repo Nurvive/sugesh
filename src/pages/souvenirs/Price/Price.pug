@@ -1,0 +1,8 @@
+mixin Price()
+    -
+        const prices = ['../../assets/img/souvenir-price.png', '../../assets/img/souvenir-price.png']
+    .price
+        h2.price__title='Прайс'
+        .price__images
+            each price in prices
+                img.price__img(src=price)

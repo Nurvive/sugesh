@@ -1,0 +1,10 @@
+include ../../../blocks/GreetingWrapper/GreetingWrapper
+include ../../../blocks/TextIcon/TextIcon
+
+mixin Greeting()
+    +GreetingWrapper()
+        .contacts-greeting
+            .contacts-greeting-inner
+                +TextIcon({icon: '../../assets/img/phone-brown.svg', text: 'КОНТАКТЫ'})
+                p.contacts-greeting-text='Туристический комплекс «Сюгеш» работает круглый год без выходных и праздников.'
+            img.contacts-greeting-img(src='../../assets/img/big-phone.png')

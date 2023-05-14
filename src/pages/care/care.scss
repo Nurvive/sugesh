@@ -1,0 +1,19 @@
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.care {
+    &__wrapper {
+        & .seasonGreeting__text {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        & > .glide {
+            margin-top: -190px;
+
+            @include media($desktopBig) {
+                margin-top: unset;
+            }
+        }
+    }
+}

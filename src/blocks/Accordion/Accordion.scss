@@ -3,115 +3,85 @@
 @import '../../scss/breakpoints';
 
 .accordion {
-    margin: 0;
-    max-width: 617px;
-    width: 100%;
-    background-color: $sand;
-    border-radius: 13px;
-    padding: 2px 12px 5px 11px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    min-height: 100px;
-    align-items: center;
-
     &__title {
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 46px;
-        color: $dark;
-        max-width: 490px;
-
-        @include media($tablet) {
-            font-size: 26px;
-            line-height: unset;
-        }
-    }
-
-    &__open-button {
-        flex-shrink: 0;
         position: relative;
-        width: 80px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        width: 100%;
+        max-width: 620px;
+        min-height: 140px;
+        padding-inline: 70px 120px;
+        background-color: $light;
+        box-shadow: 6px 6px 50px $dark15;
+        border-radius: 40px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: $sogesh;
         cursor: pointer;
-        height: 55px;
-
-        &::after, &::before {
-            position: absolute;
-            content: "";
-            background-color: $light;
-            width: 9px;
-            height: 54px;
-            left: 50%;
-            top: 0;
-            transform: translateX(-50%);
-        }
 
         &::after {
-            transform: translateX(-50%) rotate(90deg);
+            position: absolute;
+            top: 50%;
+            right: 70px;
+            transform: translateY(-50%);
+            content: url("../../assets/img/arrow-green.svg");
         }
-    }
 
-    &__modal {
-        max-width: 1280px;
-        width: 100%;
-        position: fixed;
-        top: 50%;
-        display: none;
-        border-radius: 35px;
-        border: 5px solid $sand;
-        box-shadow: 0 4px 21px rgba(0, 0, 0, 0.8);
-        padding: 18px 18px 20px 27px;
-        justify-content: space-between;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: $light;
-        z-index: 2;
-        gap: 10px;
-
-        &-text {
+        @include media($tablet) {
             font-weight: 400;
-            font-size: 20px;
-            line-height: 26px;
-            color: $dark;
-
-            &-link {
-                color: $secondColor;
-                font-weight: 700;
-            }
+            font-size: 24px;
+            line-height: 29px;
         }
 
-        &-close-button {
-            cursor: pointer;
-            flex-shrink: 0;
-            width: 50px;
-            height: 50px;
-            position: relative;
-            border-radius: 50%;
-            background-color: transparentize($dark, 0.5);
-
-            &::after, &::before {
-                width: 6px;
-                position: absolute;
-                height: 31px;
-                content: "";
-                background-color: $closeColor;
-                left: 50%;
-                top: 50%;
-            }
+        @include media($mobileBig) {
+            min-height: 94px;
+            padding-inline: 24px 74px;
+            font-size: 16px;
+            line-height: 20px;
 
             &::after {
-                transform: translate(-50%, -50%) rotate(45deg);
-            }
-
-            &::before {
-                transform: translate(-50%, -50%) rotate(-45deg);
+                right: 30px;
             }
         }
-
     }
-    &_active {
-        .accordion__modal {
-            display: flex;
+
+    &__text {
+        display: none;
+        padding: 80px 62px 40px 50px;
+        background-color: $light;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: $sogesh;
+        transform: translateY(-40px);
+
+        &-link {
+            color: $mainColor;
+            font-weight: 700;
+        }
+
+        @include media($mobileBig) {
+            padding: 60px 24px 22px 27px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    & input {
+        display: none;
+    }
+
+    & input:checked ~ &__text {
+        display: block;
+    }
+
+    & input:checked ~ &__title {
+        &::after {
+            transform: translateY(-50%) rotate(180deg);
         }
     }
 }

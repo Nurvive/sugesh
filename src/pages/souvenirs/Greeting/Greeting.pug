@@ -1,0 +1,12 @@
+include ../../../blocks/GreetingWrapper/GreetingWrapper
+include ../../../blocks/TextIcon/TextIcon
+include ../../../blocks/Button/Button
+
+mixin Greeting()
+    +GreetingWrapper()
+        .souvenirs-greeting
+            .souvenirs-greeting-inner
+                +TextIcon({icon: '../../assets/img/cup-brown.svg', text: 'СУВЕНИРЫ'})
+                +Button({text: 'Приобрести подарочный сертификат', link: 'mock-me'})
+                p.souvenirs-greeting-text!='Из любого путешествия хочется привезти «кусочек» воспоминаний с собой. </br></br>Что же можно привезти из «Сюгеша»?'
+            img.souvenirs-greeting-img(src='../../assets/img/big-souvenirs.png')

@@ -1,0 +1,81 @@
+@import '../../scss/colors';
+@import '../../scss/breakpoints';
+@import '../../scss/mixins';
+
+.results {
+    padding: 116px 20px 125px;
+
+    @include media($tablet) {
+        padding-block: 100px;
+    }
+
+    @include media($mobileBig) {
+        padding-block: 60px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: $sogesh;
+        text-align: center;
+
+        @include media($tablet) {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        @include media($mobileBig) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 80px;
+
+        @include media($desktopBig) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        @include media($mobileBig) {
+            margin-top: 30px;
+            gap: 30px;
+        }
+    }
+
+    &__video {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        max-width: 560px;
+
+        & iframe {
+            filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
+            border-radius: 40px;
+        }
+
+        &-button {
+            width: 100%;
+            max-width: 510px;
+            margin-inline: auto;
+        }
+
+        @include media($mobileBig) {
+            & iframe {
+                border-radius: 20px;
+            }
+        }
+    }
+
+    &__map {
+        width: 100%;
+        max-width: 560px;
+    }
+}

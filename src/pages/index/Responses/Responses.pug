@@ -1,0 +1,21 @@
+mixin Responses()
+    -
+        const items = [
+            {
+                img: '../../assets/img/teacher.svg',
+                text: '<strong>Мастер-классы для детей и взрослых:</strong> по актёрскому мастерству, основам дизайна, приготовлению ресторанных блюд, рукоделию и много других вариантов!'
+            },
+            {
+                img: '../../assets/img/mapPin.svg',
+                text: '<strong>Удобно добраться от Абакана (150 км.)</strong>'
+            },
+            {
+                img: '../../assets/img/massage.svg',
+                text: '<strong>Массажи для взрослых и детей,</strong> профессиональное обёртывание в нашем SPA-центре'
+            },
+        ]
+    section.responses
+        each item in items
+            .responses__item
+                img(src=item.img).responses__item-img
+                .responses__item-text!=item.text

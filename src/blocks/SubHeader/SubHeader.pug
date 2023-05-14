@@ -1,0 +1,7 @@
+mixin SubHeader(menu=[])
+    .subHeader
+        nav.subHeader__nav
+            ul.subHeader__nav-menu
+                each option in menu
+                    li.subHeader__nav-menu-item
+                        a(href=option.href).subHeader__nav-menu-item-link= option.text

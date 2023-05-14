@@ -1,7 +1,7 @@
+include ../../../blocks/SPAForm/SPAForm
+
 mixin Help()
     .help
-        div.help__img
-            img(src="../../assets/img/road.svg")
         .help__inner
-            p.help__text!="Заблудились и не можете нас найти?</br> Срочно позвоните менеджеру: <span>8 983 377 95 77</span> - он поможет сориентироваться"
-            a.help__link(href="tel:89833779577")='Позвонить'
+            p.help__text!="Заблудились и не можете нас найти?</br> Срочно <a class='help__link' href='tel:89833779577'>позвоните менеджеру: 8 983 377 95 77</a> - он поможет сориентироваться"
+        +SPAForm('Запросить консультацию').help__form

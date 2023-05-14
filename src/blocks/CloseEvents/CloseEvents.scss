@@ -1,0 +1,52 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.closeEvents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 840px;
+    margin-block-start: 80px;
+    padding-inline: 20px;
+    background-image: url("../../assets/img/opacity-car.png");
+    background-position: center;
+
+    @include media($desktop) {
+        flex-direction: column-reverse;
+    }
+
+    @include media($mobileBig) {
+        height: 660px;
+    }
+
+    &__title {
+        max-width: 510px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: $light;
+        text-align: center;
+
+        @include media($mobileBig) {
+            font-size: 30px;
+            line-height: 39px;
+        }
+    }
+
+    &__text {
+        max-width: 510px;
+        margin-block-start: 50px;
+        font-size: 24px;
+        line-height: 29px;
+        color: $light;
+        text-align: center;
+
+        @include media($mobileBig) {
+            margin-block-start: 20px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+}

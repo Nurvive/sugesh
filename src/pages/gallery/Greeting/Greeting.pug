@@ -1,0 +1,12 @@
+include ../../../blocks/GreetingWrapper/GreetingWrapper
+include ../../../blocks/TextIcon/TextIcon
+include ../../../blocks/Button/Button
+
+mixin Greeting()
+    +GreetingWrapper()
+        .gallery-greeting
+            .gallery-greeting-inner
+                +TextIcon({icon: '../../assets/img/gallery-brown.svg', text: 'ГАЛЕРЕЯ'})
+                +Button({text: 'Приобрести подарочный сертификат', link: 'mock-me'})
+                p.gallery-greeting-text='Внимание! Время заезда и выезда определяется индивидуально для каждого дома.'
+            img.gallery-greeting-img(src='../../assets/img/big-house.png')

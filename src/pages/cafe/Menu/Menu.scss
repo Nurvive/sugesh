@@ -1,0 +1,151 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.menu {
+    padding-block-start: 140px;
+
+    @include media($tablet) {
+        padding-block-start: 50px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: $sogesh;
+        text-align: center;
+
+        @include media($tablet) {
+            font-size: 32px;
+            line-height: 39px;
+        }
+    }
+
+    &__button {
+        max-width: 260px;
+        margin-block-start: 140px;
+        margin-inline: auto;
+        padding-block: 18px;
+        border-radius: 20px;
+
+        @include media($tablet) {
+            margin-block-start: 100px;
+        }
+    }
+
+    .js-glide-menu {
+        width: 100%;
+        margin-block-start: 60px;
+        margin-inline: auto;
+
+        @include media($tablet) {
+            margin-block-start: 30px;
+        }
+
+        &__track {
+            padding-block: 98px 30px;
+
+            @include media($tablet) {
+                padding-block-start: 50px;
+            }
+        }
+
+        &__wrapper {
+            position: relative;
+        }
+
+        &__arrows {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: flex;
+            justify-content: space-between;
+            max-width: 630px;
+            width: 100%;
+            padding-inline: 30px;
+            transform: translate(-50%, -50%);
+        }
+
+        &__bullets {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            width: fit-content;
+            margin-inline: auto;
+
+            @include media($tablet) {
+                gap: 15px;
+            }
+
+            @include media($mobileBig) {
+                flex-direction: column;
+            }
+        }
+
+        &__bullet {
+            padding-bottom: 10px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: $sogesh;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+
+            &.glide__bullet--active {
+                border-bottom: 4px solid $mainColor;
+            }
+        }
+
+        &__arrow {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+
+            & > img {
+                width: 20px;
+                height: 12px;
+            }
+
+            &.glide__arrow--left {
+                transform: rotate(90deg);
+            }
+
+            &.glide__arrow--right {
+                transform: rotate(-90deg);
+            }
+        }
+
+        &__slides {
+            overflow: visible;
+        }
+
+        &__slide {
+            display: flex;
+            gap: 66px;
+            justify-content: center;
+
+            & > img {
+                box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+                border-radius: 50px;
+            }
+
+            @include media($desktopBig) {
+                flex-direction: column;
+                align-items: center;
+
+                & > img {
+                    max-width: 595px;
+                    width: 100%;
+                }
+            }
+
+            @include media($tablet) {
+                padding-inline: 20px;
+            }
+        }
+    }
+}

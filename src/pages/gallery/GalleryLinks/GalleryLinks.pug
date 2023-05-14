@@ -5,4 +5,4 @@ mixin GalleryLinks({links = []} = {})
         ul.galleryLinks__list
             each link, i in links
                 li.galleryLinks__item
-                    +Button({text: link.text, link: link.link})(data-house=i class='js-galleryLinks__button')
+                    +Button({text: link.title, link: link.link})(data-house=i class='js-galleryLinks__button')

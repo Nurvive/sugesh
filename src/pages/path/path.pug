@@ -1,51 +1,41 @@
 extends ../../templates/page-template
-include ./Line/Line
+include ../../blocks/Description/Description
+include ../../blocks/Spray/Spray
+include ../../blocks/TextIcon/TextIcon
+include ../../blocks/GreetingWrapper/GreetingWrapper
+include ../../blocks/SPAForm/SPAForm
 include ./Location/Location
 include ./Help/Help
+include ./Greeting/Greeting
 
 block title
     title Как добраться
 
 block content
     -
-        const items = [
+        const cards = [
             {
-                text: "На машине: доезжайте до города Абакан. От Абакана поезжайте до села Таштып. Сюгеш находится в 150 км. от г. Абакана по трассе А161 (ю-з), в 10-ти километрах от п. Таштып (в сторону г. Абаза). </br> Дорога асфальтирована до самой базы и можно добраться на любом транспорте. На повороте к  базе отдыха, на федеральной трассе А-161, установлен указатель — баннер «Сюгеш» (от п. Таштып вы проедете 10 км. в сторону г. Абаза.)",
-                img: ['../../assets/img/carSide.svg']
+                title: "На машине",
+                text: "Доезжайте до города Абакан. От Абакана езжайте до села Таштып. Сюгеш находится в 150 км. от г. Абакана по трассе А161 (ю-з), в 10-ти километрах от п. Таштып (в сторону г. Абаза). </br></br>Дорога асфальтирована до самой базы и можно добраться на любом транспорте. На повороте к базе отдыха, на федеральной трассе А-161, установлен указатель — баннер «Сюгеш» (от п. Таштып вы проедете 10 км. в сторону г. Абаза.)",
+                img: '../../assets/img/path/path1.jpg',
+                isRight: true,
+                defaultCover: false,
             },
             {
-                text: "На самолете/поезде: нужно добраться до г. Абакана. Далее трансфер Сюгеша встречает вас на ЖД вокзале или в аэропорте и привозит на базу отдыха. Автобус (трансфер) вмещает 6 человек. Стоимость трансфера: 10 000 рублей.",
-                img:['../../assets/img/train.svg', '../../assets/img/plane.svg']
+                title: "На самолете/поезде",
+                text: 'Нужно добраться до г. Абакана. Далее трансфер Сюгеша встречает вас на ЖД вокзале или в аэропорте и привозит на базу отдыха. Автобус (трансфер) вмещает 6 человек. Стоимость трансфера: 10 000 рублей. </br></br>На поезде вы также можете доехать до станции "Аскиз". От неё вызвать такси, либо заранее забронировать транфсер через администрацию комплекса "Сюгеш" ',
+                img: '../../assets/img/path/path2.jpg'
             },
             {
+                title: "На автобусе",
                 text: "Самостоятельно добраться от ЖД вокзала или аэропорта можно на любом автобусе Абакан-Абаза (остановка от базы в 500 м.) или на такси.",
-                img: ['../../assets/img/bus.svg']
-            }]
-        const locations = [
-            {
-                link: 'https://go.2gis.com/3v4qic',
-                qr: '../../assets/img/map/qr2gis.svg',
-                img: '../../assets/img/map/2gis.jpg',
-                icon: '../../assets/img/2gisLogo.svg'
-            },{
-                link: 'https://yandex.ru/maps/-/CCUR7GXT1A',
-                qr: '../../assets/img/map/qrYa.svg',
-                img: '../../assets/img/map/yaMap.jpg',
-                icon: '../../assets/img/yaLogo.svg'
-            },{
-                link: 'https://goo.gl/maps/tWTqHCQhDmZw75os5',
-                qr: '../../assets/img/map/qrGoogle.svg',
-                img: '../../assets/img/map/googleMap.jpg',
-                icon: '../../assets/img/googleLogo.svg'
+                img: '../../assets/img/path/path3.jpg',
+                isRight: true,
             }
         ]
-    .path
-        .path__lines
-            each item in items
-                +Line({text: item.text, imgs: item.img})
-        .path__location
-            h3.path__location-title="Для вашего удобства мы подготоваили для вас отметки для построенния маршрута"
-            each location in locations
-                +Location(location)
-        .path__help
-            +Help()
+    +Spray()
+    +Greeting()
+    +SPAForm('Запросить консультацию')
+    +Description({cards})
+    +Location()
+    +Help()

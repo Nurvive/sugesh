@@ -4,20 +4,25 @@
 
 .scroll {
     overflow: auto;
-    scrollbar-color: $warn $secondColor;
-    scrollbar-width: thin;
+    padding-bottom: 60px;
+    margin-left: 100px;
+
+    @include media($tablet) {
+        padding-bottom: 20px;
+        margin-left: 20px;
+    }
 
     &::-webkit-scrollbar {
-        height: 8px;
+        height: 5px;
     }
 
     &::-webkit-scrollbar-track {
         border-radius: 17px;
-        background-color: $secondColor;
+        background-color: transparent;
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: $warn;
+        background-color: $mainColor;
         cursor: grab;
         border-radius: 17px;
     }
@@ -26,25 +31,14 @@
         display: none;
     }
 
-    &__title {
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 38px;
-        color: $secondColor;
-        margin-bottom: 5px;
-
-        @include media($tablet) {
-            font-size: 22px;
-        }
-    }
-
     &__list {
         display: flex;
-        gap: 15px;
+        gap: 40px;
 
         &-item {
             & > img {
-                max-width: 430px;
+                max-width: 400px;
+                border-radius: 40px;
 
                 @include media($tablet) {
                     max-width: 280px;

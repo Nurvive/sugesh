@@ -3,27 +3,36 @@
 @import '../../scss/breakpoints';
 
 .cafe {
-    @include media($tablet) {
-        padding-bottom: 20px;
+    & .seasonGreeting__text {
+        margin-block-end: 78px;
+        font-size: 24px;
+        line-height: 29px;
     }
 
-    &__inner {
-        padding-inline: 20px;
+    &__link {
+        font-weight: 700;
+        text-decoration: underline;
+        color: $sogesh;
     }
 
-    &__subtitle {
-        text-align: center;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 51px;
-        color: $secondColor;
-        max-width: 800px;
-        margin: 30px auto 0;
+    &__undertext {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: $sogesh;
+    }
+
+    & > &__slider {
+        margin-top: 100px;
 
         @include media($tablet) {
-            font-size: 26px;
-            margin-top: 20px;
-            line-height: unset;
+            margin-top: -50px;
+        }
+
+        .js-glide__lines {
+            &::after, &::before {
+                height: 280px;
+            }
         }
     }
 }

@@ -3,57 +3,33 @@
 @import '../../../scss/breakpoints';
 
 .help {
+    @include commonContainer;
+
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    gap: 60px;
+    padding-block: 120px;
+    padding-inline: 20px;
 
-    &__img {
-        max-width: 225px;
-
-        @include media($tablet) {
-            display: none;
-        }
-
-        & > img {
-            width: 100%;
-        }
-    }
-
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    @include media($tablet) {
+        gap: 30px;
+        padding-block: 50px;
     }
 
     &__text {
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 38px;
-        color: $dark;
-
-        @include media($tablet) {
-            font-size: 20px;
-            line-height: unset;
-        }
-
-        & > span {
-            font-weight: 500;
-        }
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $sogesh;
+        text-align: center;
     }
 
     &__link {
-        background-color: $warn;
-        max-width: 410px;
-        width: 100%;
-        color: $light;
-        font-weight: 400;
-        font-size: 41px;
-        line-height: 52px;
-        text-align: center;
-        border-radius: 20px;
+        color: $sogesh;
+        font-weight: 700;
+    }
 
-        @include media($tablet) {
-            font-size: 24px;
-            line-height: 36px;
-        }
+    &__form {
+        padding-block: 0;
     }
 }

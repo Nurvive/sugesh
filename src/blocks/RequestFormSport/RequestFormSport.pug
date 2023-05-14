@@ -1,0 +1,10 @@
+include ../Input/Input
+
+mixin RequestFormSport()
+    form.requestFormSport
+        .requestFormSport__inputs
+            +Input({placeholder: 'Имя'})(type='text', minlength="2")
+            +Input({placeholder: 'Телефон'})(type="tel", inputmode="tel")
+        .requestFormSport__buttons
+            button(type="submit").requestFormSport__button='Записаться к инструктору'
+            button(type="submit").requestFormSport__button='Подобрать снаряжение'

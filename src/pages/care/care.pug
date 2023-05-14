@@ -1,0 +1,24 @@
+extends ../../templates/page-template
+include ../../blocks/Spray/Spray
+include ../../blocks/GreetingWrapper/GreetingWrapper
+include ../../blocks/SeasonGreeting/SeasonGreeting
+include ../../blocks/Results/Results
+include ../../blocks/Slider/Slider
+
+block title
+    title Отдел заботы
+
+block content
+    -
+        const greeting = {
+            text: 'Каждому гостю мы обеспечиваем индивидуальный подход и хотим, чтобы на нашем курорте было комфортно каждому. При любой необходимости вы всегда можете обратиться в наш отдел заботы.</br></br> За каждым гостем нашего курорта закрепляется свой Ангел заботы, к который будет сопровождать вас на протяжении всего присутствия в «Сюгеше» и после!',
+            buttonText: 'Забронировать домик',
+            link: 'mock-me',
+            iconText: 'ОТДЕЛ ЗАБОТЫ',
+            icon: '../../assets/img/care-brown.svg'
+        }
+    +Spray(true)
+    +GreetingWrapper().care__wrapper
+        +SeasonGreeting(greeting)
+        +Slider({slides: ['../../assets/img/winter/house.jpg', '../../assets/img/winter/inventory.jpg', '../../assets/img/winter/bath.jpg', '../../assets/img/winter/board.jpg']})
+    +Results()

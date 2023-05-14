@@ -1,0 +1,18 @@
+@import '../../scss/breakpoints';
+@import '../../scss/mixins';
+
+.input {
+    width: 100%;
+    padding: 20px 0 20px 30px;
+    background-color: #F3F3F3;
+    border: none;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4F4F4F;
+
+    @include media($tablet) {
+        padding: 14px 0 14px 20px;
+    }
+}

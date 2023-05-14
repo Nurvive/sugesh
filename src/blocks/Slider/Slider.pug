@@ -1,15 +1,16 @@
-mixin Slider({slides} = {})
-    .glide.js-glide
-        .glide__track(data-glide-el="track")
-            ul.glide__slides
+mixin Slider({slides, withIcon = false, alternateColor = false} = {})
+    -
+        const alternateClass = alternateColor ? 'glide_color_alternate' : ''
+    .glide.js-glide(class=alternateClass)&attributes(attributes)
+        .js-glide__lines.js-glide__lines-first
+        .js-glide__lines.js-glide__lines-last
+        if withIcon
+            img.js-glide__icon(src='../../assets/img/rabbit.png')
+        .glide__track.js-glide__track(data-glide-el="track")
+            ul.glide__slides.js-glide__slides
                 each slide in slides
-                    li.glide__slide
+                    li.glide__slide.js-glide__slide
                         img(src=slide)
-        .glide__arrows(data-glide-el="controls")
-            button.glide__arrow.glide__arrow_direction_left(data-glide-dir="<")
-                img(src="../../assets/img/arrow.svg")
-            button.glide__arrow.glide__arrow_direction_right(data-glide-dir=">")
-                img(src="../../assets/img/arrow.svg")
-        .glide__bullets(data-glide-el="controls[nav]")
+        .glide__bullets.js-glide__bullets(data-glide-el="controls[nav]")
             each slide, i in slides
-                button(class="glide__bullet" data-glide-dir=`=${i}`)
+                button(class="glide__bullet js-glide__bullet" data-glide-dir=`=${i}`)

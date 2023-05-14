@@ -1,0 +1,147 @@
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+@import '../../scss/colors';
+
+.galleryBlock {
+    @include commonContainer();
+
+    padding-block-start: 120px;
+    padding-inline: 30px;
+
+    @include media($tablet) {
+        padding-block-start: 30px;
+    }
+
+    @include media($mobileBig) {
+        padding-inline: 20px;
+    }
+
+    &__title {
+        margin-bottom: 80px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: $sogesh;
+        text-align: center;
+
+        @include media($tablet) {
+            margin-bottom: 30px;
+            font-size: 30px;
+            line-height: 39px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        & > img {
+            max-width: 510px;
+            width: 100%;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-block-end: 96px;
+
+        @include media($tablet) {
+            margin-block-end: 40px;
+        }
+
+        @include media($mobileBig) {
+            display: block;
+            white-space: nowrap;
+            max-width: 250px;
+            margin-inline: auto;
+            overflow: auto;
+        }
+    }
+
+    &__button {
+        padding-bottom: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $sogesh;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &_active {
+            border-bottom: 4px solid $mainColor;
+        }
+
+        @include media($mobileBig) {
+            margin-inline: 14px;
+        }
+    }
+
+    &__bullets {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-block-start: 90px;
+
+        @include media($tablet) {
+            margin-block-start: 40px;
+        }
+    }
+
+    &__bullet {
+        padding-bottom: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $sogesh;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &.glide__bullet--active {
+            font-size: 35px;
+            line-height: 42px;
+        }
+    }
+
+    &__arrow {
+        cursor: pointer;
+        position: absolute;
+        bottom: 50%;
+        left: -20px;
+        background-color: $mainColor;
+        mask-image: url("../../assets/img/arrow.svg");
+        mask-repeat: no-repeat;
+        width: 24px;
+        height: 40px;
+        mask-size: 85%;
+        transform: translateY(50%);
+
+        &_direction {
+            &_right {
+                right: -20px;
+                left: revert;
+                transform: translateY(50%) rotate(180deg);
+            }
+        }
+
+        @include media($mobileBig) {
+            bottom: 30px;
+            width: 12px;
+            height: 20px;
+            left: -10px;
+
+            &_direction {
+                &_right {
+                    right: -10px;
+                    left: revert;
+                }
+            }
+        }
+    }
+}

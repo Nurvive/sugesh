@@ -3,30 +3,42 @@
 @import '../../scss/breakpoints';
 
 .header {
-    background-color: $mainColor;
-    display: flex;
-    align-items: center;
-    padding: 8px 78px 8px 26px;
-    justify-content: space-between;
     position: relative;
+    z-index: 1;
+    padding: 20px 40px;
+    background-color: $mainColor;
+
+    @include media($desktop) {
+        display: flex;
+        gap: 48px;
+    }
 
     @include media($tablet) {
         padding: 8px 20px;
     }
 
+    &__container {
+        @include commonContainer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     &__nav-menu {
         display: flex;
-        gap: 30px;
+        gap: 20px;
 
-        @include media($desktopBig) {
+        @include media($desktop) {
             display: none;
         }
 
         &-item {
             &-link {
-                font-size: 22px;
-                line-height: 28px;
-                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                text-transform: capitalize;
                 color: $light;
                 position: relative;
 
@@ -61,6 +73,27 @@
                     }
                 }
             }
+        }
+    }
+
+    &__phone {
+        position: relative;
+        padding: 12px 12px 12px 40px;
+        border: 3px solid $light;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $light;
+
+        &::before {
+            position: absolute;
+            left: 15px;
+            content: url("../../assets/img/phone.svg");
+        }
+
+        @include media($mobileBig) {
+            display: none;
         }
     }
 }

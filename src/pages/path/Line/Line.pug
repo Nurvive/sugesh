@@ -1,7 +1,0 @@
-mixin Line({text = '', imgs = ['']} = {})
-    .line
-        .line__imgs
-            each img in imgs
-                img(src=img)
-        .line__separator
-        p.line__text!=text

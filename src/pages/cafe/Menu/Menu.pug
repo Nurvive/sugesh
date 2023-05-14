@@ -1,0 +1,23 @@
+include ../../../blocks/Button/Button
+
+mixin Menu(menu=[])
+    .menu
+        h2.menu__title='Меню'
+        .glide.js-glide-menu(class=alternateClass)&attributes(attributes)
+            .js-glide-menu__wrapper
+                .glide__arrows.js-glide-menu__arrows(data-glide-el="controls")
+                    button.glide__arrow.js-glide-menu__arrow.glide__arrow--left(data-glide-dir="<")
+                        img(src='../../assets/img/arrow-green.svg')
+                    button.glide__arrow.js-glide-menu__arrow.glide__arrow--right(data-glide-dir=">")
+                        img(src='../../assets/img/arrow-green.svg')
+                .glide__bullets.js-glide-menu__bullets(data-glide-el="controls[nav]")
+                    each item, i in menu
+                        button(class="glide__bullet js-glide-menu__bullet" data-glide-dir=`=${i}`)=item.title
+            .glide__track.js-glide-menu__track(data-glide-el="track")
+                ul.glide__slides.js-glide-menu__slides
+                    each item, i in menu
+                        li.glide__slide.js-glide-menu__slide
+                            each slide in menu[i].slides
+                                img(src=slide)
+        +Button({text: 'Скачать PDF', link: 'assets/images/big-menu.png'})(download='download').menu__button.js-menu__button
+        // mock-me link href

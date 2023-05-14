@@ -1,13 +1,82 @@
 extends ../../templates/page-template
-include ../../blocks/Carousel/Carousel
-include ./Description/Description
+include ../../blocks/SeasonGreeting/SeasonGreeting
+include ../../blocks/QuickLinks/QuickLinks
+include ../../blocks/Results/Results
+include ../../blocks/Slider/Slider
+include ../../blocks/SPAForm/SPAForm
+include ../../blocks/GreetingWrapper/GreetingWrapper
+include ../../blocks/Description/Description
+include ../../blocks/CloseEvents/CloseEvents
+include ../../blocks/Spray/Spray
 
 block title
     title Лето
 
 block content
-    +Carousel({slides: ['../../assets/img/summer/summer1.jpg', '../../assets/img/summer/summer2.jpg', '../../assets/img/summer/summer3.jpg', '../../assets/img/summer/summer4.jpg', '../../assets/img/summer/summer5.jpg']})
-    p.summer__text="Всегда ли нужно выезжать заграницу, чтобы насладиться комфортным отдыхом на природе и сменить обстановку? Нет!"
-    +Description()
-    a(href="https://vk.com/sugesh" target="_blank" rel="noopener noreferrer").summer__link
-        img(src="../../assets/img/sugeshVK.svg")
+    -
+        const greeting = {
+            text: 'Всегда ли нужно выезжать заграницу, чтобы <strong>насладиться комфортным отдыхом на природе</strong> и сменить обстановку? Нет!',
+            buttonText: 'Забронировать дом',
+            link: 'mock-me',
+            iconText: 'ЛЕТО',
+            icon: '../../assets/img/sun-brown.svg'
+        }
+        const cards = [
+            {
+                title: "Открытый бассейн с шезлонгами",
+                text: "Для наших гостей мы оборудовали замечательный открытый бассейн. Купайтесь, загорайте на шезлонгах, заказывайте вкусные напитки в кафе Сюгеша и заряжайтесь летним настроением по-максимуму!",
+                img: '../../assets/img/infoCardSummer/infoCardSummer1.jpg',
+                isRight: true,
+                defaultCover: false,
+            },
+            {
+                title: 'Летнее кафе',
+                text: "Проведите время приятно в нашем летнем кафе на открытом воздухе. Для вас мы подготовили специальное сезонное меню, свежее мясо и прохладные коктейли.",
+                img: '../../assets/img/infoCardSummer/infoCardSummer2.jpg'
+            },
+            {
+                title: 'Вкусные трапезы в кафе "Братец кролик"',
+                text: "Детское меню, горячие напитки и вкусные блюда - все для вашего гастрономического наслаждения. </br></br>Забудьте о хлопотах, наслаждайтесь отдыхом и закажите вкусные блюда в кафе Сюгеш (при аренде дома завтрак и ужин входят в стоимость проживания).",
+                img: '../../assets/img/infoCardSummer/infoCardSummer3.jpg',
+                isRight: true,
+            },
+            {
+                title: 'Вдохновляющие пешие прогулки в окружении пейзажей Хакасии и медитации под звуки природы',
+                text: "На территории базы отдыха регулярно проводится уборка, поэтому вы сможете насладиться прогулкой по чистым пешим дорожкам. </br></br>Прогулки или занятия спортом на свежем весеннем воздухе - лучший подарок для организма после холодной зимы.",
+                img: '../../assets/img/infoCardSummer/infoCardSummer4.jpg',
+            },
+            {
+                title: 'Занятия спортом на свежем воздухе',
+                text: "Огромное пространство для комфортных занятий спортом на свежем воздухе в окружении кедрового леса.",
+                img: '../../assets/img/infoCardSummer/infoCardSummer5.jpg',
+                isRight: true
+            },
+            {
+                title: 'Увлекательные мастер-классы для детей и взрослых',
+                text: "Описание увлекательных мастер-классов для детей и взрослых",
+                img: '../../assets/img/infoCardSummer/infoCardSummer6.jpg',
+            },
+            {
+                title: "Экскурсии на Саяно-Шушенскую ГЭС</br><p class='infoCard__subtitle'>(одну из крупнейших станций в России) или форелевое хозяйство</p>",
+                text: "По вашему запросу мы можем организовать экскурсию на 3-5 человек на Саяно-Шушенскую ГЭС - одну из крупнейших станций в России. Или на форелевое хозяйство. Там вы сможете приобрести форель, которую  поймают прям при вас. Рыбу можно приготовить там,на самой ферме, либо привезти на базу отдыха Сюгеш и повара нашего кафе приготовят блюдо для вас. <strong>Подробности уточняйте у администратора.</strong>",
+                img: '../../assets/img/infoCardSummer/infoCardSummer7.jpg',
+                isRight: true
+            },
+            {
+                title: 'Катание на моторной или аэролодке',
+                text: "Прокатитесь на моторной или аэролодке по реке, и насладитесь пейзажами Хакасии с другого ракурса. </br></br>Вдохните свежий речной воздух, перемешанный с влагой от реки и насладитесь прекрасным отдыхом! Подробности уточняйте у администратора. ",
+                img: '../../assets/img/infoCardSummer/infoCardSummer8.jpg'
+            }
+        ]
+    +Spray()
+    +GreetingWrapper()
+        +SeasonGreeting(greeting)
+        +Slider({slides: ['../../assets/img/summer/summer1.jpg', '../../assets/img/summer/summer2.jpg', '../../assets/img/summer/summer3.jpg', '../../assets/img/summer/summer4.jpg', '../../assets/img/summer/summer5.jpg']})
+    +SPAForm()
+    +Description({title: 'Чем заняться в Сюгеше летом?', cards})
+    +QuickLinks(true)
+    +CloseEvents({
+        text: 'Вобщем эта вкладка сделана так, чтобы можно было потом легко заменять информацию и ставить несколько разных событий в слайдер',
+        slides: ['../../assets/img/summer/summer1.jpg', '../../assets/img/summer/summer2.jpg', '../../assets/img/summer/summer3.jpg']
+    })
+    +Results()

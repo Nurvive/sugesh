@@ -1,6 +1,5 @@
-mixin Scroll({images = [], title = ""} = {})
-    .scroll
-        .scroll__title=title
+mixin Scroll({images = [], title = "", text = ""} = {})
+    .scroll.js-scroll
         ul.scroll__list
             each img in images
                 li.scroll__list-item

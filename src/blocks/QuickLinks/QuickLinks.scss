@@ -1,0 +1,68 @@
+@import '../../scss/mixins';
+@import '../../scss/breakpoints';
+
+.quickLinks {
+    @include commonContainer;
+
+    display: flex;
+    justify-content: center;
+    padding-block-start: 130px;
+    padding-inline: 10px;
+
+    @include media($desktop) {
+        padding-block-start: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        width: 100%;
+
+        @include media($desktop) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    &__link {
+        padding: 30px 36px;
+        background: linear-gradient(101.27deg, rgba(0, 83, 64, 0.8) 13.04%, #447A43 99.61%);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        border-radius: 40px;
+        text-align: center;
+    }
+
+    &_full {
+        .quickLinks__list {
+            flex-wrap: wrap;
+            column-gap: 40px;
+            row-gap: 100px;
+            justify-content: center;
+
+            @include media($desktop) {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        .quickLinks__item {
+            flex-basis: 50%;
+
+
+            @include media($desktop) {
+                flex-basis: 100%;
+            }
+        }
+    }
+}

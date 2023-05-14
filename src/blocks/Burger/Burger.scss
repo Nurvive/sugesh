@@ -4,20 +4,19 @@
 
 .burger {
     display: none;
-    @include media($desktopBig) {
+
+    @include media($desktop) {
         display: block;
     }
 
     &__open {
         cursor: pointer;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: white;
+        width: 52px;
+        height: 100%;
         position: relative;
 
         & span {
-            width: 50%;
+            width: 100%;
             left: 50%;
             transform: translate(-50%, -50%);
             top: 50%;
@@ -25,8 +24,8 @@
             &, &::after, &::before {
                 display: block;
                 position: absolute;
-                height: 2px;
-                background-color: black;
+                height: 5px;
+                background-color: $light;
             }
 
             &::after, &::before {
@@ -35,11 +34,11 @@
             }
 
             &::after {
-                top: -6px;
+                top: -13px;
             }
 
             &::before {
-                top: 6px;
+                top: 13px;
             }
         }
 
@@ -51,7 +50,7 @@
         left: 50%;
         top: 0;
         transform: translate(-50%, -100%);
-        background-color: $sand;
+        background-color: $mainColor;
         padding-block: 50px 15px;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
@@ -99,7 +98,7 @@
             content: ' ';
             height: 23px;
             width: 2px;
-            background-color: black;
+            background-color: $light;
         }
 
         &::after {

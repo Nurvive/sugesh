@@ -1,0 +1,119 @@
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.data {
+    @include commonContainer();
+
+    padding-inline: 176px 50px;
+
+    @include media($desktopBig) {
+        padding-block-start: 20px;
+        padding-inline: 50px;
+    }
+
+    @include media($tablet) {
+        padding-inline: 20px;
+    }
+
+    &__phone {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+
+        & > a {
+            color: black;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 350px;
+        margin-block: 30px;
+
+        @include media($desktopBig) {
+            flex-direction: column;
+            align-items: start;
+            gap: 30px;
+            padding-left: 150px;
+        }
+
+        @include media($tablet) {
+            padding-left: 60px;
+        }
+
+        &-item {
+            position: relative;
+            max-width: 308px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+
+            & > a {
+                color: black;
+            }
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: -56px;
+                transform: translate(-100%, -50%);
+                background-size: cover;
+                content: "";
+            }
+
+            @include media($tablet) {
+                font-size: 20px;
+                line-height: 22px;
+
+                &::before {
+                    left: -14px;
+                }
+            }
+        }
+
+        &-item:first-child {
+            &::before {
+                width: 70px;
+                height: 70px;
+                background-image: url("../../../assets/img/green-phone.svg");
+            }
+        }
+
+        &-item:last-child {
+            &::before {
+                width: 96px;
+                height: 56px;
+                background-image: url("../../../assets/img/green-mail.svg");
+            }
+        }
+
+        @include media($tablet) {
+            &-item:first-child {
+                &::before {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            &-item:last-child {
+                &::before {
+                    width: 52px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+
+        @include media($tablet) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

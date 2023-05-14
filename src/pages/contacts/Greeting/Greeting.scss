@@ -1,0 +1,27 @@
+@import '../../../scss/colors';
+@import '../../../scss/breakpoints';
+@import '../../../scss/mixins';
+
+.contacts-greeting {
+    display: flex;
+
+    &-text {
+        max-width: 750px;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 49px;
+        color: $sogesh;
+
+        @include media($tablet) {
+            padding-block-start: 20px;
+            font-size: 20px;
+            line-height: 33px;
+        }
+    }
+
+    &-img {
+        @include media($desktopBig) {
+            display: none;
+        }
+    }
+}

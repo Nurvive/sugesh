@@ -3,27 +3,21 @@
 @import '../../scss/breakpoints';
 
 .button {
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    padding: 7px;
-    color: $warn;
-    text-transform: uppercase;
-    background-color: $light;
-    border-radius: 12px;
-    transition: border-color 0.4s ease;
-    border: 3px solid $light;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 36px;
     display: block;
+    width: 100%;
+    padding-block: 26px;
+    background: linear-gradient(101.27deg, rgba(0, 83, 64, 0.8) 13.04%, #447A43 99.61%);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $light;
 
     @include media($tablet) {
-        font-size: 22px;
-        line-height: 28px;
-    }
-
-    &:hover {
-        border-color: $warn;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
     }
 }

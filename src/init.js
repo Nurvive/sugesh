@@ -1,13 +1,13 @@
 import {Header} from './blocks/Header/Header';
-import {Accordion} from './blocks/Accordion/Accordion';
 import {Slider} from './blocks/Slider/Slider';
-import {Location} from './pages/path/Location/Location';
 import {HouseModal} from './pages/gallery/HouseModal/HouseModal';
+import {GalleryBlock} from './blocks/GalleryBlock/GalleryBlock';
+import {Menu} from './pages/cafe/Menu/Menu';
 
 (() => {
     new Header();
-    new Accordion();
     new Slider();
-    new Location();
     new HouseModal();
+    new GalleryBlock();
+    new Menu();
 })();

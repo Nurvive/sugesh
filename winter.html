@@ -16,193 +16,204 @@
     <link rel="mask-icon" href="assets/fonts/safari-pinned-tab.svg" color="#5bbad5">
   <script defer src="./main.bundle.js"></script><link href="./main.css" rel="stylesheet"></head>
   <body>
-    <header class="header js-header"><a class="header__logo-link" href="index.html"><img class="header__logo" src="assets/fonts/logo.svg"/></a>
-      <nav class="header__nav">
-        <ul class="header__nav-menu">
-          <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="https://vk.com/sugesh">Сюгеш ВК</a></li>
-          <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="https://booking.sugesh.ru/">бронирование</a></li>
-          <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="path.html">как добраться</a></li>
-          <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="cafe.html">кафе</a></li>
-          <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="gallery.html">галерея</a></li>
-          <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="price.html">прайс</a></li>
-          <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="souvenirs.html">сувениры </a></li>
-          <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="contacts.html">контакты</a></li>
-        </ul>
-      </nav>
+    <header class="header js-header">
+      <div class="header__container"><a class="header__logo-link" href="index.html"><img class="header__logo" src="assets/fonts/logo.svg"/></a>
+        <nav class="header__nav">
+          <ul class="header__nav-menu">
+            <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="price.html">прайс</a></li>
+            <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="https://booking.sugesh.ru/">бронирование</a></li>
+            <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="path.html">как добраться</a></li>
+            <li class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="contacts.html">контакты</a></li>
+          </ul>
+        </nav><a class="header__phone" href="tel:+73902313506">+73902313506</a>
+      </div>
+      <div class="subHeader">
+        <nav class="subHeader__nav">
+          <ul class="subHeader__nav-menu">
+            <li class="subHeader__nav-menu-item"><a class="subHeader__nav-menu-item-link" href="mission.html">Наша миссия</a></li>
+            <li class="subHeader__nav-menu-item"><a class="subHeader__nav-menu-item-link" href="care.html">Отдел заботы</a></li>
+            <li class="subHeader__nav-menu-item"><a class="subHeader__nav-menu-item-link" href="cafe.html">кафе</a></li>
+            <li class="subHeader__nav-menu-item"><a class="subHeader__nav-menu-item-link" href="gallery.html">галерея</a></li>
+            <li class="subHeader__nav-menu-item"><a class="subHeader__nav-menu-item-link" href="souvenirs.html">сувениры </a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="burger js-burger">
         <div class="burger__open js-burger__open"><span></span></div>
         <nav class="burger__nav">
           <ul class="burger__nav-menu">
-            <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="https://vk.com/sugesh">Сюгеш ВК</a></li>
+            <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="price.html">прайс</a></li>
             <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="https://booking.sugesh.ru/">бронирование</a></li>
             <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="path.html">как добраться</a></li>
+            <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="contacts.html">контакты</a></li>
+            <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="mission.html">Наша миссия</a></li>
+            <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="care.html">Отдел заботы</a></li>
             <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="cafe.html">кафе</a></li>
             <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="gallery.html">галерея</a></li>
-            <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="price.html">прайс</a></li>
             <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="souvenirs.html">сувениры </a></li>
-            <li class="burger__nav-menu-item"><a class="burger__nav-menu-item-link" href="contacts.html">контакты</a></li>
           </ul>
           <div class="burger__close js-burger__close"></div>
         </nav>
       </div>
     </header>
-    <div class="carousel">
+    <div class="spray">
+      <div class="spray__first"></div>
+      <div class="spray__second"></div>
+      <div class="spray__third"></div>
+    </div>
+    <div class="greeting-wrapper">
+      <div class="seasonGreeting">
+        <div class="textIcon"><img src="assets/fonts/snowflake-brown.svg"/>
+          <div class="textIcon__text">ЗИМА</div>
+        </div>
+        <h2 class="seasonGreeting__title">Сюгеш.</br> Кроличья нора.</h2>
+        <p class="seasonGreeting__text">Детский горнолыжный курорт. Всё для семейного отдыха.</p><a class="button" href="mock-me">Забронировать дом</a>
+      </div>
       <div class="glide js-glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide"><img src="assets/images/house.jpg"/></li>
-            <li class="glide__slide"><img src="assets/images/inventory.jpg"/></li>
-            <li class="glide__slide"><img src="assets/images/bath.jpg"/></li>
-            <li class="glide__slide"><img src="assets/images/board.jpg"/></li>
-            <li class="glide__slide"><img src="assets/images/fito.jpg"/></li>
-            <li class="glide__slide"><img src="assets/images/rock.jpg"/></li>
-            <li class="glide__slide"><img src="assets/images/trener.jpg"/></li>
+        <div class="js-glide__lines js-glide__lines-first"></div>
+        <div class="js-glide__lines js-glide__lines-last"></div>
+        <div class="glide__track js-glide__track" data-glide-el="track">
+          <ul class="glide__slides js-glide__slides">
+            <li class="glide__slide js-glide__slide"><img src="assets/images/house.jpg"/></li>
+            <li class="glide__slide js-glide__slide"><img src="assets/images/inventory.jpg"/></li>
+            <li class="glide__slide js-glide__slide"><img src="assets/images/bath.jpg"/></li>
+            <li class="glide__slide js-glide__slide"><img src="assets/images/board.jpg"/></li>
+            <li class="glide__slide js-glide__slide"><img src="assets/images/fito.jpg"/></li>
+            <li class="glide__slide js-glide__slide"><img src="assets/images/rock.jpg"/></li>
+            <li class="glide__slide js-glide__slide"><img src="assets/images/trener.jpg"/></li>
           </ul>
         </div>
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow_direction_left" data-glide-dir="&lt;"><img src="assets/fonts/arrow.svg"/></button>
-          <button class="glide__arrow glide__arrow_direction_right" data-glide-dir="&gt;"><img src="assets/fonts/arrow.svg"/></button>
+        <div class="glide__bullets js-glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet js-glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet js-glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet js-glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet js-glide__bullet" data-glide-dir="=3"></button>
+          <button class="glide__bullet js-glide__bullet" data-glide-dir="=4"></button>
+          <button class="glide__bullet js-glide__bullet" data-glide-dir="=5"></button>
+          <button class="glide__bullet js-glide__bullet" data-glide-dir="=6"></button>
         </div>
-        <div class="glide__bullets" data-glide-el="controls[nav]">
-          <button class="glide__bullet" data-glide-dir="=0"></button>
-          <button class="glide__bullet" data-glide-dir="=1"></button>
-          <button class="glide__bullet" data-glide-dir="=2"></button>
-          <button class="glide__bullet" data-glide-dir="=3"></button>
-          <button class="glide__bullet" data-glide-dir="=4"></button>
-          <button class="glide__bullet" data-glide-dir="=5"></button>
-          <button class="glide__bullet" data-glide-dir="=6"></button>
-        </div>
-      </div>
-      <div class="carousel__button"><a class="button" href="https://booking.sugesh.ru/">ЗАБРОНИРОВАТЬ ДОМ</a>
       </div>
     </div>
+    <div class="form-wrapper">
+      <form class="requestFormSport">
+        <div class="requestFormSport__inputs">
+          <input class="input" placeholder="Имя" type="text" minlength="2"/>
+          <input class="input" placeholder="Телефон" type="tel" inputmode="tel"/>
+        </div>
+        <div class="requestFormSport__buttons">
+          <button class="requestFormSport__button" type="submit">Записаться к инструктору</button>
+          <button class="requestFormSport__button" type="submit">Подобрать снаряжение</button>
+        </div>
+      </form>
+    </div>
     <section class="description">
-      <h2 class="description__title">ЧЕМ ЗАНЯТЬСЯ В СЮГЕШЕ ЗИМОЙ?</h2>
+      <h2 class="description__title">Чем заняться в Сюгеше зимой?</h2>
       <ul class="description__cards">
         <li class="description__cards-item">
-          <div class="infoCard infoCard_textSize_small infoCard_textLength_medium">
-            <h3 class="infoCard__title"></h3>
+          <div class="infoCard infoCard_direction_right infoCard_cover_other">
+            <h3 class="infoCard__title">Катание на горных лыжах, сноуборде, тюбинге или коньках</h3>
             <div class="infoCard__wrapper">
-              <h4 class="infoCard__subtitle">Прокатитесь на горных лыжах</h4>
-              <p class="infoCard__text">Для вас оборудован бугельный подъемник на гору 600 метров в длину (кстати, при аренде дома и амуниции, поездки на подъемнике в подарок). Сможете прокатиться на горных лыжах, сноуборде. Вы можете приехать как на один день, так и забронировать дом, чтобы насладиться отдыхом в Хакасии подольше. В скором времени мы запустим вторую гору 1200 метров в длину! Также на территории Сюгеш есть беговые профессиональные лыжные трассы на 2, 3 и 5 км</p>
+              <p class="infoCard__text">Для вас оборудован бугельный подъёмник на гору 600 метров в длину (кстати, при аренде дома и амуниции, поездки на подъёмнике в подарок). Сможете прокатиться на горных лыжах, сноуборде. </br></br> Вы можете приехать как на один день, так и забронировать дом, чтобы насладиться отдыхом в Хакасии подольше. В скором времени мы запустим вторую гору 1200 метров в длину! Также на территории Сюгеш есть беговые профессиональные лыжные трассы на 2, 3 и 5 км.</p>
             </div><img class="infoCard__img" src="assets/images/infoCardWinter1.jpg"/>
           </div>
         </li>
         <li class="description__cards-item">
-          <div class="buttonLine"><a class="button" href="price.html">ПОСМОТРЕТЬ ПРАЙС</a><a class="button" href="https://booking.sugesh.ru/">ЗАБРОНИРОВАТЬ ДОМ</a>
-          </div>
-        </li>
-        <li class="description__cards-item">
-          <div class="infoCard infoCard_direction_right infoCard_textSize_small infoCard_textLength_medium">
-            <h3 class="infoCard__title"></h3>
+          <div class="infoCard">
+            <h3 class="infoCard__title">Прогулки по сказочному зимнему лесу Хакасии</h3>
             <div class="infoCard__wrapper">
-              <h4 class="infoCard__subtitle">Прогуляйтесь по сказочному зимнему лесу Хакасии</h4>
-              <p class="infoCard__text">Вы сможете пройтись и насладиться зимними пейзажами Хакасии, взяв ароматный горячий кофе в кафе Сюгеша. Можно приехать как на один день, так и забронировать домик, чтобы насладиться природой Хакасии подольше.</p>
+              <p class="infoCard__text">Вы сможете пройтись и насладиться зимними пейзажами Хакасии, взяв ароматный горячий кофе в кафе Сюгеша. </br></br>Можно приехать как на один день, так и забронировать домик, чтобы насладиться природой Хакасии подольше.</p>
             </div><img class="infoCard__img" src="assets/images/infoCardWinter2.jpg"/>
           </div>
         </li>
         <li class="description__cards-item">
-          <div class="buttonLine"><a class="button" href="path.html">КАК ДОБРАТЬСЯ ДО СЮГЕШ</a>
-          </div>
-        </li>
-        <li class="description__cards-item">
-          <div class="infoCard infoCard_textSize_small infoCard_textLength_medium">
-            <h3 class="infoCard__title"></h3>
+          <div class="infoCard infoCard_direction_right">
+            <h3 class="infoCard__title">Вкусные трапезы в кафе “Братец кролик”</h3>
             <div class="infoCard__wrapper">
-              <h4 class="infoCard__subtitle">Вкусно покушайте в кафе Сюгеша</h4>
-              <p class="infoCard__text">Детское меню, горячие напитки и вкусные блюда - все для вашего гастрономического наслаждения. Забудьте о хлопотах, наслаждайтесь отдыхом и закажите вкусные блюда в кафе Сюгеш (при аренде дома завтрак и ужин входят в стоимость проживания)</p>
+              <p class="infoCard__text">Детское меню, горячие напитки и вкусные блюда — все для вашего гастрономического наслаждения.</br></br> Забудьте о хлопотах, наслаждайтесь отдыхом и закажите вкусные блюда в кафе Сюгеш (при аренде дома завтрак и ужин входят в стоимость проживания).</p>
             </div><img class="infoCard__img" src="assets/images/infoCardWinter3.jpg"/>
           </div>
         </li>
         <li class="description__cards-item">
-          <div class="infoCard infoCard_direction_right infoCard_textSize_small infoCard_textLength_medium">
-            <h3 class="infoCard__title"></h3>
+          <div class="infoCard">
+            <h3 class="infoCard__title">Занятия с инструктором для детей и взрослых</h3>
             <div class="infoCard__wrapper">
-              <h4 class="infoCard__subtitle">Прокатитесь на сноутюбинге: самая длинная трасса Хакасии в 250 метров</h4>
-              <p class="infoCard__text">Да, с таким развлечением скучать точно не придется!  Не беспокойтесь за безопасность - наши трассы оборудованы по всем техническим правилам. Трасса освещена в темное время суток, имеется подъемник.</p>
+              <p class="infoCard__text">Да, с таким развлечением скучать точно не придется! </br></br>Не беспокойтесь за безопасность - наши трассы оборудованы по всем техническим правилам. Трасса освещена в темное время суток, имеется подъемник.</p>
             </div><img class="infoCard__img" src="assets/images/infoCardWinter4.jpg"/>
           </div>
         </li>
         <li class="description__cards-item">
-          <div class="infoCard infoCard_textSize_small infoCard_textLength_medium">
-            <h3 class="infoCard__title"></h3>
+          <div class="infoCard infoCard_direction_right">
+            <h3 class="infoCard__title">Сауна с бассейном</h3>
             <div class="infoCard__wrapper">
-              <h4 class="infoCard__subtitle">Прокатитесь на банане</h4>
-              <p class="infoCard__text">Лучший способ получить порцию ярких эмоций - прокатиться на банане! Он цепляется к снегоходу и мчится по кругу длиной 5 километров. Одновременно прокатиться могут 9 человек.</p>
+              <p class="infoCard__text">Вы всегда можете забронировать сауну с бассейном и отлично провести время</p>
             </div><img class="infoCard__img" src="assets/images/infoCardWinter5.jpg"/>
           </div>
         </li>
         <li class="description__cards-item">
-          <div class="infoCard infoCard_direction_right infoCard_textSize_small infoCard_textLength_medium">
-            <h3 class="infoCard__title"></h3>
+          <div class="infoCard">
+            <h3 class="infoCard__title">Русская банька, чан и прорубь</h3>
             <div class="infoCard__wrapper">
-              <h4 class="infoCard__subtitle">Посетите русскую баньку и Фурако, фитобочку, сходите на массаж</h4>
               <p class="infoCard__text">Отдых нужен для полного релакса и Сюгеш его обеспечит. После активного отдыха на зимнем морозце погрейтесь в бане, кедровой фитобочке и посетите расслабляющий массаж. После процедуры вас напоят горячим травяным чаем с медом. Кстати, при аренде дома русская банька и фитобочка входят в стоимость проживания.</p>
             </div><img class="infoCard__img" src="assets/images/infoCardWinter6.jpg"/>
           </div>
         </li>
         <li class="description__cards-item">
-          <div class="buttonLine"><a class="button" href="price.html">ПОСМОТРЕТЬ ПРАЙС</a>
-          </div>
-        </li>
-        <li class="description__cards-item">
-          <div class="infoCard infoCard_textSize_small infoCard_textLength_medium">
-            <h3 class="infoCard__title"></h3>
+          <div class="infoCard infoCard_direction_right">
+            <h3 class="infoCard__title">Расслабляющие процедуры в SPA-центре</br><p class='infoCard__subtitle'>(массаж для детей и взрослых, обёртывание и другие услуги)</p></h3>
             <div class="infoCard__wrapper">
-              <h4 class="infoCard__subtitle">Покатайтесь на коньках по освещенному открытому катку</h4>
-              <p class="infoCard__text">Коньки, зимняя Хакасия, вечер и стаканчик кофе - звучит романтично, правда?</p>
+              <p class="infoCard__text">Телу нужно расслабляться. Поставьте динамичную жизнь на паузу, приезжайте в Сюгеш и после насыщенного дня посетите баньку или кедровую фитобочку, а после — расслабляющий массаж. </br></br>После процедуры вас напоят вкусным горячим травяным чаем с мёдом.</p>
             </div><img class="infoCard__img" src="assets/images/infoCardWinter7.jpg"/>
-          </div>
-        </li>
-        <li class="description__cards-item">
-          <div class="infoCard infoCard_direction_right infoCard_textSize_small infoCard_textLength_medium">
-            <h3 class="infoCard__title"></h3>
-            <div class="infoCard__wrapper">
-              <h4 class="infoCard__subtitle">Проведите уютный семейный вечер</h4>
-              <p class="infoCard__text">Ваш теплый и уютный дом будет ждать вас после дневных развлечений. Соберитесь всей семьей, возьмите настольные игры, заварите ароматный чай и уделите время друг другу. Все дома теплые внутри - за это даже не беспокойтесь! Кстати, вы можете взять у администрации любимые настольные игры: монополию, дженгу и другие!</p>
-            </div><img class="infoCard__img" src="assets/images/infoCardWinter8.jpg"/>
-          </div>
-        </li>
-        <li class="description__cards-item">
-          <div class="buttonLine"><a class="button" href="gallery.html">ПОСМОТРЕТЬ ДОМ ВНУТРИ</a><a class="button" href="https://booking.sugesh.ru/">ЗАБРОНИРОВАТЬ ДОМ</a>
-          </div>
-        </li>
-        <li class="description__cards-item">
-          <div class="infoCard infoCard_textSize_small infoCard_textPosition_center infoCard_textLength_medium">
-            <h3 class="infoCard__title"></h3>
-            <div class="infoCard__wrapper">
-              <h4 class="infoCard__subtitle">Отдохните после насыщенного дня на природе</h4>
-              <p class="infoCard__text">Придите в свой домик после насыщенного дня, примите теплую ванну, прилягте на мягкую кровать и посмотрите телевизор перед сном. </br>Клининг в домах производится регулярно. Дома обеспечены всей необходимой бытовой техникой и средствами гигиены.</p>
-            </div>
           </div>
         </li>
       </ul>
     </section>
-    <div class="newYear">
-      <div class="newYear__inner"><a class="newYear__link" href="https://vk.com/sugesh" target="_blank" rel="noopener noreferrer"><img src="assets/fonts/sugeshVK.svg"/></a>
-        <h2 class="newYear__title">НОВЫЙ ГОД В СЮГЕШЕ</h2>
-        <div class="newYear__question"><span class="newYear__question-text">Решили отметить Новый Год семьей в Сюгеше?</span></div>
-      </div>
-      <div class="newYear__info">
-        <div class="newYear__info-inner">
-          <p class="newYear__info-text">Это отличный выбор! 31 декабря к нам приезжают самые настоящие Дед Мороз и Снегурочка, чтобы поздравить гостей Сюгеша с праздником.</br></br>С 31 декабря на 1 января проводится яркая и веселая вечеринка.</br></br>В дни крещения приезжает батюшка и оборудуется купель в форме креста. Можно приехать в Сюгеш на омовение</p>
+    <div class="quickLinks">
+      <ul class="quickLinks__list">
+        <li class="quickLinks__item"><img src="assets/fonts/price-big-image.svg"/><a class="button" href="/mock-me">Посмотреть прайс</a>
+        </li>
+        <li class="quickLinks__item"><img src="assets/fonts/house-big-image.svg"/><a class="button" href="/mock-me">Забронировать дом</a>
+        </li>
+        <li class="quickLinks__item"><img src="assets/fonts/map-big-image.svg"/><a class="button" href="/mock-me">Как добраться до Сюгеша</a>
+        </li>
+      </ul>
+    </div>
+    <div class="results">
+      <h2 class="results__title">Результаты нашей работы</h2>
+      <div class="results__content">
+        <div class="results__video"><iframe style="width:100%" height="315" src="https://www.youtube-nocookie.com/embed/5hJVdF1lKSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="width:100%" height="315" src="https://www.youtube-nocookie.com/embed/gaHp2ZfQMU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="results__video-button"><a class="button" href="https://www.youtube.com/results?search_query=%D1%81%D1%8E%D0%B3%D0%B5%D1%88" target="_blank">Смотреть больше видео</a>
+          </div>
+        </div>
+        <div class="results__map"><div style="width:100%;height:800px;overflow:hidden;position:relative;">
+<iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/149204522479?comments"></iframe>
+<a href="https://yandex.ru/maps/org/baza_otdykha_syugesh/149204522479/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">База отдыха Сюгеш на карте Республики Хакасия — Яндекс Карты</a>
+</div>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <div class="footer__left"><img class="footer__logo" src="assets/fonts/footerLogo.svg"/>
-        <ul class="footer__promo">
-          <li class="footer__promo-item">Используем продукты “Прибавка”</li>
-          <li class="footer__promo-item"><a href="https://pribavka.su" target="_blank" rel="noopener noreferrer">www.pribavka.su</a></li>
-          <li class="footer__promo-item"><a href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer">vk.com/pribavka_bio</a></li>
-        </ul>
-      </div>
-      <div class="footer__right">
-        <ul class="footer__promo">
-          <li class="footer__promo-item">© 2022 Горнолыжный комплекс Сюгеш</li>
-          <li class="footer__promo-item"><a href="tel:89833779577">8-983-377-95-77</a></li>
-          <li class="footer__promo-item"><a href="mailto:sugeshbron@gmail.com">sugeshbron@gmail.com</a></li>
-        </ul>
+      <div class="footer__container">
+        <div class="footer__column">
+          <div class="footer__inner"><img class="footer__logo" src="assets/fonts/logo.svg"/>
+            <div class="footer__desktop-text">
+              <div class="footer__questions">Остались вопросы?</div><a class="footer__feedback" href="mailto:sugeshbron@gmail.com">Обратная связь</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__subtitle">E-mail:</div><a class="footer__email" href="mailto:sugeshbron@gmail.com">sugeshbron@gmail.com</a>
+          <div class="footer__socials-wrapper"><a href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer"><img src="assets/fonts/VK.svg"/></a><a href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer"><img src="assets/fonts/OK.svg"/></a><a href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer"><img src="assets/fonts/Whatsapp.svg"/></a></div>
+        </div>
+        <div class="footer__column footer__column_phone">
+          <div class="footer__subtitle">Телефон:</div><a class="footer__number" href="tel:+73902313506">+7 390 231-35-06<br/>(Единый номер отдела заботы)</a><a class="footer__number" href="tel:+79833779577">+7 983 377-95 77<br/>(Единый номер отдела бронирования)</a>
+        </div>
+        <div class="footer__column footer__column_right">
+          <div class="footer__responsive-text">
+            <div class="footer__questions">Остались вопросы?</div><a class="footer__feedback" href="mailto:sugeshbron@gmail.com">Обратная связь</a>
+          </div>
+          <div class="footer__promo">Используем продукты “Прибавка”</div><a class="footer__external" href="https://pribavka.su" target="_blank" rel="noopener noreferrer">www.pribavka.su</a><a class="footer__external" href="https://vk.com/pribavka_bio" target="_blank" rel="noopener noreferrer">vk.com/pribavka_bio</a>
+        </div>
       </div>
     </footer>
   </body>

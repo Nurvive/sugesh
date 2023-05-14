@@ -147,7 +147,7 @@
   width: 100%;
 }
 .burger__nav-menu-item:hover {
-  background-color: #dc992c;
+  background-color: #003a2c;
 }
 .burger__nav-menu-item-link {
   font-size: 22px;
@@ -1996,6 +1996,11 @@
 }
 .cafe > .cafe__slider {
   margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .cafe > .cafe__slider {
+    margin-top: -50px;
+  }
 }
 .cafe > .cafe__slider .js-glide__lines::after, .cafe > .cafe__slider .js-glide__lines::before {
   height: 280px;

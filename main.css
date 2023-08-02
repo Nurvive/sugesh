@@ -1820,6 +1820,46 @@
   font-size: 24px;
   line-height: 29px;
 }
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/cafe/ExcelMenu/ExcelMenu.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.excel-menu {
+  -webkit-padding-before: 140px;
+          padding-block-start: 140px;
+}
+@media screen and (max-width: 768px) {
+  .excel-menu {
+    -webkit-padding-before: 50px;
+            padding-block-start: 50px;
+  }
+}
+.excel-menu__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #502F0A;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .excel-menu__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+.excel-menu__button {
+  max-width: 260px;
+  -webkit-margin-before: 40px;
+          margin-block-start: 40px;
+  margin-inline: auto;
+  padding-block: 18px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .excel-menu__button {
+    -webkit-margin-before: 20px;
+            margin-block-start: 20px;
+  }
+}
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/cafe/Menu/Menu.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/

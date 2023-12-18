@@ -1398,13 +1398,13 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/assets/img/gallery sync recursive \\.(png)$":
-/*!***********************************************!*\
-  !*** ./src/assets/img/gallery/ sync \.(png)$ ***!
-  \***********************************************/
+/***/ "./src/assets/img/gallery sync recursive \\.(jpe?g%7Cpng%7Cgif%7CJPG)$":
+/*!*******************************************************************!*\
+  !*** ./src/assets/img/gallery/ sync \.(jpe?g%7Cpng%7Cgif%7CJPG)$ ***!
+  \*******************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./territory/territory_1_1.png\": \"./src/assets/img/gallery/territory/territory_1_1.png\",\n\t\"./territory/territory_1_2.png\": \"./src/assets/img/gallery/territory/territory_1_2.png\",\n\t\"./territory/territory_1_3.png\": \"./src/assets/img/gallery/territory/territory_1_3.png\",\n\t\"./territory/territory_1_4.png\": \"./src/assets/img/gallery/territory/territory_1_4.png\",\n\t\"./territory/territory_2_1.png\": \"./src/assets/img/gallery/territory/territory_2_1.png\",\n\t\"./territory/territory_2_2.png\": \"./src/assets/img/gallery/territory/territory_2_2.png\",\n\t\"./territory/territory_2_3.png\": \"./src/assets/img/gallery/territory/territory_2_3.png\",\n\t\"./territory/territory_2_4.png\": \"./src/assets/img/gallery/territory/territory_2_4.png\",\n\t\"./tubing/tubing_1_1.png\": \"./src/assets/img/gallery/tubing/tubing_1_1.png\",\n\t\"./tubing/tubing_1_2.png\": \"./src/assets/img/gallery/tubing/tubing_1_2.png\",\n\t\"./tubing/tubing_1_3.png\": \"./src/assets/img/gallery/tubing/tubing_1_3.png\",\n\t\"./tubing/tubing_1_4.png\": \"./src/assets/img/gallery/tubing/tubing_1_4.png\",\n\t\"./tubing/tubing_2_1.png\": \"./src/assets/img/gallery/tubing/tubing_2_1.png\",\n\t\"./tubing/tubing_2_2.png\": \"./src/assets/img/gallery/tubing/tubing_2_2.png\",\n\t\"./tubing/tubing_2_3.png\": \"./src/assets/img/gallery/tubing/tubing_2_3.png\",\n\t\"./tubing/tubing_2_4.png\": \"./src/assets/img/gallery/tubing/tubing_2_4.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/assets/img/gallery sync recursive \\\\.(png)$\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/_sync_\\.(png)$?");
+eval("var map = {\n\t\"./dining/dining_1_1.jpg\": \"./src/assets/img/gallery/dining/dining_1_1.jpg\",\n\t\"./dining/dining_1_2.jpg\": \"./src/assets/img/gallery/dining/dining_1_2.jpg\",\n\t\"./dining/dining_1_3.jpg\": \"./src/assets/img/gallery/dining/dining_1_3.jpg\",\n\t\"./dining/dining_1_4.jpg\": \"./src/assets/img/gallery/dining/dining_1_4.jpg\",\n\t\"./dining/dining_2_1.jpg\": \"./src/assets/img/gallery/dining/dining_2_1.jpg\",\n\t\"./dining/dining_2_2.jpg\": \"./src/assets/img/gallery/dining/dining_2_2.jpg\",\n\t\"./dining/dining_2_3.jpg\": \"./src/assets/img/gallery/dining/dining_2_3.jpg\",\n\t\"./dining/dining_2_4.jpg\": \"./src/assets/img/gallery/dining/dining_2_4.jpg\",\n\t\"./dining/dining_3_1.jpg\": \"./src/assets/img/gallery/dining/dining_3_1.jpg\",\n\t\"./dining/dining_3_2.jpg\": \"./src/assets/img/gallery/dining/dining_3_2.jpg\",\n\t\"./houses/houses_1_1.jpg\": \"./src/assets/img/gallery/houses/houses_1_1.jpg\",\n\t\"./houses/houses_1_2.jpg\": \"./src/assets/img/gallery/houses/houses_1_2.jpg\",\n\t\"./houses/houses_1_3.jpg\": \"./src/assets/img/gallery/houses/houses_1_3.jpg\",\n\t\"./houses/houses_1_4.jpg\": \"./src/assets/img/gallery/houses/houses_1_4.jpg\",\n\t\"./houses/houses_2_1.jpg\": \"./src/assets/img/gallery/houses/houses_2_1.jpg\",\n\t\"./houses/houses_2_2.jpg\": \"./src/assets/img/gallery/houses/houses_2_2.jpg\",\n\t\"./houses/houses_2_3.jpg\": \"./src/assets/img/gallery/houses/houses_2_3.jpg\",\n\t\"./houses/houses_2_4.jpg\": \"./src/assets/img/gallery/houses/houses_2_4.jpg\",\n\t\"./houses/houses_3_1.jpg\": \"./src/assets/img/gallery/houses/houses_3_1.jpg\",\n\t\"./houses/houses_3_2.jpg\": \"./src/assets/img/gallery/houses/houses_3_2.jpg\",\n\t\"./houses/houses_3_3.jpg\": \"./src/assets/img/gallery/houses/houses_3_3.jpg\",\n\t\"./houses/houses_3_4.jpg\": \"./src/assets/img/gallery/houses/houses_3_4.jpg\",\n\t\"./houses/houses_4_1.jpg\": \"./src/assets/img/gallery/houses/houses_4_1.jpg\",\n\t\"./houses/houses_4_2.jpg\": \"./src/assets/img/gallery/houses/houses_4_2.jpg\",\n\t\"./houses/houses_4_3.jpg\": \"./src/assets/img/gallery/houses/houses_4_3.jpg\",\n\t\"./houses/houses_4_4.jpg\": \"./src/assets/img/gallery/houses/houses_4_4.jpg\",\n\t\"./houses/houses_5_1.jpg\": \"./src/assets/img/gallery/houses/houses_5_1.jpg\",\n\t\"./houses/houses_5_2.jpg\": \"./src/assets/img/gallery/houses/houses_5_2.jpg\",\n\t\"./houses/houses_5_3.jpg\": \"./src/assets/img/gallery/houses/houses_5_3.jpg\",\n\t\"./houses/houses_5_4.jpg\": \"./src/assets/img/gallery/houses/houses_5_4.jpg\",\n\t\"./houses/houses_6_1.jpg\": \"./src/assets/img/gallery/houses/houses_6_1.jpg\",\n\t\"./houses/houses_6_2.jpg\": \"./src/assets/img/gallery/houses/houses_6_2.jpg\",\n\t\"./houses/houses_6_3.jpg\": \"./src/assets/img/gallery/houses/houses_6_3.jpg\",\n\t\"./houses/houses_6_4.jpg\": \"./src/assets/img/gallery/houses/houses_6_4.jpg\",\n\t\"./houses/houses_7_1.jpg\": \"./src/assets/img/gallery/houses/houses_7_1.jpg\",\n\t\"./houses/houses_7_2.jpg\": \"./src/assets/img/gallery/houses/houses_7_2.jpg\",\n\t\"./houses/houses_7_3.jpg\": \"./src/assets/img/gallery/houses/houses_7_3.jpg\",\n\t\"./houses/houses_7_4.jpg\": \"./src/assets/img/gallery/houses/houses_7_4.jpg\",\n\t\"./houses/houses_8_1.jpg\": \"./src/assets/img/gallery/houses/houses_8_1.jpg\",\n\t\"./pool/pool_1_1.jpg\": \"./src/assets/img/gallery/pool/pool_1_1.jpg\",\n\t\"./pool/pool_1_2.jpg\": \"./src/assets/img/gallery/pool/pool_1_2.jpg\",\n\t\"./pool/pool_1_3.jpg\": \"./src/assets/img/gallery/pool/pool_1_3.jpg\",\n\t\"./pool/pool_1_4.jpg\": \"./src/assets/img/gallery/pool/pool_1_4.jpg\",\n\t\"./pool/pool_2_1.jpg\": \"./src/assets/img/gallery/pool/pool_2_1.jpg\",\n\t\"./pool/pool_2_2.jpg\": \"./src/assets/img/gallery/pool/pool_2_2.jpg\",\n\t\"./pool/pool_2_3.jpg\": \"./src/assets/img/gallery/pool/pool_2_3.jpg\",\n\t\"./pool/pool_2_4.jpg\": \"./src/assets/img/gallery/pool/pool_2_4.jpg\",\n\t\"./pool/pool_3_1.jpg\": \"./src/assets/img/gallery/pool/pool_3_1.jpg\",\n\t\"./pool/pool_3_2.jpg\": \"./src/assets/img/gallery/pool/pool_3_2.jpg\",\n\t\"./pool/pool_3_3.jpg\": \"./src/assets/img/gallery/pool/pool_3_3.jpg\",\n\t\"./pool/pool_3_4.jpg\": \"./src/assets/img/gallery/pool/pool_3_4.jpg\",\n\t\"./pool/pool_4_1.jpg\": \"./src/assets/img/gallery/pool/pool_4_1.jpg\",\n\t\"./pool/pool_4_2.jpg\": \"./src/assets/img/gallery/pool/pool_4_2.jpg\",\n\t\"./pool/pool_4_3.jpg\": \"./src/assets/img/gallery/pool/pool_4_3.jpg\",\n\t\"./sauna/sauna_1_1.jpg\": \"./src/assets/img/gallery/sauna/sauna_1_1.jpg\",\n\t\"./sauna/sauna_1_2.jpg\": \"./src/assets/img/gallery/sauna/sauna_1_2.jpg\",\n\t\"./sauna/sauna_1_3.jpg\": \"./src/assets/img/gallery/sauna/sauna_1_3.jpg\",\n\t\"./sauna/sauna_1_4.jpg\": \"./src/assets/img/gallery/sauna/sauna_1_4.jpg\",\n\t\"./sauna/sauna_2_1.jpg\": \"./src/assets/img/gallery/sauna/sauna_2_1.jpg\",\n\t\"./sauna/sauna_2_2.jpg\": \"./src/assets/img/gallery/sauna/sauna_2_2.jpg\",\n\t\"./sauna/sauna_2_3.jpg\": \"./src/assets/img/gallery/sauna/sauna_2_3.jpg\",\n\t\"./sauna/sauna_2_4.jpg\": \"./src/assets/img/gallery/sauna/sauna_2_4.jpg\",\n\t\"./sauna/sauna_3_1.jpg\": \"./src/assets/img/gallery/sauna/sauna_3_1.jpg\",\n\t\"./sauna/sauna_3_2.jpg\": \"./src/assets/img/gallery/sauna/sauna_3_2.jpg\",\n\t\"./sauna/sauna_3_3.jpg\": \"./src/assets/img/gallery/sauna/sauna_3_3.jpg\",\n\t\"./sauna/sauna_3_4.jpg\": \"./src/assets/img/gallery/sauna/sauna_3_4.jpg\",\n\t\"./territory/territory_1_1.jpg\": \"./src/assets/img/gallery/territory/territory_1_1.jpg\",\n\t\"./territory/territory_1_2.jpg\": \"./src/assets/img/gallery/territory/territory_1_2.jpg\",\n\t\"./territory/territory_1_3.jpg\": \"./src/assets/img/gallery/territory/territory_1_3.jpg\",\n\t\"./territory/territory_1_4.jpg\": \"./src/assets/img/gallery/territory/territory_1_4.jpg\",\n\t\"./territory/territory_2_1.jpg\": \"./src/assets/img/gallery/territory/territory_2_1.jpg\",\n\t\"./territory/territory_2_2.jpg\": \"./src/assets/img/gallery/territory/territory_2_2.jpg\",\n\t\"./territory/territory_2_3.jpg\": \"./src/assets/img/gallery/territory/territory_2_3.jpg\",\n\t\"./territory/territory_2_4.jpg\": \"./src/assets/img/gallery/territory/territory_2_4.jpg\",\n\t\"./territory/territory_3_1.jpg\": \"./src/assets/img/gallery/territory/territory_3_1.jpg\",\n\t\"./territory/territory_3_2.jpg\": \"./src/assets/img/gallery/territory/territory_3_2.jpg\",\n\t\"./territory/territory_3_3.jpg\": \"./src/assets/img/gallery/territory/territory_3_3.jpg\",\n\t\"./territory/territory_3_4.jpg\": \"./src/assets/img/gallery/territory/territory_3_4.jpg\",\n\t\"./territory/territory_4_1.jpg\": \"./src/assets/img/gallery/territory/territory_4_1.jpg\",\n\t\"./territory/territory_4_2.jpg\": \"./src/assets/img/gallery/territory/territory_4_2.jpg\",\n\t\"./territory/territory_4_3.jpg\": \"./src/assets/img/gallery/territory/territory_4_3.jpg\",\n\t\"./territory/territory_4_4.jpg\": \"./src/assets/img/gallery/territory/territory_4_4.jpg\",\n\t\"./territory/territory_5_1.jpg\": \"./src/assets/img/gallery/territory/territory_5_1.jpg\",\n\t\"./territory/territory_5_2.jpg\": \"./src/assets/img/gallery/territory/territory_5_2.jpg\",\n\t\"./territory/territory_5_3.jpg\": \"./src/assets/img/gallery/territory/territory_5_3.jpg\",\n\t\"./territory/territory_5_4.jpg\": \"./src/assets/img/gallery/territory/territory_5_4.jpg\",\n\t\"./territory/territory_6_1.jpg\": \"./src/assets/img/gallery/territory/territory_6_1.jpg\",\n\t\"./territory/territory_6_2.jpg\": \"./src/assets/img/gallery/territory/territory_6_2.jpg\",\n\t\"./territory/territory_6_3.jpg\": \"./src/assets/img/gallery/territory/territory_6_3.jpg\",\n\t\"./territory/territory_6_4.jpg\": \"./src/assets/img/gallery/territory/territory_6_4.jpg\",\n\t\"./tubing/tubing_1_1.jpg\": \"./src/assets/img/gallery/tubing/tubing_1_1.jpg\",\n\t\"./tubing/tubing_1_2.jpg\": \"./src/assets/img/gallery/tubing/tubing_1_2.jpg\",\n\t\"./tubing/tubing_1_3.jpg\": \"./src/assets/img/gallery/tubing/tubing_1_3.jpg\",\n\t\"./tubing/tubing_1_4.jpg\": \"./src/assets/img/gallery/tubing/tubing_1_4.jpg\",\n\t\"./tubing/tubing_2_1.jpg\": \"./src/assets/img/gallery/tubing/tubing_2_1.jpg\",\n\t\"./tubing/tubing_2_2.jpg\": \"./src/assets/img/gallery/tubing/tubing_2_2.jpg\",\n\t\"./tubing/tubing_2_3.jpg\": \"./src/assets/img/gallery/tubing/tubing_2_3.jpg\",\n\t\"./tubing/tubing_2_4.jpg\": \"./src/assets/img/gallery/tubing/tubing_2_4.jpg\",\n\t\"./tubing/tubing_3_1.jpg\": \"./src/assets/img/gallery/tubing/tubing_3_1.jpg\",\n\t\"./tubing/tubing_3_2.jpg\": \"./src/assets/img/gallery/tubing/tubing_3_2.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/assets/img/gallery sync recursive \\\\.(jpe?g%7Cpng%7Cgif%7CJPG)$\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/_sync_\\.(jpe?");
 
 /***/ }),
 
@@ -1415,7 +1415,7 @@ eval("var map = {\n\t\"./territory/territory_1_1.png\": \"./src/assets/img/galle
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"GalleryBlock\": function() { return /* binding */ GalleryBlock; }\n/* harmony export */ });\n/* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @glidejs/glide */ \"./node_modules/@glidejs/glide/dist/glide.esm.js\");\n/* harmony import */ var _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../static/gallery/gallery.json */ \"./src/static/gallery/gallery.json\");\n\r\n\r\n\r\nclass GalleryBlock {\r\n    constructor() {\r\n        this.glide = document.querySelector('.js-galleryBlock');\r\n\r\n        if (this.glide) {\r\n            this.glideClass = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__[\"default\"](this.glide, {\r\n                perView: 2,\r\n                breakpoints: {\r\n                    768: {\r\n                        perView: 1\r\n                    }\r\n                }\r\n            });\r\n            this.list = document.querySelector('.js-galleryBlock__slides');\r\n            this.currrent = _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__[0].name;\r\n            this.init();\r\n        }\r\n    }\r\n\r\n    init() {\r\n        const buttons = _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__.map((item) => item.name);\r\n        this.createButtons(buttons);\r\n        const object = _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__.find((item) => item.name === this.currrent);\r\n        this.createSlides(object.slides);\r\n        this.createBullets(object.slides);\r\n        this.glideClass.mount();\r\n    }\r\n\r\n    creating() {\r\n        const object = _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__.find((item) => item.name === this.currrent);\r\n        this.createSlides(object.slides);\r\n        this.createBullets(object.slides);\r\n        this.glideClass = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__[\"default\"](this.glide, {\r\n            perView: 2,\r\n            breakpoints: {\r\n                768: {\r\n                    perView: 1\r\n                }\r\n            }\r\n        });\r\n        this.glideClass.mount();\r\n    }\r\n\r\n    removeBullets() {\r\n        const bullets = document.querySelector('.js-galleryBlock__bullets');\r\n        bullets?.remove();\r\n    }\r\n\r\n    removeSlides() {\r\n        const slides = document.querySelectorAll('.js-galleryBlock__slide');\r\n        slides.forEach((slide) => {\r\n            slide.remove();\r\n        });\r\n    }\r\n\r\n    createButtons(buttons) {\r\n        const buttonContainer = document.createElement('div');\r\n        buttonContainer.classList.add('galleryBlock__buttons', 'js-galleryBlock__buttons');\r\n\r\n        buttons.forEach((button, i) => {\r\n            const newButton = document.createElement('button');\r\n            newButton.classList.add('galleryBlock__button');\r\n\r\n            if (i === 0) {\r\n                newButton.classList.add('galleryBlock__button_active');\r\n            }\r\n            newButton.textContent = button;\r\n            buttonContainer.append(newButton);\r\n            newButton.addEventListener('click', this.changeSet);\r\n        });\r\n\r\n        this.glide.prepend(buttonContainer);\r\n    }\r\n\r\n    createBullets(bullets) {\r\n        const buttonContainer = document.createElement('div');\r\n        buttonContainer.classList.add('glide__bullets', 'galleryBlock__bullets', 'js-galleryBlock__bullets');\r\n        buttonContainer.dataset.glideEl = 'controls[nav]';\r\n\r\n        bullets.forEach((button, i) => {\r\n            const newButton = document.createElement('button');\r\n            newButton.classList.add('glide__bullet', 'galleryBlock__bullet');\r\n            newButton.dataset.glideDir = `=${i}`;\r\n            newButton.textContent = i + 1;\r\n            buttonContainer.append(newButton);\r\n        });\r\n\r\n        this.glide.append(buttonContainer);\r\n    }\r\n\r\n    createSlides(slides) {\r\n        slides.forEach((slide) => {\r\n            const newSlide = document.createElement('li');\r\n            newSlide.classList.add('glide__slide', 'galleryBlock__slide', 'js-galleryBlock__slide');\r\n\r\n            const wrapper = document.createElement('div');\r\n            wrapper.classList.add('galleryBlock__item');\r\n            slide.forEach((image) => {\r\n                const newImg = document.createElement('img');\r\n                newImg.src = image;\r\n                wrapper.append(newImg);\r\n            });\r\n            newSlide.append(wrapper);\r\n            this.list.append(newSlide);\r\n        });\r\n    }\r\n\r\n    changeSet = (event) => {\r\n        const buttons = document.querySelector('.js-galleryBlock__buttons');\r\n        Array.from(buttons.children).forEach((button) => {\r\n            button.classList.remove('galleryBlock__button_active');\r\n        });\r\n        event.target.classList.add('galleryBlock__button_active');\r\n        this.currrent = event.target.textContent;\r\n        this.removeBullets();\r\n        this.removeSlides();\r\n\r\n        this.glideClass.destroy();\r\n        this.creating();\r\n    };\r\n}\r\n\n\n//# sourceURL=webpack://sugesh/./src/blocks/GalleryBlock/GalleryBlock.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"GalleryBlock\": function() { return /* binding */ GalleryBlock; }\n/* harmony export */ });\n/* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @glidejs/glide */ \"./node_modules/@glidejs/glide/dist/glide.esm.js\");\n/* harmony import */ var _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../static/gallery/gallery.json */ \"./src/static/gallery/gallery.json\");\n\r\n\r\n\r\nclass GalleryBlock {\r\n    constructor() {\r\n        this.glide = document.querySelector('.js-galleryBlock');\r\n\r\n        if (this.glide) {\r\n            this.glideClass = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__[\"default\"](this.glide, {\r\n                perView: 2,\r\n                breakpoints: {\r\n                    1070: {\r\n                        perView: 1\r\n                    }\r\n                }\r\n            });\r\n            this.list = document.querySelector('.js-galleryBlock__slides');\r\n            this.currrent = _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__[0].name;\r\n            this.init();\r\n        }\r\n    }\r\n\r\n    init() {\r\n        console.log(_static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__);\r\n        const buttons = _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__.map((item) => item.name);\r\n        this.createButtons(buttons);\r\n        const object = _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__.find((item) => item.name === this.currrent);\r\n        this.createSlides(object.slides);\r\n        this.createBullets(object.slides);\r\n        this.glideClass.mount();\r\n    }\r\n\r\n    creating() {\r\n        const object = _static_gallery_gallery_json__WEBPACK_IMPORTED_MODULE_1__.find((item) => item.name === this.currrent);\r\n        this.createSlides(object.slides);\r\n        this.createBullets(object.slides);\r\n        this.glideClass = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__[\"default\"](this.glide, {\r\n            perView: 2,\r\n            breakpoints: {\r\n                1070: {\r\n                    perView: 1\r\n                }\r\n            }\r\n        });\r\n        this.glideClass.mount();\r\n    }\r\n\r\n    removeBullets() {\r\n        const bullets = document.querySelector('.js-galleryBlock__bullets');\r\n        bullets?.remove();\r\n    }\r\n\r\n    removeSlides() {\r\n        const slides = document.querySelectorAll('.js-galleryBlock__slide');\r\n        slides.forEach((slide) => {\r\n            slide.remove();\r\n        });\r\n    }\r\n\r\n    createButtons(buttons) {\r\n        const buttonContainer = document.createElement('div');\r\n        buttonContainer.classList.add('galleryBlock__buttons', 'js-galleryBlock__buttons');\r\n\r\n        buttons.forEach((button, i) => {\r\n            const newButton = document.createElement('button');\r\n            newButton.classList.add('galleryBlock__button');\r\n\r\n            if (i === 0) {\r\n                newButton.classList.add('galleryBlock__button_active');\r\n            }\r\n            newButton.textContent = button;\r\n            buttonContainer.append(newButton);\r\n            newButton.addEventListener('click', this.changeSet);\r\n        });\r\n\r\n        this.glide.prepend(buttonContainer);\r\n    }\r\n\r\n    createBullets(bullets) {\r\n        const buttonContainer = document.createElement('div');\r\n        buttonContainer.classList.add('glide__bullets', 'galleryBlock__bullets', 'js-galleryBlock__bullets');\r\n        buttonContainer.dataset.glideEl = 'controls[nav]';\r\n\r\n        bullets.forEach((button, i) => {\r\n            const newButton = document.createElement('button');\r\n            newButton.classList.add('glide__bullet', 'galleryBlock__bullet');\r\n            newButton.dataset.glideDir = `=${i}`;\r\n            newButton.textContent = i + 1;\r\n            buttonContainer.append(newButton);\r\n        });\r\n\r\n        this.glide.append(buttonContainer);\r\n    }\r\n\r\n    createSlides(slides) {\r\n        slides.forEach((slide) => {\r\n            const newSlide = document.createElement('li');\r\n            newSlide.classList.add('glide__slide', 'galleryBlock__slide', 'js-galleryBlock__slide');\r\n\r\n            const wrapper = document.createElement('div');\r\n            wrapper.classList.add('galleryBlock__item');\r\n            slide.forEach((image) => {\r\n                const newImg = document.createElement('img');\r\n                const imgWrapper = document.createElement('div')\r\n                imgWrapper.classList.add('galleryBlock__img-wrapper')\r\n                newImg.loading = 'lazy';\r\n                newImg.src = image;\r\n                imgWrapper.append(newImg)\r\n                wrapper.append(imgWrapper);\r\n            });\r\n            newSlide.append(wrapper);\r\n            this.list.append(newSlide);\r\n        });\r\n    }\r\n\r\n    changeSet = (event) => {\r\n        const buttons = document.querySelector('.js-galleryBlock__buttons');\r\n        Array.from(buttons.children).forEach((button) => {\r\n            button.classList.remove('galleryBlock__button_active');\r\n        });\r\n        event.target.classList.add('galleryBlock__button_active');\r\n        this.currrent = event.target.textContent;\r\n        this.removeBullets();\r\n        this.removeSlides();\r\n\r\n        this.glideClass.destroy();\r\n        this.creating();\r\n    };\r\n}\r\n\n\n//# sourceURL=webpack://sugesh/./src/blocks/GalleryBlock/GalleryBlock.js?");
 
 /***/ }),
 
@@ -1448,7 +1448,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _init__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./init */ \"./src/init.js\");\n\r\n\r\nfunction importAll(resolve) {\r\n    resolve.keys().forEach(resolve);\r\n}\r\n\r\nimportAll(__webpack_require__(\"./src sync recursive \\\\.js$\"));\r\nimportAll(__webpack_require__(\"./src sync recursive \\\\.scss$\"));\r\nimportAll(__webpack_require__(\"./src/assets/img/gallery sync recursive \\\\.(png)$\"));\r\n\n\n//# sourceURL=webpack://sugesh/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _init__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./init */ \"./src/init.js\");\n\r\n\r\nfunction importAll(resolve) {\r\n    resolve.keys().forEach(resolve);\r\n}\r\n\r\nimportAll(__webpack_require__(\"./src sync recursive \\\\.js$\"));\r\nimportAll(__webpack_require__(\"./src sync recursive \\\\.scss$\"));\r\nimportAll(__webpack_require__(\"./src/assets/img/gallery sync recursive \\\\.(jpe?g%7Cpng%7Cgif%7CJPG)$\"));\r\n\n\n//# sourceURL=webpack://sugesh/./src/index.js?");
 
 /***/ }),
 
@@ -1481,7 +1481,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"HouseModal\": function() { return /* binding */ HouseModal; }\n/* harmony export */ });\n/* harmony import */ var _static_houses_houses_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../static/houses/houses.json */ \"./src/static/houses/houses.json\");\n/* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @glidejs/glide */ \"./node_modules/@glidejs/glide/dist/glide.esm.js\");\n\r\n\r\n\r\nclass HouseModal {\r\n    constructor() {\r\n        this.init();\r\n    }\r\n\r\n    init() {\r\n        const buttons = document.querySelectorAll('.js-galleryLinks__button');\r\n        if (buttons.length > 0) {\r\n            buttons.forEach(button => button.addEventListener('click', this.handleButtonClick));\r\n        }\r\n    }\r\n\r\n    handleButtonClick = (e) => {\r\n        e.preventDefault();\r\n        this.button = e.currentTarget;\r\n        this.number = Number(this.button.dataset.house);\r\n        this.house = _static_houses_houses_json__WEBPACK_IMPORTED_MODULE_0__[this.number];\r\n        this.createModal();\r\n        this.showModal();\r\n    };\r\n\r\n    createModal = () => {\r\n        this.modalWrapper = document.createElement('div');\r\n        this.modalWrapper.classList.add('houseModal__wrapper');\r\n\r\n        this.modal = document.createElement('div');\r\n        this.modal.classList.add('houseModal');\r\n\r\n        this.overlay = document.createElement('div');\r\n        this.overlay.classList.add('houseModal__overlay');\r\n        this.overlay.addEventListener('click', this.handleCloseModal);\r\n\r\n        this.modalWrapper.append(this.overlay);\r\n        this.modalWrapper.append(this.modal);\r\n\r\n        this.createHeader();\r\n        this.createSlider();\r\n        this.createContent();\r\n        this.createBottomButtons();\r\n    };\r\n\r\n    createHeader = () => {\r\n        this.header = document.createElement('header');\r\n        this.header.classList.add('houseModal__header');\r\n\r\n        this.createTitle();\r\n        this.createCloseButton();\r\n\r\n        this.modal.append(this.header);\r\n    };\r\n\r\n    createTitle = () => {\r\n        const modalInfo = document.createElement('h2');\r\n        modalInfo.textContent = `Информация о домике №${this.number + 1}`;\r\n        modalInfo.classList.add('houseModal__header-info');\r\n        this.header.append(modalInfo);\r\n    };\r\n\r\n    createCloseButton = () => {\r\n        const closeButton = document.createElement('div');\r\n        closeButton.classList.add('houseModal__header-close');\r\n        this.header.append(closeButton);\r\n        closeButton.addEventListener('click', this.handleCloseModal);\r\n    };\r\n\r\n    createSlider = () => {\r\n        const slider = document.createElement('div');\r\n        slider.classList.add('houseModal__slider');\r\n\r\n        const glide = document.createElement('div');\r\n        glide.classList.add('glide', 'js-glide-modal');\r\n        slider.append(glide);\r\n\r\n        const track = document.createElement('div');\r\n        track.classList.add('glide__track');\r\n        track.dataset.glideEl = 'track';\r\n        glide.append(track);\r\n\r\n        const slides = document.createElement('ul');\r\n        slides.classList.add('glide__slides');\r\n        this.house.images.forEach(src => {\r\n            const item = document.createElement('li');\r\n            item.classList.add('glide__slide');\r\n\r\n            const img = document.createElement('img');\r\n            img.src = src;\r\n            item.append(img);\r\n\r\n            slides.append(item);\r\n        });\r\n\r\n        track.append(slides);\r\n        this.createSliderControls(glide);\r\n        this.modal.append(slider);\r\n    };\r\n\r\n    createSliderControls = (parent) => {\r\n        const arrows = document.createElement('div');\r\n        arrows.classList.add('houseModal__arrows');\r\n        arrows.dataset.glideEl = 'controls';\r\n\r\n\r\n        const leftButton = document.createElement('div');\r\n        leftButton.classList.add('houseModal__arrows-arrow');\r\n        leftButton.dataset.glideDir = '<';\r\n        arrows.append(leftButton);\r\n\r\n        const rightButton = document.createElement('div');\r\n        rightButton.classList.add('houseModal__arrows-arrow', 'houseModal__arrows-arrow_direction_right');\r\n        rightButton.dataset.glideDir = '>';\r\n        arrows.append(rightButton);\r\n\r\n        parent.append(arrows);\r\n    };\r\n\r\n    createContent = () => {\r\n        this.modalContent = document.createElement('div');\r\n        this.modalContent.classList.add('houseModal__content');\r\n        this.createContentName();\r\n        this.createContentBeds();\r\n        this.createContentDescription();\r\n        this.modal.append(this.modalContent);\r\n    };\r\n\r\n    createContentName = () => {\r\n        const nameWrapper = document.createElement('div');\r\n\r\n        const modalName = document.createElement('div');\r\n        modalName.textContent = 'Наименование:';\r\n        modalName.classList.add('houseModal__title');\r\n        nameWrapper.append(modalName);\r\n\r\n        const modalNameText = document.createElement('div');\r\n        modalNameText.textContent = this.house.name;\r\n        modalNameText.classList.add('houseModal__title-text');\r\n        nameWrapper.append(modalNameText);\r\n\r\n        this.modalContent.append(nameWrapper);\r\n    };\r\n\r\n    createContentBeds = () => {\r\n        const bedsWrapper = document.createElement('div');\r\n\r\n        const modalBeds = document.createElement('div');\r\n        modalBeds.textContent = 'Кол-во спальных мест:';\r\n        modalBeds.classList.add('houseModal__title');\r\n        bedsWrapper.append(modalBeds);\r\n\r\n        const modalBedsText = document.createElement('div');\r\n        modalBedsText.textContent = this.house.beds;\r\n        modalBedsText.classList.add('houseModal__title-text');\r\n        bedsWrapper.append(modalBedsText);\r\n\r\n        this.modalContent.append(bedsWrapper);\r\n    };\r\n\r\n    createContentDescription = () => {\r\n        const descriptionWrapper = document.createElement('div');\r\n\r\n        const modalDescription = document.createElement('div');\r\n        modalDescription.textContent = 'Описание:';\r\n        modalDescription.classList.add('houseModal__title');\r\n        descriptionWrapper.append(modalDescription);\r\n\r\n        if (this.house.subDescription) {\r\n            const subDescription = document.createElement('div');\r\n            subDescription.textContent = this.house.subDescription;\r\n            subDescription.classList.add('houseModal__title-text');\r\n            descriptionWrapper.append(subDescription);\r\n        }\r\n\r\n        const modalList = document.createElement('ul');\r\n        modalList.classList.add('houseModal__list');\r\n        this.house.description.forEach((item) => {\r\n            const listItem = document.createElement('li');\r\n            listItem.classList.add('houseModal__list-item');\r\n            listItem.textContent = item;\r\n            modalList.append(listItem);\r\n        });\r\n        descriptionWrapper.append(modalList);\r\n\r\n        this.modalContent.append(descriptionWrapper);\r\n    };\r\n\r\n    createBottomButtons = () => {\r\n        this.bottomButtons = document.createElement('div');\r\n        this.bottomButtons.classList.add('houseModal__bottom');\r\n        this.createBookButton();\r\n        this.createOkButton();\r\n        this.modal.append(this.bottomButtons);\r\n    }\r\n\r\n    createOkButton = () => {\r\n        const button = document.createElement('div');\r\n        button.textContent = 'Ок';\r\n        button.classList.add('houseModal__bottom-button');\r\n        button.addEventListener('click', this.handleCloseModal)\r\n\r\n        this.bottomButtons.append(button);\r\n    }\r\n\r\n    createBookButton = () => {\r\n        const button = document.createElement('div');\r\n        button.textContent = 'Забронировать домик';\r\n        button.classList.add('houseModal__bottom-button');\r\n\r\n        this.bottomButtons.append(button);\r\n    }\r\n\r\n    handleCloseModal = () => {\r\n        this.modalWrapper.classList.remove('houseModal__wrapper_active');\r\n        const body = document.querySelector('body');\r\n        body.removeChild(this.modalWrapper);\r\n    };\r\n\r\n    showModal = () => {\r\n        const body = document.querySelector('body');\r\n        body.append(this.modalWrapper);\r\n        this.modalWrapper.classList.add('houseModal__wrapper_active');\r\n        new _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('.js-glide-modal').mount();\r\n    };\r\n}\r\n\n\n//# sourceURL=webpack://sugesh/./src/pages/gallery/HouseModal/HouseModal.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"HouseModal\": function() { return /* binding */ HouseModal; }\n/* harmony export */ });\n/* harmony import */ var _static_houses_houses_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../static/houses/houses.json */ \"./src/static/houses/houses.json\");\n/* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @glidejs/glide */ \"./node_modules/@glidejs/glide/dist/glide.esm.js\");\n\r\n\r\n\r\nclass HouseModal {\r\n    constructor() {\r\n        this.init();\r\n    }\r\n\r\n    init() {\r\n        const buttons = document.querySelectorAll('.js-galleryLinks__button');\r\n        if (buttons.length > 0) {\r\n            buttons.forEach(button => button.addEventListener('click', this.handleButtonClick));\r\n        }\r\n    }\r\n\r\n    handleButtonClick = (e) => {\r\n        e.preventDefault();\r\n        this.button = e.currentTarget;\r\n        this.number = Number(this.button.dataset.house);\r\n        this.house = _static_houses_houses_json__WEBPACK_IMPORTED_MODULE_0__.find((house) => house.number === this.number);\r\n        this.createModal();\r\n        this.showModal();\r\n    };\r\n\r\n    createModal = () => {\r\n        this.modalWrapper = document.createElement('div');\r\n        this.modalWrapper.classList.add('houseModal__wrapper');\r\n\r\n        this.modal = document.createElement('div');\r\n        this.modal.classList.add('houseModal');\r\n\r\n        this.overlay = document.createElement('div');\r\n        this.overlay.classList.add('houseModal__overlay');\r\n        this.overlay.addEventListener('click', this.handleCloseModal);\r\n\r\n        this.modalWrapper.append(this.overlay);\r\n        this.modalWrapper.append(this.modal);\r\n\r\n        this.createHeader();\r\n        this.createSlider();\r\n        this.createContent();\r\n        this.createBottomButtons();\r\n    };\r\n\r\n    createHeader = () => {\r\n        this.header = document.createElement('header');\r\n        this.header.classList.add('houseModal__header');\r\n\r\n        this.createTitle();\r\n        this.createCloseButton();\r\n\r\n        this.modal.append(this.header);\r\n    };\r\n\r\n    createTitle = () => {\r\n        const modalInfo = document.createElement('h2');\r\n        modalInfo.textContent = `Информация о домике №${this.number}`;\r\n        modalInfo.classList.add('houseModal__header-info');\r\n        this.header.append(modalInfo);\r\n    };\r\n\r\n    createCloseButton = () => {\r\n        const closeButton = document.createElement('div');\r\n        closeButton.classList.add('houseModal__header-close');\r\n        this.header.append(closeButton);\r\n        closeButton.addEventListener('click', this.handleCloseModal);\r\n    };\r\n\r\n    createSlider = () => {\r\n        const slider = document.createElement('div');\r\n        slider.classList.add('houseModal__slider');\r\n\r\n        const glide = document.createElement('div');\r\n        glide.classList.add('glide', 'js-glide-modal');\r\n        slider.append(glide);\r\n\r\n        const track = document.createElement('div');\r\n        track.classList.add('glide__track');\r\n        track.dataset.glideEl = 'track';\r\n        glide.append(track);\r\n\r\n        const slides = document.createElement('ul');\r\n        slides.classList.add('glide__slides');\r\n        this.house.images.forEach(src => {\r\n            const item = document.createElement('li');\r\n            item.classList.add('glide__slide');\r\n\r\n            const img = document.createElement('img');\r\n            img.src = src;\r\n            img.loading = 'lazy';\r\n            item.append(img);\r\n\r\n            slides.append(item);\r\n        });\r\n\r\n        track.append(slides);\r\n        this.createSliderControls(glide);\r\n        this.modal.append(slider);\r\n    };\r\n\r\n    createSliderControls = (parent) => {\r\n        const arrows = document.createElement('div');\r\n        arrows.classList.add('houseModal__arrows');\r\n        arrows.dataset.glideEl = 'controls';\r\n\r\n\r\n        const leftButton = document.createElement('div');\r\n        leftButton.classList.add('houseModal__arrows-arrow');\r\n        leftButton.dataset.glideDir = '<';\r\n        arrows.append(leftButton);\r\n\r\n        const rightButton = document.createElement('div');\r\n        rightButton.classList.add('houseModal__arrows-arrow', 'houseModal__arrows-arrow_direction_right');\r\n        rightButton.dataset.glideDir = '>';\r\n        arrows.append(rightButton);\r\n\r\n        parent.append(arrows);\r\n    };\r\n\r\n    createContent = () => {\r\n        this.modalContent = document.createElement('div');\r\n        this.modalContent.classList.add('houseModal__content');\r\n        this.createContentName();\r\n        this.createContentBeds();\r\n        this.createContentDescription();\r\n        this.modal.append(this.modalContent);\r\n    };\r\n\r\n    createContentName = () => {\r\n        const nameWrapper = document.createElement('div');\r\n\r\n        const modalName = document.createElement('div');\r\n        modalName.textContent = 'Наименование:';\r\n        modalName.classList.add('houseModal__title');\r\n        nameWrapper.append(modalName);\r\n\r\n        const modalNameText = document.createElement('div');\r\n        modalNameText.textContent = this.house.name;\r\n        modalNameText.classList.add('houseModal__title-text');\r\n        nameWrapper.append(modalNameText);\r\n\r\n        this.modalContent.append(nameWrapper);\r\n    };\r\n\r\n    createContentBeds = () => {\r\n        const bedsWrapper = document.createElement('div');\r\n\r\n        const modalBeds = document.createElement('div');\r\n        modalBeds.textContent = 'Кол-во спальных мест:';\r\n        modalBeds.classList.add('houseModal__title');\r\n        bedsWrapper.append(modalBeds);\r\n\r\n        const modalBedsText = document.createElement('div');\r\n        modalBedsText.textContent = this.house.beds;\r\n        modalBedsText.classList.add('houseModal__title-text');\r\n        bedsWrapper.append(modalBedsText);\r\n\r\n        this.modalContent.append(bedsWrapper);\r\n    };\r\n\r\n    createContentDescription = () => {\r\n        const descriptionWrapper = document.createElement('div');\r\n\r\n        const modalDescription = document.createElement('div');\r\n        modalDescription.textContent = 'Описание:';\r\n        modalDescription.classList.add('houseModal__title');\r\n        descriptionWrapper.append(modalDescription);\r\n\r\n        if (this.house.subDescription) {\r\n            const subDescription = document.createElement('div');\r\n            subDescription.textContent = this.house.subDescription;\r\n            subDescription.classList.add('houseModal__title-text');\r\n            descriptionWrapper.append(subDescription);\r\n        }\r\n\r\n        const modalList = document.createElement('ul');\r\n        modalList.classList.add('houseModal__list');\r\n        this.house.description.forEach((item) => {\r\n            const listItem = document.createElement('li');\r\n            listItem.classList.add('houseModal__list-item');\r\n            listItem.textContent = item;\r\n            modalList.append(listItem);\r\n        });\r\n        descriptionWrapper.append(modalList);\r\n\r\n        this.modalContent.append(descriptionWrapper);\r\n    };\r\n\r\n    createBottomButtons = () => {\r\n        this.bottomButtons = document.createElement('div');\r\n        this.bottomButtons.classList.add('houseModal__bottom');\r\n        this.createBookButton();\r\n        this.createOkButton();\r\n        this.modal.append(this.bottomButtons);\r\n    };\r\n\r\n    createOkButton = () => {\r\n        const button = document.createElement('div');\r\n        button.textContent = 'Ок';\r\n        button.classList.add('houseModal__bottom-button');\r\n        button.addEventListener('click', this.handleCloseModal);\r\n\r\n        this.bottomButtons.append(button);\r\n    };\r\n\r\n    createBookButton = () => {\r\n        const link = document.createElement('a');\r\n        link.href = this.house.link;\r\n        link.target = '_blank';\r\n        link.textContent = 'Забронировать домик';\r\n        link.classList.add('houseModal__bottom-button');\r\n\r\n        this.bottomButtons.append(link);\r\n    };\r\n\r\n    handleCloseModal = () => {\r\n        this.modalWrapper.classList.remove('houseModal__wrapper_active');\r\n        const body = document.querySelector('body');\r\n        body.removeChild(this.modalWrapper);\r\n    };\r\n\r\n    showModal = () => {\r\n        const body = document.querySelector('body');\r\n        body.append(this.modalWrapper);\r\n        this.modalWrapper.classList.add('houseModal__wrapper_active');\r\n        new _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('.js-glide-modal').mount();\r\n    };\r\n}\r\n\n\n//# sourceURL=webpack://sugesh/./src/pages/gallery/HouseModal/HouseModal.js?");
 
 /***/ }),
 
@@ -1505,179 +1505,1103 @@ eval("var map = {\n\t\"./blocks/Accordion/Accordion.scss\": \"./src/blocks/Accor
 
 /***/ }),
 
-/***/ "./src/assets/img/gallery/territory/territory_1_1.png":
-/*!************************************************************!*\
-  !*** ./src/assets/img/gallery/territory/territory_1_1.png ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/territory_1_1.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_1_1.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/gallery/territory/territory_1_2.png":
-/*!************************************************************!*\
-  !*** ./src/assets/img/gallery/territory/territory_1_2.png ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/territory_1_2.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_1_2.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/gallery/territory/territory_1_3.png":
-/*!************************************************************!*\
-  !*** ./src/assets/img/gallery/territory/territory_1_3.png ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/territory_1_3.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_1_3.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/gallery/territory/territory_1_4.png":
-/*!************************************************************!*\
-  !*** ./src/assets/img/gallery/territory/territory_1_4.png ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/territory_1_4.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_1_4.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/gallery/territory/territory_2_1.png":
-/*!************************************************************!*\
-  !*** ./src/assets/img/gallery/territory/territory_2_1.png ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/territory_2_1.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_2_1.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/gallery/territory/territory_2_2.png":
-/*!************************************************************!*\
-  !*** ./src/assets/img/gallery/territory/territory_2_2.png ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/territory_2_2.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_2_2.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/gallery/territory/territory_2_3.png":
-/*!************************************************************!*\
-  !*** ./src/assets/img/gallery/territory/territory_2_3.png ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/territory_2_3.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_2_3.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/gallery/territory/territory_2_4.png":
-/*!************************************************************!*\
-  !*** ./src/assets/img/gallery/territory/territory_2_4.png ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/territory_2_4.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_2_4.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/gallery/tubing/tubing_1_1.png":
+/***/ "./src/assets/img/gallery/dining/dining_1_1.jpg":
 /*!******************************************************!*\
-  !*** ./src/assets/img/gallery/tubing/tubing_1_1.png ***!
+  !*** ./src/assets/img/gallery/dining/dining_1_1.jpg ***!
   \******************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/tubing_1_1.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_1_1.png?");
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_1_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_1_1.jpg?");
 
 /***/ }),
 
-/***/ "./src/assets/img/gallery/tubing/tubing_1_2.png":
+/***/ "./src/assets/img/gallery/dining/dining_1_2.jpg":
 /*!******************************************************!*\
-  !*** ./src/assets/img/gallery/tubing/tubing_1_2.png ***!
+  !*** ./src/assets/img/gallery/dining/dining_1_2.jpg ***!
   \******************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/tubing_1_2.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_1_2.png?");
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_1_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_1_2.jpg?");
 
 /***/ }),
 
-/***/ "./src/assets/img/gallery/tubing/tubing_1_3.png":
+/***/ "./src/assets/img/gallery/dining/dining_1_3.jpg":
 /*!******************************************************!*\
-  !*** ./src/assets/img/gallery/tubing/tubing_1_3.png ***!
+  !*** ./src/assets/img/gallery/dining/dining_1_3.jpg ***!
   \******************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/tubing_1_3.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_1_3.png?");
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_1_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_1_3.jpg?");
 
 /***/ }),
 
-/***/ "./src/assets/img/gallery/tubing/tubing_1_4.png":
+/***/ "./src/assets/img/gallery/dining/dining_1_4.jpg":
 /*!******************************************************!*\
-  !*** ./src/assets/img/gallery/tubing/tubing_1_4.png ***!
+  !*** ./src/assets/img/gallery/dining/dining_1_4.jpg ***!
   \******************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/tubing_1_4.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_1_4.png?");
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_1_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_1_4.jpg?");
 
 /***/ }),
 
-/***/ "./src/assets/img/gallery/tubing/tubing_2_1.png":
+/***/ "./src/assets/img/gallery/dining/dining_2_1.jpg":
 /*!******************************************************!*\
-  !*** ./src/assets/img/gallery/tubing/tubing_2_1.png ***!
+  !*** ./src/assets/img/gallery/dining/dining_2_1.jpg ***!
   \******************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/tubing_2_1.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_2_1.png?");
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_2_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_2_1.jpg?");
 
 /***/ }),
 
-/***/ "./src/assets/img/gallery/tubing/tubing_2_2.png":
+/***/ "./src/assets/img/gallery/dining/dining_2_2.jpg":
 /*!******************************************************!*\
-  !*** ./src/assets/img/gallery/tubing/tubing_2_2.png ***!
+  !*** ./src/assets/img/gallery/dining/dining_2_2.jpg ***!
   \******************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/tubing_2_2.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_2_2.png?");
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_2_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_2_2.jpg?");
 
 /***/ }),
 
-/***/ "./src/assets/img/gallery/tubing/tubing_2_3.png":
+/***/ "./src/assets/img/gallery/dining/dining_2_3.jpg":
 /*!******************************************************!*\
-  !*** ./src/assets/img/gallery/tubing/tubing_2_3.png ***!
+  !*** ./src/assets/img/gallery/dining/dining_2_3.jpg ***!
   \******************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/tubing_2_3.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_2_3.png?");
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_2_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_2_3.jpg?");
 
 /***/ }),
 
-/***/ "./src/assets/img/gallery/tubing/tubing_2_4.png":
+/***/ "./src/assets/img/gallery/dining/dining_2_4.jpg":
 /*!******************************************************!*\
-  !*** ./src/assets/img/gallery/tubing/tubing_2_4.png ***!
+  !*** ./src/assets/img/gallery/dining/dining_2_4.jpg ***!
   \******************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"assets/images/tubing_2_4.png\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_2_4.png?");
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_2_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_2_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/dining/dining_3_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/dining/dining_3_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_3_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_3_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/dining/dining_3_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/dining/dining_3_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/dining_3_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/dining/dining_3_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_1_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_1_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_1_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_1_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_1_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_1_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_1_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_1_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_1_3.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_1_3.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_1_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_1_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_1_4.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_1_4.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_1_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_1_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_2_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_2_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_2_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_2_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_2_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_2_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_2_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_2_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_2_3.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_2_3.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_2_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_2_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_2_4.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_2_4.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_2_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_2_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_3_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_3_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_3_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_3_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_3_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_3_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_3_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_3_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_3_3.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_3_3.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_3_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_3_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_3_4.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_3_4.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_3_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_3_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_4_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_4_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_4_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_4_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_4_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_4_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_4_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_4_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_4_3.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_4_3.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_4_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_4_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_4_4.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_4_4.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_4_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_4_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_5_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_5_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_5_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_5_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_5_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_5_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_5_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_5_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_5_3.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_5_3.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_5_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_5_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_5_4.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_5_4.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_5_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_5_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_6_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_6_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_6_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_6_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_6_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_6_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_6_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_6_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_6_3.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_6_3.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_6_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_6_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_6_4.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_6_4.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_6_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_6_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_7_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_7_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_7_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_7_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_7_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_7_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_7_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_7_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_7_3.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_7_3.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_7_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_7_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_7_4.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_7_4.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_7_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_7_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/houses/houses_8_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/houses/houses_8_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/houses_8_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/houses/houses_8_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_1_1.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_1_1.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_1_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_1_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_1_2.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_1_2.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_1_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_1_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_1_3.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_1_3.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_1_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_1_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_1_4.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_1_4.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_1_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_1_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_2_1.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_2_1.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_2_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_2_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_2_2.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_2_2.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_2_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_2_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_2_3.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_2_3.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_2_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_2_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_2_4.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_2_4.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_2_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_2_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_3_1.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_3_1.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_3_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_3_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_3_2.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_3_2.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_3_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_3_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_3_3.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_3_3.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_3_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_3_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_3_4.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_3_4.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_3_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_3_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_4_1.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_4_1.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_4_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_4_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_4_2.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_4_2.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_4_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_4_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/pool/pool_4_3.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/img/gallery/pool/pool_4_3.jpg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/pool_4_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/pool/pool_4_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_1_1.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_1_1.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_1_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_1_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_1_2.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_1_2.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_1_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_1_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_1_3.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_1_3.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_1_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_1_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_1_4.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_1_4.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_1_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_1_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_2_1.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_2_1.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_2_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_2_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_2_2.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_2_2.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_2_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_2_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_2_3.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_2_3.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_2_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_2_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_2_4.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_2_4.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_2_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_2_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_3_1.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_3_1.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_3_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_3_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_3_2.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_3_2.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_3_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_3_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_3_3.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_3_3.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_3_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_3_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/sauna/sauna_3_4.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/img/gallery/sauna/sauna_3_4.jpg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/sauna_3_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/sauna/sauna_3_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_1_1.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_1_1.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_1_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_1_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_1_2.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_1_2.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_1_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_1_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_1_3.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_1_3.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_1_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_1_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_1_4.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_1_4.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_1_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_1_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_2_1.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_2_1.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_2_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_2_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_2_2.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_2_2.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_2_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_2_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_2_3.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_2_3.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_2_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_2_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_2_4.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_2_4.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_2_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_2_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_3_1.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_3_1.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_3_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_3_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_3_2.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_3_2.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_3_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_3_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_3_3.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_3_3.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_3_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_3_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_3_4.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_3_4.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_3_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_3_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_4_1.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_4_1.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_4_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_4_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_4_2.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_4_2.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_4_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_4_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_4_3.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_4_3.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_4_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_4_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_4_4.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_4_4.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_4_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_4_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_5_1.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_5_1.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_5_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_5_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_5_2.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_5_2.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_5_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_5_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_5_3.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_5_3.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_5_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_5_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_5_4.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_5_4.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_5_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_5_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_6_1.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_6_1.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_6_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_6_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_6_2.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_6_2.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_6_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_6_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_6_3.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_6_3.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_6_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_6_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/territory/territory_6_4.jpg":
+/*!************************************************************!*\
+  !*** ./src/assets/img/gallery/territory/territory_6_4.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/territory_6_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/territory/territory_6_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_1_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_1_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_1_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_1_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_1_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_1_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_1_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_1_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_1_3.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_1_3.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_1_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_1_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_1_4.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_1_4.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_1_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_1_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_2_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_2_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_2_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_2_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_2_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_2_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_2_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_2_2.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_2_3.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_2_3.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_2_3.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_2_3.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_2_4.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_2_4.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_2_4.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_2_4.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_3_1.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_3_1.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_3_1.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_3_1.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/gallery/tubing/tubing_3_2.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/gallery/tubing/tubing_3_2.jpg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/images/tubing_3_2.jpg\";\n\n//# sourceURL=webpack://sugesh/./src/assets/img/gallery/tubing/tubing_3_2.jpg?");
 
 /***/ }),
 
@@ -1699,7 +2623,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(module) {
 
 "use strict";
-eval("module.exports = JSON.parse('[{\"name\":\"Территория\",\"slides\":[[\"assets/images/territory_1_1.png\",\"assets/images/territory_1_2.png\"],[\"assets/images/territory_1_3.png\",\"assets/images/territory_1_4.png\"],[\"assets/images/territory_2_1.png\",\"assets/images/territory_2_2.png\"],[\"assets/images/territory_2_3.png\",\"assets/images/territory_2_4.png\"]]},{\"name\":\"Столовая\",\"slides\":[[\"assets/images/territory_1_1.png\",\"assets/images/territory_1_2.png\"],[\"assets/images/territory_1_3.png\",\"assets/images/territory_1_4.png\"],[\"assets/images/territory_2_1.png\",\"assets/images/territory_2_2.png\"],[\"assets/images/territory_2_3.png\",\"assets/images/territory_2_4.png\"]]},{\"name\":\"Сауна\",\"slides\":[[\"assets/images/territory_1_1.png\",\"assets/images/territory_1_2.png\"],[\"assets/images/territory_1_3.png\",\"assets/images/territory_1_4.png\"]]},{\"name\":\"Плюшки\",\"slides\":[[\"assets/images/tubing_1_1.png\",\"assets/images/tubing_1_2.png\"],[\"assets/images/tubing_1_3.png\",\"assets/images/tubing_1_4.png\"],[\"assets/images/tubing_2_1.png\",\"assets/images/tubing_2_2.png\"],[\"assets/images/tubing_2_3.png\",\"assets/images/tubing_2_4.png\"],[\"assets/images/tubing_2_1.png\",\"assets/images/tubing_2_2.png\"],[\"assets/images/tubing_2_3.png\",\"assets/images/tubing_2_4.png\"]]},{\"name\":\"Дома\",\"slides\":[[\"assets/images/tubing_1_1.png\",\"assets/images/tubing_1_2.png\"],[\"assets/images/tubing_1_3.png\",\"assets/images/tubing_1_4.png\"],[\"assets/images/tubing_2_1.png\",\"assets/images/tubing_2_2.png\"],[\"assets/images/tubing_2_3.png\",\"assets/images/tubing_2_4.png\"],[\"assets/images/tubing_2_1.png\",\"assets/images/tubing_2_2.png\"],[\"assets/images/tubing_2_3.png\",\"assets/images/tubing_2_4.png\"]]},{\"name\":\"Бассейн\",\"slides\":[[\"assets/images/tubing_2_1.png\",\"assets/images/tubing_2_2.png\"],[\"assets/images/tubing_2_3.png\",\"assets/images/tubing_2_4.png\"],[\"assets/images/tubing_2_1.png\",\"assets/images/tubing_2_2.png\"],[\"assets/images/tubing_2_3.png\",\"assets/images/tubing_2_4.png\"]]}]');\n\n//# sourceURL=webpack://sugesh/./src/static/gallery/gallery.json?");
+eval("module.exports = JSON.parse('[{\"name\":\"Территория\",\"slides\":[[\"assets/images/territory_1_1.jpg\",\"assets/images/territory_1_2.jpg\"],[\"assets/images/territory_1_3.jpg\",\"assets/images/territory_1_4.jpg\"],[\"assets/images/territory_2_1.jpg\",\"assets/images/territory_2_2.jpg\"],[\"assets/images/territory_2_3.jpg\",\"assets/images/territory_2_4.jpg\"],[\"assets/images/territory_3_1.jpg\",\"assets/images/territory_3_2.jpg\"],[\"assets/images/territory_3_3.jpg\",\"assets/images/territory_3_4.jpg\"],[\"assets/images/territory_4_1.jpg\",\"assets/images/territory_4_2.jpg\"],[\"assets/images/territory_4_3.jpg\",\"assets/images/territory_4_4.jpg\"],[\"assets/images/territory_5_1.jpg\",\"assets/images/territory_5_2.jpg\"],[\"assets/images/territory_5_3.jpg\",\"assets/images/territory_5_4.jpg\"],[\"assets/images/territory_6_1.jpg\",\"assets/images/territory_6_2.jpg\"],[\"assets/images/territory_6_3.jpg\",\"assets/images/territory_6_4.jpg\"]]},{\"name\":\"Столовая\",\"slides\":[[\"assets/images/dining_1_1.jpg\",\"assets/images/dining_1_2.jpg\"],[\"assets/images/dining_1_3.jpg\",\"assets/images/dining_1_4.jpg\"],[\"assets/images/dining_2_1.jpg\",\"assets/images/dining_2_2.jpg\"],[\"assets/images/dining_2_3.jpg\",\"assets/images/dining_2_4.jpg\"],[\"assets/images/dining_3_1.jpg\",\"assets/images/dining_3_2.jpg\"]]},{\"name\":\"Сауна\",\"slides\":[[\"assets/images/sauna_1_1.jpg\",\"assets/images/sauna_1_2.jpg\"],[\"assets/images/sauna_1_3.jpg\",\"assets/images/sauna_1_4.jpg\"],[\"assets/images/sauna_2_1.jpg\",\"assets/images/sauna_2_2.jpg\"],[\"assets/images/sauna_2_3.jpg\",\"assets/images/sauna_2_4.jpg\"],[\"assets/images/sauna_3_1.jpg\",\"assets/images/sauna_3_2.jpg\"],[\"assets/images/sauna_3_3.jpg\",\"assets/images/sauna_3_4.jpg\"]]},{\"name\":\"Плюшки\",\"slides\":[[\"assets/images/tubing_1_1.jpg\",\"assets/images/tubing_1_2.jpg\"],[\"assets/images/tubing_1_3.jpg\",\"assets/images/tubing_1_4.jpg\"],[\"assets/images/tubing_2_1.jpg\",\"assets/images/tubing_2_2.jpg\"],[\"assets/images/tubing_2_3.jpg\",\"assets/images/tubing_2_4.jpg\"],[\"assets/images/tubing_3_1.jpg\",\"assets/images/tubing_3_2.jpg\"]]},{\"name\":\"Дома\",\"slides\":[[\"assets/images/houses_1_1.jpg\",\"assets/images/houses_1_2.jpg\"],[\"assets/images/houses_1_3.jpg\",\"assets/images/houses_1_4.jpg\"],[\"assets/images/houses_2_1.jpg\",\"assets/images/houses_2_2.jpg\"],[\"assets/images/houses_2_3.jpg\",\"assets/images/houses_2_4.jpg\"],[\"assets/images/houses_3_1.jpg\",\"assets/images/houses_3_2.jpg\"],[\"assets/images/houses_3_3.jpg\",\"assets/images/houses_3_4.jpg\"],[\"assets/images/houses_4_1.jpg\",\"assets/images/houses_4_2.jpg\"],[\"assets/images/houses_4_3.jpg\",\"assets/images/houses_4_4.jpg\"],[\"assets/images/houses_5_1.jpg\",\"assets/images/houses_5_2.jpg\"],[\"assets/images/houses_5_3.jpg\",\"assets/images/houses_5_4.jpg\"],[\"assets/images/houses_6_1.jpg\",\"assets/images/houses_6_2.jpg\"],[\"assets/images/houses_6_3.jpg\",\"assets/images/houses_6_4.jpg\"],[\"assets/images/houses_7_1.jpg\",\"assets/images/houses_7_2.jpg\"],[\"assets/images/houses_7_3.jpg\",\"assets/images/houses_7_4.jpg\"],[\"assets/images/houses_8_1.jpg\"]]},{\"name\":\"Бассейн\",\"slides\":[[\"assets/images/pool_1_1.jpg\",\"assets/images/pool_1_2.jpg\"],[\"assets/images/pool_1_3.jpg\",\"assets/images/pool_1_4.jpg\"],[\"assets/images/pool_2_1.jpg\",\"assets/images/pool_2_2.jpg\"],[\"assets/images/pool_2_3.jpg\",\"assets/images/pool_2_4.jpg\"],[\"assets/images/pool_3_1.jpg\",\"assets/images/pool_3_2.jpg\"],[\"assets/images/pool_3_3.jpg\",\"assets/images/pool_3_4.jpg\"],[\"assets/images/pool_4_1.jpg\",\"assets/images/pool_4_2.jpg\"],[\"assets/images/pool_4_3.jpg\"]]}]');\n\n//# sourceURL=webpack://sugesh/./src/static/gallery/gallery.json?");
 
 /***/ }),
 
@@ -1710,7 +2634,7 @@ eval("module.exports = JSON.parse('[{\"name\":\"Территория\",\"slides\
 /***/ (function(module) {
 
 "use strict";
-eval("module.exports = JSON.parse('[{\"name\":\"Домик №1\",\"beds\":\"4\",\"description\":[\"Полностью благоустроен: водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Холодильник;\",\"Постельное бельё, полотенца;\",\"В стоимость дома включены завтраки;\"],\"images\":[\"assets/images/house1_1.jpg\",\"assets/images/house1_2.jpg\",\"assets/images/house1_3.jpg\",\"assets/images/house1_4.jpg\",\"assets/images/house1_5.jpg\",\"assets/images/house1_6.jpg\",\"assets/images/house1_7.jpg\",\"assets/images/house1_8.jpg\",\"assets/images/house1_9.jpg\",\"assets/images/house1_10.jpg\",\"assets/images/house1_11.jpg\",\"assets/images/house1_12.jpg\",\"assets/images/house1_13.jpg\"]},{\"name\":\"Домик №2\",\"beds\":\"7\",\"subDescription\":\"Дом №2: 60 м2. 2 этажа: 7 спальных мест. Расположен на берегу озера, (две двухъярусные 1,5-спальные кровати и две 1,5-спальные)\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость дома включены завтраки;\"],\"images\":[\"assets/images/house2_1.jpg\",\"assets/images/house2_2.jpg\",\"assets/images/house2_3.jpg\",\"assets/images/house2_4.jpg\",\"assets/images/house2_5.jpg\",\"assets/images/house2_6.jpg\",\"assets/images/house2_7.jpg\",\"assets/images/house2_8.jpg\",\"assets/images/house2_9.jpg\",\"assets/images/house2_10.jpg\",\"assets/images/house2_11.jpg\",\"assets/images/house2_12.jpg\"]},{\"name\":\"Домик №3\",\"beds\":\"6\",\"subDescription\":\"Дом №3: 35 м2. 1 этаж: 6 спальных мест (три двухъярусные 1,5-спальные кровати), красивый вид на озеро.\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость дома включены завтраки;\"],\"images\":[\"assets/images/house3_1.jpg\",\"assets/images/house3_2.jpg\",\"assets/images/house3_3.jpg\",\"assets/images/house3_4.jpg\",\"assets/images/house3_5.jpg\",\"assets/images/house3_6.jpg\",\"assets/images/house3_7.jpg\",\"assets/images/house3_8.jpg\",\"assets/images/house3_9.jpg\",\"assets/images/house3_10.jpg\",\"assets/images/house3_11.jpg\",\"assets/images/house3_12.jpg\",\"assets/images/house3_13.jpg\"]},{\"name\":\"Домик №4\",\"beds\":\"12\",\"subDescription\":\"Дом № 4. 72 м2. 2 этажа, 12 спальных мест:\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость дома включены завтраки;\"],\"images\":[\"assets/images/house4_1.jpg\",\"assets/images/house4_2.jpg\",\"assets/images/house4_3.jpg\"]},{\"name\":\"Домик №5\",\"beds\":\"12\",\"subDescription\":\"Дом № 5. 72 м2. 2 этажа, 12 спальных мест\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость дома включены завтраки;\"],\"images\":[\"assets/images/house5_1.jpg\",\"assets/images/house5_2.jpg\",\"assets/images/house5_3.jpg\",\"assets/images/house5_4.jpg\",\"assets/images/house5_5.jpg\",\"assets/images/house5_6.jpg\",\"assets/images/house5_7.jpg\",\"assets/images/house5_8.jpg\",\"assets/images/house5_9.jpg\",\"assets/images/house5_10.jpg\",\"assets/images/house5_11.jpg\",\"assets/images/house5_12.jpg\"]},{\"name\":\"Домик №6\",\"beds\":\"10\",\"subDescription\":\"Дом №6: 72 м2. 2 этажа:10 спальных мест. Расположен в 10 метрах от бассейна (три двухъярусные кровати и четырех односпальных кровати)\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость дома включены завтраки;\"],\"images\":[\"assets/images/house6_1.jpg\",\"assets/images/house6_2.jpg\",\"assets/images/house6_3.jpg\",\"assets/images/house6_4.jpg\",\"assets/images/house6_5.jpg\",\"assets/images/house6_6.jpg\",\"assets/images/house6_7.jpg\",\"assets/images/house6_8.jpg\",\"assets/images/house6_9.jpg\",\"assets/images/house6_10.jpg\",\"assets/images/house6_11.jpg\"]},{\"name\":\"Домик №7\",\"beds\":\"6\",\"subDescription\":\"Дом №7, 2 этажа, 50 м2\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость дома включены завтраки;\"],\"images\":[\"assets/images/house7_1.jpg\",\"assets/images/house7_2.jpg\",\"assets/images/house7_3.jpg\",\"assets/images/house7_4.jpg\",\"assets/images/house7_5.jpg\",\"assets/images/house7_6.jpg\",\"assets/images/house7_7.jpg\",\"assets/images/house7_8.jpg\",\"assets/images/house7_9.jpg\"]},{\"name\":\"Домик №8\",\"beds\":\"4\",\"subDescription\":\"Дом №8,  2-х этажный 50 м2, рассчитан на 4 персоны\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость дома включены завтраки;\"],\"images\":[\"assets/images/house8_1.jpg\",\"assets/images/house8_2.jpg\"]},{\"name\":\"Домик №9\",\"beds\":\"4\",\"subDescription\":\"Дом №8,  2-х этажный 50 м2, рассчитан на 4 персоны\",\"description\":[\"Телевизор\",\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"3 спальные зоны (2- двухспальных кровати, 1 - двухъярусная, 1 - односпальная)\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость дома включены завтраки;\",\"Мангальная зона\"],\"images\":[\"assets/images/house9_1.jpg\",\"assets/images/house9_2.jpg\",\"assets/images/house9_3.jpg\",\"assets/images/house9_4.jpg\",\"assets/images/house9_5.jpg\",\"assets/images/house9_6.jpg\",\"assets/images/house9_7.jpg\",\"assets/images/house9_8.jpg\",\"assets/images/house9_9.jpg\",\"assets/images/house9_10.jpg\",\"assets/images/house9_11.jpg\",\"assets/images/house9_12.jpg\"]},{\"name\":\"Домик №10\",\"beds\":\"10\",\"subDescription\":\"Номер 10: 2 этажа. 12 спальных мест.\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость дома включены завтраки;\"],\"images\":[\"assets/images/house10_1.jpg\"]}]');\n\n//# sourceURL=webpack://sugesh/./src/static/houses/houses.json?");
+eval("module.exports = JSON.parse('[{\"name\":\"Домик №1\",\"number\":1,\"beds\":\"4\",\"link\":\"https://sugesh.ru/hotel/#1461010016802-d8760cfa-b696\",\"subDescription\":\"42 м2. 1 этаж: 4 спальных места (две двуспальные кровати).\",\"description\":[\"Полностью благоустроен: водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Холодильник;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 4 человека (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house1_1.jpg\",\"assets/images/house1_2.jpg\",\"assets/images/house1_3.jpg\",\"assets/images/house1_4.jpg\",\"assets/images/house1_5.jpg\",\"assets/images/house1_6.jpg\",\"assets/images/house1_7.jpg\",\"assets/images/house1_8.jpg\",\"assets/images/house1_9.jpg\",\"assets/images/house1_10.jpg\",\"assets/images/house1_11.jpg\",\"assets/images/house1_12.jpg\",\"assets/images/house1_13.jpg\",\"assets/images/house1_14.jpg\",\"assets/images/house1_15.jpg\",\"assets/images/house1_16.jpg\",\"assets/images/house1_17.jpg\",\"assets/images/house1_18.jpg\"]},{\"name\":\"Домик №2\",\"number\":2,\"beds\":\"7\",\"link\":\"https://sugesh.ru/hotel/#1461051067646-653438dc-f181\",\"subDescription\":\"Дом №2: 60 м2. 2 этажа: 7 спальных мест. Расположен на берегу озера, (две двухъярусные 1,5-спальные кровати и две 1,5-спальные).\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник\",\"В стоимость включен завтрак на 7 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house2_1.jpg\",\"assets/images/house2_2.jpg\",\"assets/images/house2_3.jpg\",\"assets/images/house2_4.jpg\",\"assets/images/house2_5.jpg\",\"assets/images/house2_6.jpg\",\"assets/images/house2_7.jpg\",\"assets/images/house2_8.jpg\",\"assets/images/house2_9.jpg\",\"assets/images/house2_10.jpg\",\"assets/images/house2_11.jpg\",\"assets/images/house2_12.jpg\",\"assets/images/house2_13.jpg\",\"assets/images/house2_14.jpg\",\"assets/images/house2_15.jpg\",\"assets/images/house2_16.jpg\",\"assets/images/house2_17.jpg\",\"assets/images/house2_18.jpg\",\"assets/images/house2_19.jpg\"]},{\"name\":\"Домик №3\",\"number\":3,\"beds\":\"6\",\"link\":\"https://sugesh.ru/hotel/#1461051064874-7ee184d3-cc43\",\"subDescription\":\"35 м2. 1 этаж: 6 спальных мест (три двухъярусные кровати), красивый вид на озеро.\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 6 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house3_1.jpg\",\"assets/images/house3_2.jpg\",\"assets/images/house3_3.jpg\",\"assets/images/house3_4.jpg\",\"assets/images/house3_5.jpg\",\"assets/images/house3_6.jpg\",\"assets/images/house3_7.jpg\",\"assets/images/house3_8.jpg\",\"assets/images/house3_9.jpg\",\"assets/images/house3_10.jpg\",\"assets/images/house3_11.jpg\",\"assets/images/house3_12.jpg\",\"assets/images/house3_13.jpg\"]},{\"name\":\"Домик №4\",\"number\":4,\"beds\":\"8\",\"link\":\"https://sugesh.ru/hotel/#1461053395626-9056e14e-79f0\",\"subDescription\":\"72 м2. 2 этаж, 8 спальных мест: 2 — двухъярусных кровати и 4 — полуторных.\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 8 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house4_1.jpg\",\"assets/images/house4_2.jpg\",\"assets/images/house4_3.jpg\",\"assets/images/house4_4.jpg\",\"assets/images/house4_5.jpg\",\"assets/images/house4_6.jpg\",\"assets/images/house4_7.jpg\",\"assets/images/house4_8.jpg\",\"assets/images/house4_9.jpg\",\"assets/images/house4_10.jpg\"]},{\"name\":\"Домик №5\",\"number\":5,\"beds\":\"8\",\"link\":\"https://sugesh.ru/hotel/#1461053398522-966aa2e8-75aa\",\"subDescription\":\"72 м2. 2 этаж, 8 спальных мест: 3 — двухъярусных кровати и 2 — полуторных;\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 8 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house5_1.jpg\",\"assets/images/house5_2.jpg\",\"assets/images/house5_3.jpg\",\"assets/images/house5_4.jpg\",\"assets/images/house5_5.jpg\",\"assets/images/house5_6.jpg\",\"assets/images/house5_7.jpg\"]},{\"name\":\"Домик №6\",\"number\":6,\"beds\":\"10\",\"link\":\"https://sugesh.ru/hotel/#1461051062747-bc73e71d-8acb\",\"subDescription\":\"72 м2. 2 этажа: 10 спальных мест. Расположен в 10 метрах от бассейна (четыре двухъярусные 1,5-спальные кровати и две 1,5-спальные).\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 10 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house6_1.jpg\",\"assets/images/house6_2.jpg\",\"assets/images/house6_3.jpg\",\"assets/images/house6_4.jpg\",\"assets/images/house6_5.jpg\",\"assets/images/house6_6.jpg\",\"assets/images/house6_7.jpg\",\"assets/images/house6_8.jpg\",\"assets/images/house6_9.jpg\",\"assets/images/house6_10.jpg\",\"assets/images/house6_11.jpg\",\"assets/images/house6_12.jpg\",\"assets/images/house6_13.jpg\",\"assets/images/house6_14.jpg\",\"assets/images/house6_15.jpg\",\"assets/images/house6_16.jpg\"]},{\"name\":\"Домик №7\",\"number\":7,\"beds\":\"6\",\"link\":\"https://sugesh.ru/hotel/#1461051060927-961dfa8d-82ce\",\"subDescription\":\"72 м2. Новый коттедж из кедрового массива введен в эксплуатацию в декабре 2012 года! 2-х этажный, рассчитан на 6 персон\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 6 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house7_1.jpg\",\"assets/images/house7_2.jpg\",\"assets/images/house7_3.jpg\",\"assets/images/house7_4.jpg\",\"assets/images/house7_5.jpg\",\"assets/images/house7_6.jpg\",\"assets/images/house7_7.jpg\",\"assets/images/house7_8.jpg\",\"assets/images/house7_9.jpg\",\"assets/images/house7_10.jpg\"]},{\"name\":\"Домик №8\",\"number\":8,\"beds\":\"4\",\"link\":\"https://sugesh.ru/hotel/#1461051058878-5f721404-129f\",\"subDescription\":\"55 м2. Новый коттедж из кедрового массива введен в эксплуатацию в декабре 2012 года. 2-х этажный, рассчитан на 4 персоны.\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 4 человека (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house8_1.jpg\",\"assets/images/house8_2.jpg\"]},{\"name\":\"Домик №9\",\"number\":9,\"beds\":\"7\",\"link\":\"https://sugesh.ru/hotel/#1611227704594-bf253514-9b37\",\"subDescription\":\"Рассчитан на комфортный отдых 7 человек, 3 спальные зоны (2 — двуспальные кровати, 1 — двухъярусная, 1 — односпальная)\",\"description\":[\"Телевизор\",\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 7 человек (весной и осенью возможны исключения);\",\"Мангальная зона\"],\"images\":[\"assets/images/house9_1.jpg\",\"assets/images/house9_2.jpg\",\"assets/images/house9_3.jpg\",\"assets/images/house9_4.jpg\",\"assets/images/house9_5.jpg\",\"assets/images/house9_6.jpg\",\"assets/images/house9_7.jpg\",\"assets/images/house9_8.jpg\",\"assets/images/house9_9.jpg\",\"assets/images/house9_10.jpg\",\"assets/images/house9_11.jpg\"]},{\"name\":\"Домик №10\",\"number\":10,\"beds\":\"12\",\"link\":\"https://sugesh.ru/hotel/#1461054441752-deca7d05-ba74\",\"subDescription\":\"2 этажа. 12 спальных мест. Кухонная зона: посуда на 10 персон, микроволновая печь, эл. плита, холодильник.\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 12 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house10_1.jpg\",\"assets/images/house10_2.jpg\",\"assets/images/house10_3.jpg\",\"assets/images/house10_4.jpg\",\"assets/images/house10_5.jpg\",\"assets/images/house10_6.jpg\",\"assets/images/house10_7.jpg\",\"assets/images/house10_8.jpg\",\"assets/images/house10_9.jpg\",\"assets/images/house10_10.jpg\",\"assets/images/house10_12.jpg\",\"assets/images/house10_13.jpg\",\"assets/images/house10_14.jpg\",\"assets/images/house10_15.jpg\",\"assets/images/house10_16.jpg\"]},{\"name\":\"Домик №11\",\"number\":11,\"beds\":\"10\",\"link\":\"https://sugesh.ru/hotel/#1461054444248-3410a143-c7ff\",\"subDescription\":\"2 спальных комнаты по 5 человек с двухъярусными кроватями.\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 12 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house11_1.jpg\",\"assets/images/house11_2.jpg\",\"assets/images/house11_3.jpg\",\"assets/images/house11_4.jpg\",\"assets/images/house11_5.jpg\",\"assets/images/house11_6.jpg\",\"assets/images/house11_7.jpg\",\"assets/images/house11_8.jpg\"]},{\"name\":\"Домик №12\",\"number\":12,\"beds\":\"10\",\"link\":\"https://sugesh.ru/hotel/#1461054446739-d6550db4-ec47\",\"subDescription\":\"2 спальных комнаты по 5 человек с двухъярусными кроватями.\",\"description\":[\"Холодильник;\",\"Водоснабжение, санузел, душевая кабина, централизованное отопление;\",\"Постельное бельё, полотенца;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 12 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house12_1.jpg\",\"assets/images/house12_2.jpg\",\"assets/images/house12_3.jpg\",\"assets/images/house12_4.jpg\",\"assets/images/house12_5.jpg\",\"assets/images/house12_6.jpg\"]},{\"name\":\"Домик №45\",\"number\":45,\"beds\":\"8\",\"link\":\"https://sugesh.ru/hotel/#1461054446739-d6550db4-ec47\",\"subDescription\":\"8 спальных мест: 2 — двухъярусных кровати и 4 — полуторных.\",\"description\":[\"2 этажа;\",\"Душ;\",\"Туалет;\",\"Холодильник;\",\"Централизованное отопление;\",\"Электрический чайник;\",\"В стоимость включен завтрак на 8 человек (весной и осенью возможны исключения);\"],\"images\":[\"assets/images/house45_1.jpg\",\"assets/images/house45_2.jpg\",\"assets/images/house45_3.jpg\",\"assets/images/house45_4.jpg\",\"assets/images/house45_5.jpg\",\"assets/images/house45_6.jpg\",\"assets/images/house45_7.jpg\",\"assets/images/house45_8.jpg\",\"assets/images/house45_9.jpg\",\"assets/images/house45_10.jpg\",\"assets/images/house45_11.jpg\",\"assets/images/house45_12.jpg\"]}]');\n\n//# sourceURL=webpack://sugesh/./src/static/houses/houses.json?");
 
 /***/ })
 

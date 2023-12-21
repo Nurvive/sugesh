@@ -1,0 +1,36 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
+
+.excel-menu {
+    padding-block-start: 140px;
+
+    @include media($tablet) {
+        padding-block-start: 50px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: $sogesh;
+        text-align: center;
+
+        @include media($tablet) {
+            font-size: 32px;
+            line-height: 39px;
+        }
+    }
+
+    &__button {
+        max-width: 260px;
+        margin-block-start: 40px;
+        margin-inline: auto;
+        padding-block: 18px;
+        border-radius: 20px;
+
+        @include media($tablet) {
+            margin-block-start: 20px;
+        }
+    }
+}

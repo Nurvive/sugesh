@@ -3,7 +3,7 @@
 @import '../../scss/breakpoints';
 
 .seasons {
-    padding: 0 52px 160px;
+    padding: 0 52px 120px;
 
     @include media($tablet) {
         padding-inline: 16px;

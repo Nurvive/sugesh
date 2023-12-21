@@ -1,0 +1,6 @@
+include ../../../blocks/Button/Button
+
+mixin ExcelMenu()
+    .excel-menu
+        h2.excel-menu__title='Меню'
+        +Button({text: 'Скачать меню', link: 'assets/menu/menu.xlsx'})(download='menu').excel-menu__button

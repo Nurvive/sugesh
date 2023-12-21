@@ -1,12 +1,16 @@
 [
     {
         "name": "Домик №1",
+        "number": 1,
         "beds": "4",
+        "link": "https://sugesh.ru/hotel/#1461010016802-d8760cfa-b696",
+        "subDescription": "42 м2. 1 этаж: 4 спальных места (две двуспальные кровати).",
         "description": [
             "Полностью благоустроен: водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Холодильник;",
             "Постельное бельё, полотенца;",
-            "В стоимость дома включены завтраки;"
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 4 человека (весной и осенью возможны исключения);"
         ],
         "images": [
             "assets/images/house1_1.jpg",
@@ -21,19 +25,26 @@
             "assets/images/house1_10.jpg",
             "assets/images/house1_11.jpg",
             "assets/images/house1_12.jpg",
-            "assets/images/house1_13.jpg"
+            "assets/images/house1_13.jpg",
+            "assets/images/house1_14.jpg",
+            "assets/images/house1_15.jpg",
+            "assets/images/house1_16.jpg",
+            "assets/images/house1_17.jpg",
+            "assets/images/house1_18.jpg"
         ]
     },
     {
         "name": "Домик №2",
+        "number": 2,
         "beds": "7",
-        "subDescription": "Дом №2: 60 м2. 2 этажа: 7 спальных мест. Расположен на берегу озера, (две двухъярусные 1,5-спальные кровати и две 1,5-спальные)",
+        "link": "https://sugesh.ru/hotel/#1461051067646-653438dc-f181",
+        "subDescription": "Дом №2: 60 м2. 2 этажа: 7 спальных мест. Расположен на берегу озера, (две двухъярусные 1,5-спальные кровати и две 1,5-спальные).",
         "description": [
             "Холодильник;",
             "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Постельное бельё, полотенца;",
             "Электрический чайник",
-            "В стоимость дома включены завтраки;"
+            "В стоимость включен завтрак на 7 человек (весной и осенью возможны исключения);"
         ],
         "images": [
             "assets/images/house2_1.jpg",
@@ -47,19 +58,28 @@
             "assets/images/house2_9.jpg",
             "assets/images/house2_10.jpg",
             "assets/images/house2_11.jpg",
-            "assets/images/house2_12.jpg"
+            "assets/images/house2_12.jpg",
+            "assets/images/house2_13.jpg",
+            "assets/images/house2_14.jpg",
+            "assets/images/house2_15.jpg",
+            "assets/images/house2_16.jpg",
+            "assets/images/house2_17.jpg",
+            "assets/images/house2_18.jpg",
+            "assets/images/house2_19.jpg"
         ]
     },
     {
         "name": "Домик №3",
+        "number": 3,
         "beds": "6",
-        "subDescription": "Дом №3: 35 м2. 1 этаж: 6 спальных мест (три двухъярусные 1,5-спальные кровати), красивый вид на озеро.",
+        "link": "https://sugesh.ru/hotel/#1461051064874-7ee184d3-cc43",
+        "subDescription": "35 м2. 1 этаж: 6 спальных мест (три двухъярусные кровати), красивый вид на озеро.",
         "description": [
             "Холодильник;",
             "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Постельное бельё, полотенца;",
-            "Электрический чайник",
-            "В стоимость дома включены завтраки;"
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 6 человек (весной и осенью возможны исключения);"
         ],
         "images": [
             "assets/images/house3_1.jpg",
@@ -79,31 +99,42 @@
     },
     {
         "name": "Домик №4",
-        "beds": "12",
-        "subDescription": "Дом № 4. 72 м2. 2 этажа, 12 спальных мест:",
+        "number": 4,
+        "beds": "8",
+        "link": "https://sugesh.ru/hotel/#1461053395626-9056e14e-79f0",
+        "subDescription": "72 м2. 2 этаж, 8 спальных мест: 2 — двухъярусных кровати и 4 — полуторных.",
         "description": [
             "Холодильник;",
             "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Постельное бельё, полотенца;",
-            "Электрический чайник",
-            "В стоимость дома включены завтраки;"
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 8 человек (весной и осенью возможны исключения);"
         ],
         "images": [
             "assets/images/house4_1.jpg",
             "assets/images/house4_2.jpg",
-            "assets/images/house4_3.jpg"
+            "assets/images/house4_3.jpg",
+            "assets/images/house4_4.jpg",
+            "assets/images/house4_5.jpg",
+            "assets/images/house4_6.jpg",
+            "assets/images/house4_7.jpg",
+            "assets/images/house4_8.jpg",
+            "assets/images/house4_9.jpg",
+            "assets/images/house4_10.jpg"
         ]
     },
     {
         "name": "Домик №5",
-        "beds": "12",
-        "subDescription": "Дом № 5. 72 м2. 2 этажа, 12 спальных мест",
+        "number": 5,
+        "beds": "8",
+        "link": "https://sugesh.ru/hotel/#1461053398522-966aa2e8-75aa",
+        "subDescription": "72 м2. 2 этаж, 8 спальных мест: 3 — двухъярусных кровати и 2 — полуторных;",
         "description": [
             "Холодильник;",
             "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Постельное бельё, полотенца;",
-            "Электрический чайник",
-            "В стоимость дома включены завтраки;"
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 8 человек (весной и осенью возможны исключения);"
         ],
         "images": [
             "assets/images/house5_1.jpg",
@@ -112,24 +143,21 @@
             "assets/images/house5_4.jpg",
             "assets/images/house5_5.jpg",
             "assets/images/house5_6.jpg",
-            "assets/images/house5_7.jpg",
-            "assets/images/house5_8.jpg",
-            "assets/images/house5_9.jpg",
-            "assets/images/house5_10.jpg",
-            "assets/images/house5_11.jpg",
-            "assets/images/house5_12.jpg"
+            "assets/images/house5_7.jpg"
         ]
     },
     {
         "name": "Домик №6",
+        "number": 6,
         "beds": "10",
-        "subDescription": "Дом №6: 72 м2. 2 этажа:10 спальных мест. Расположен в 10 метрах от бассейна (три двухъярусные кровати и четырех односпальных кровати)",
+        "link": "https://sugesh.ru/hotel/#1461051062747-bc73e71d-8acb",
+        "subDescription": "72 м2. 2 этажа: 10 спальных мест. Расположен в 10 метрах от бассейна (четыре двухъярусные 1,5-спальные кровати и две 1,5-спальные).",
         "description": [
             "Холодильник;",
             "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Постельное бельё, полотенца;",
-            "Электрический чайник",
-            "В стоимость дома включены завтраки;"
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 10 человек (весной и осенью возможны исключения);"
         ],
         "images": [
             "assets/images/house6_1.jpg",
@@ -142,19 +170,26 @@
             "assets/images/house6_8.jpg",
             "assets/images/house6_9.jpg",
             "assets/images/house6_10.jpg",
-            "assets/images/house6_11.jpg"
+            "assets/images/house6_11.jpg",
+            "assets/images/house6_12.jpg",
+            "assets/images/house6_13.jpg",
+            "assets/images/house6_14.jpg",
+            "assets/images/house6_15.jpg",
+            "assets/images/house6_16.jpg"
         ]
     },
     {
         "name": "Домик №7",
+        "number": 7,
         "beds": "6",
-        "subDescription": "Дом №7, 2 этажа, 50 м2",
+        "link": "https://sugesh.ru/hotel/#1461051060927-961dfa8d-82ce",
+        "subDescription": "72 м2. Новый коттедж из кедрового массива введен в эксплуатацию в декабре 2012 года! 2-х этажный, рассчитан на 6 персон",
         "description": [
             "Холодильник;",
             "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Постельное бельё, полотенца;",
-            "Электрический чайник",
-            "В стоимость дома включены завтраки;"
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 6 человек (весной и осенью возможны исключения);"
         ],
         "images": [
             "assets/images/house7_1.jpg",
@@ -165,19 +200,22 @@
             "assets/images/house7_6.jpg",
             "assets/images/house7_7.jpg",
             "assets/images/house7_8.jpg",
-            "assets/images/house7_9.jpg"
+            "assets/images/house7_9.jpg",
+            "assets/images/house7_10.jpg"
         ]
     },
     {
         "name": "Домик №8",
+        "number": 8,
         "beds": "4",
-        "subDescription": "Дом №8,  2-х этажный 50 м2, рассчитан на 4 персоны",
+        "link": "https://sugesh.ru/hotel/#1461051058878-5f721404-129f",
+        "subDescription": "55 м2. Новый коттедж из кедрового массива введен в эксплуатацию в декабре 2012 года. 2-х этажный, рассчитан на 4 персоны.",
         "description": [
             "Холодильник;",
             "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Постельное бельё, полотенца;",
-            "Электрический чайник",
-            "В стоимость дома включены завтраки;"
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 4 человека (весной и осенью возможны исключения);"
         ],
         "images": [
             "assets/images/house8_1.jpg",
@@ -186,16 +224,17 @@
     },
     {
         "name": "Домик №9",
-        "beds": "4",
-        "subDescription": "Дом №8,  2-х этажный 50 м2, рассчитан на 4 персоны",
+        "number": 9,
+        "beds": "7",
+        "link": "https://sugesh.ru/hotel/#1611227704594-bf253514-9b37",
+        "subDescription": "Рассчитан на комфортный отдых 7 человек, 3 спальные зоны (2 — двуспальные кровати, 1 — двухъярусная, 1 — односпальная)",
         "description": [
             "Телевизор",
             "Холодильник;",
             "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
-            "3 спальные зоны (2- двухспальных кровати, 1 - двухъярусная, 1 - односпальная)",
             "Постельное бельё, полотенца;",
-            "Электрический чайник",
-            "В стоимость дома включены завтраки;",
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 7 человек (весной и осенью возможны исключения);",
             "Мангальная зона"
         ],
         "images": [
@@ -209,23 +248,114 @@
             "assets/images/house9_8.jpg",
             "assets/images/house9_9.jpg",
             "assets/images/house9_10.jpg",
-            "assets/images/house9_11.jpg",
-            "assets/images/house9_12.jpg"
+            "assets/images/house9_11.jpg"
         ]
     },
     {
         "name": "Домик №10",
-        "beds": "10",
-        "subDescription": "Номер 10: 2 этажа. 12 спальных мест.",
+        "number": 10,
+        "beds": "12",
+        "link": "https://sugesh.ru/hotel/#1461054441752-deca7d05-ba74",
+        "subDescription": "2 этажа. 12 спальных мест. Кухонная зона: посуда на 10 персон, микроволновая печь, эл. плита, холодильник.",
         "description": [
             "Холодильник;",
             "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
             "Постельное бельё, полотенца;",
-            "Электрический чайник",
-            "В стоимость дома включены завтраки;"
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 12 человек (весной и осенью возможны исключения);"
         ],
         "images": [
-            "assets/images/house10_1.jpg"
+            "assets/images/house10_1.jpg",
+            "assets/images/house10_2.jpg",
+            "assets/images/house10_3.jpg",
+            "assets/images/house10_4.jpg",
+            "assets/images/house10_5.jpg",
+            "assets/images/house10_6.jpg",
+            "assets/images/house10_7.jpg",
+            "assets/images/house10_8.jpg",
+            "assets/images/house10_9.jpg",
+            "assets/images/house10_10.jpg",
+            "assets/images/house10_12.jpg",
+            "assets/images/house10_13.jpg",
+            "assets/images/house10_14.jpg",
+            "assets/images/house10_15.jpg",
+            "assets/images/house10_16.jpg"
+        ]
+    },
+    {
+        "name": "Домик №11",
+        "number": 11,
+        "beds": "10",
+        "link": "https://sugesh.ru/hotel/#1461054444248-3410a143-c7ff",
+        "subDescription": "2 спальных комнаты по 5 человек с двухъярусными кроватями.",
+        "description": [
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 12 человек (весной и осенью возможны исключения);"
+        ],
+        "images": [
+            "assets/images/house11_1.jpg",
+            "assets/images/house11_2.jpg",
+            "assets/images/house11_3.jpg",
+            "assets/images/house11_4.jpg",
+            "assets/images/house11_5.jpg",
+            "assets/images/house11_6.jpg",
+            "assets/images/house11_7.jpg",
+            "assets/images/house11_8.jpg"
+        ]
+    },
+    {
+        "name": "Домик №12",
+        "number": 12,
+        "beds": "10",
+        "link": "https://sugesh.ru/hotel/#1461054446739-d6550db4-ec47",
+        "subDescription": "2 спальных комнаты по 5 человек с двухъярусными кроватями.",
+        "description": [
+            "Холодильник;",
+            "Водоснабжение, санузел, душевая кабина, централизованное отопление;",
+            "Постельное бельё, полотенца;",
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 12 человек (весной и осенью возможны исключения);"
+        ],
+        "images": [
+            "assets/images/house12_1.jpg",
+            "assets/images/house12_2.jpg",
+            "assets/images/house12_3.jpg",
+            "assets/images/house12_4.jpg",
+            "assets/images/house12_5.jpg",
+            "assets/images/house12_6.jpg"
+        ]
+    },
+    {
+        "name": "Домик №45",
+        "number": 45,
+        "beds": "8",
+        "link": "https://sugesh.ru/hotel/#1461054446739-d6550db4-ec47",
+        "subDescription": "8 спальных мест: 2 — двухъярусных кровати и 4 — полуторных.",
+        "description": [
+            "2 этажа;",
+            "Душ;",
+            "Туалет;",
+            "Холодильник;",
+            "Централизованное отопление;",
+            "Электрический чайник;",
+            "В стоимость включен завтрак на 8 человек (весной и осенью возможны исключения);"
+        ],
+        "images": [
+            "assets/images/house45_1.jpg",
+            "assets/images/house45_2.jpg",
+            "assets/images/house45_3.jpg",
+            "assets/images/house45_4.jpg",
+            "assets/images/house45_5.jpg",
+            "assets/images/house45_6.jpg",
+            "assets/images/house45_7.jpg",
+            "assets/images/house45_8.jpg",
+            "assets/images/house45_9.jpg",
+            "assets/images/house45_10.jpg",
+            "assets/images/house45_11.jpg",
+            "assets/images/house45_12.jpg"
         ]
     }
 ]

@@ -4,27 +4,27 @@ mixin QuickLinks(isFull=false)
     -
         const defaultLinks = [{
             text: 'Посмотреть прайс',
-            link: '/mock-me',
+            link: '/price.html',
             img: '../../assets/img/price-big-image.svg'
         }, {
             text: 'Забронировать дом',
-            link: '/mock-me',
+            link: 'https://booking.sugesh.ru/',
             img: '../../assets/img/house-big-image.svg'
         }, {
-            text: 'Как добраться до Сюгеша',
-            link: '/mock-me',
+            text: 'Как добраться до «Сюгеша»',
+            link: '/path.html',
             img: '../../assets/img/map-big-image.svg'
         }]
         const lastLink = [{
-            text: 'Записаться на экскурсию',
-            link: '/mock-me',
+            text: 'Записаться на экскурсию </br>8-983-377-9577',
+            link: 'tel:+79833779577',
             img: '../../assets/img/hike-big-image.svg'
         }]
         const links = isFull ? [...defaultLinks, ...lastLink] : [...defaultLinks]
         const fullClass = isFull ? 'quickLinks_full' : ''
     .quickLinks(class=fullClass)
         ul.quickLinks__list
-            each link in links
+            each link, i in links
                 li.quickLinks__item
                     img(src=link.img)
-                    +Button({text: link.text, link: link.link})
+                    +Button({text: link.text, link: link.link})(class=isFull && i === links.length - 1 ? 'quickLinks__button' : '')

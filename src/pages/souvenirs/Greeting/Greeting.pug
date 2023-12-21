@@ -7,6 +7,6 @@ mixin Greeting()
         .souvenirs-greeting
             .souvenirs-greeting-inner
                 +TextIcon({icon: '../../assets/img/cup-brown.svg', text: 'СУВЕНИРЫ'})
-                +Button({text: 'Приобрести подарочный сертификат', link: 'mock-me'})
-                p.souvenirs-greeting-text!='Из любого путешествия хочется привезти «кусочек» воспоминаний с собой. </br></br>Что же можно привезти из «Сюгеша»?'
+                +Button({text: 'Приобрести подарочный сертификат </br>8-983-377-9577', link: 'tel:+79833779577'})(class='souvenirs-greeting__button')
+                p.souvenirs-greeting-text!='Из любого путешествия хочется привезти домой что-то, что будет напоминать о пережитых приключениях.</br> Что можно привезти из «Сюгеша»?'
             img.souvenirs-greeting-img(src='../../assets/img/big-souvenirs.png')

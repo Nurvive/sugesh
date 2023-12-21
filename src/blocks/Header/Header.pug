@@ -8,13 +8,13 @@ mixin Header({menu=[]} = {})
     header.header.js-header
         .header__container
             a.header__logo-link(href="index.html")
-                img.header__logo(src='../../assets/img/logo.svg')
+                img.header__logo(src='../../assets/img/logo.png')
             nav.header__nav
                 ul.header__nav-menu
                     each option in headerMenu
                         li.header__nav-menu-item
                             a(href=option.href).header__nav-menu-item-link= option.text
-            a(href="tel:+73902313506").header__phone="+73902313506"
+            a(href="tel:+79833779577").header__phone="+79833779577"
         +SubHeader(subHeaderMenu)
         +Burger({menu})
 

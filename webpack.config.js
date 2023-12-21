@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const PAGES = fs.readdirSync(path.join(__dirname, './src/pages'));
+
 module.exports = {
     entry: './src/index.js',
     mode: 'development',
@@ -93,7 +94,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(jpe?g|png|gif|JPG)$/i,
                 type: 'asset/resource',
                 generator: {
                     filename: 'assets/images/[name][ext]'
@@ -107,7 +108,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(woff|ttf|svg)$/i,
+                test: /\.(woff|ttf)$/i,
                 type: 'asset/resource',
                 generator: {
                     filename: 'assets/fonts/[name][ext]'

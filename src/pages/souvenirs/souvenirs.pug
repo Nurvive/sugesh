@@ -14,21 +14,21 @@ block content
         const seasons = [
             {
                 name: "зима",
-                img: '../../assets/img/winter.png',
+                img: '../../assets/img/winter.jpg',
                 link: 'winter.html',
                 isWinter: true,
                 icon: '../../assets/img/snowflake.svg'
             },
             {
                 name: "весна",
-                img: '../../assets/img/spring.png',
+                img: '../../assets/img/spring.jpg',
                 link: 'spring.html',
                 icon: '../../assets/img/flower.svg'
             },
-            {name: "лето", img: '../../assets/img/summer.png', link: 'summer.html', icon: '../../assets/img/sun.svg'},
+            {name: "лето", img: '../../assets/img/summer.jpg', link: 'summer.html', icon: '../../assets/img/sun.svg'},
             {
                 name: "осень",
-                img: '../../assets/img/autumn.png',
+                img: '../../assets/img/autumn.jpg',
                 link: 'autumn.html',
                 icon: '../../assets/img/leafAutumn.svg'
             }
@@ -36,6 +36,6 @@ block content
     +Spray(true)
     +Greeting()
     +SPAForm('Запросить консультацию')
-    +Price()
+    //+Price()
     +Seasons({seasons})
-    +Button({text: 'Забронировать дом', link: 'mock-me'}).souvenirs__button
+    +Button({text: 'Забронировать дом', link: 'https://booking.sugesh.ru/'}).souvenirs__button

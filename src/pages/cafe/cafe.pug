@@ -7,6 +7,7 @@ include ../../blocks/Description/Description
 include ../../blocks/SPAForm/SPAForm
 include ../../blocks/Results/Results
 include ./Menu/Menu
+include ./ExcelMenu/ExcelMenu
 
 block title
     title Кафе
@@ -14,16 +15,16 @@ block title
 block content
     -
         const greeting = {
-            title: 'Братец кролик',
-            text: 'Приезжая в “Сюгеш” обязательно загляните в наше кафе! Мы очень заботимся о наших гостях, поэтому готовим блюда только из натуральных продуктов. ' +
+            title: '«Братец кролик»',
+            text: 'Приезжая в «Сюгеш», обязательно загляните в наше кафе! Мы очень заботимся о наших гостях, поэтому готовим блюда только из натуральных продуктов. ' +
                     '</br></br><strong>График работы</strong>: Воскресенье-четверг: с 9.00 до 20.00 Пятница, суббота: с 9.00 до 22.00 </br></br><strong>Завтраки ежедневно</strong>: с 9:00 до 11:00',
-            link: 'mock-me',
             iconText: 'КАФЕ',
             icon: '../../assets/img/bowl-brown.svg'
         }
         const cards = [
             {
-                text: "Для наших гостей мы готовим аппетитные домашние блюда. </br></br>Дополнительно вы всегда можете <a class='cafe__link' href='mock-me'>оформить под заказ</a> блюда Итальянской или Японской кухни*</br></br><span class='cafe__undertext'>*подробную информацию можно уточнить у администратора или в кафе</span>",
+                title: 'Аппетитно',
+                text: "Для наших гостей мы готовим аппетитные домашние блюда.</br></br><span class='cafe__undertext'> Подробную информацию можно уточнить у администратора или в кафе</span>",
                 img: '../../assets/img/infoCardCafe/infoCardCafe1.jpg',
                 isRight: true,
                 defaultCover: false
@@ -47,10 +48,11 @@ block content
     +GreetingWrapper.cafe()
         +SeasonGreeting(greeting)
         +Slider({
-            slides: ['../../assets/img/summer/summer1.jpg', '../../assets/img/summer/summer2.jpg', '../../assets/img/summer/summer3.jpg'],
+            slides: ['../../assets/img/summer/summer_1.jpg', '../../assets/img/summer/summer_2.jpg', '../../assets/img/summer/summer_3.jpg'],
             withIcon: true
         }).cafe__slider
     +SPAForm('Забронировать столик')
     +Description({title: 'Кухня', cards})
-    +Menu(menuData)
+    //+Menu(menuData)
+    +ExcelMenu()
     +Results()

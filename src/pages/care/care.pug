@@ -11,14 +11,14 @@ block title
 block content
     -
         const greeting = {
-            text: 'Каждому гостю мы обеспечиваем индивидуальный подход и хотим, чтобы на нашем курорте было комфортно каждому. При любой необходимости вы всегда можете обратиться в наш отдел заботы.</br></br> За каждым гостем нашего курорта закрепляется свой Ангел заботы, к который будет сопровождать вас на протяжении всего присутствия в «Сюгеше» и после!',
+            text: 'Мы рады приветствовать вас на нашей таежной горнолыжной базе. Здесь каждый сможет найти что-то для себя.</br> Наша главная цель – сделать ваш отдых комфортным и безопасным. Мы стремимся обеспечить вам чудесное времяпровождение, создаем атмосферу уюта и гостеприимства.</br> Если у вас возникнут вопросы или пожелания, мы всегда готовы прийти на помощь. У нас работают отзывчивые и опытные специалисты.',
             buttonText: 'Забронировать домик',
-            link: 'mock-me',
+            link: 'https://booking.sugesh.ru/',
             iconText: 'ОТДЕЛ ЗАБОТЫ',
             icon: '../../assets/img/care-brown.svg'
         }
     +Spray(true)
     +GreetingWrapper().care__wrapper
         +SeasonGreeting(greeting)
-        +Slider({slides: ['../../assets/img/winter/house.jpg', '../../assets/img/winter/inventory.jpg', '../../assets/img/winter/bath.jpg', '../../assets/img/winter/board.jpg']})
+        +Slider({slides: ['../../assets/img/other/house.jpg', '../../assets/img/other/inventory.jpg', '../../assets/img/other/bath.jpg', '../../assets/img/other/board.jpg']})
     +Results()

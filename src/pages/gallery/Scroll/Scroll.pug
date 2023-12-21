@@ -3,4 +3,4 @@ mixin Scroll({images = [], title = "", text = ""} = {})
         ul.scroll__list
             each img in images
                 li.scroll__list-item
-                    img(src=img)
+                    img(src=img loading='lazy')

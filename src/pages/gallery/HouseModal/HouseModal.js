@@ -17,7 +17,7 @@ export class HouseModal {
         e.preventDefault();
         this.button = e.currentTarget;
         this.number = Number(this.button.dataset.house);
-        this.house = houses[this.number];
+        this.house = houses.find((house) => house.number === this.number);
         this.createModal();
         this.showModal();
     };
@@ -54,7 +54,7 @@ export class HouseModal {
 
     createTitle = () => {
         const modalInfo = document.createElement('h2');
-        modalInfo.textContent = `Информация о домике №${this.number + 1}`;
+        modalInfo.textContent = `Информация о домике №${this.number}`;
         modalInfo.classList.add('houseModal__header-info');
         this.header.append(modalInfo);
     };
@@ -87,6 +87,7 @@ export class HouseModal {
 
             const img = document.createElement('img');
             img.src = src;
+            img.loading = 'lazy';
             item.append(img);
 
             slides.append(item);
@@ -191,24 +192,26 @@ export class HouseModal {
         this.createBookButton();
         this.createOkButton();
         this.modal.append(this.bottomButtons);
-    }
+    };
 
     createOkButton = () => {
         const button = document.createElement('div');
         button.textContent = 'Ок';
         button.classList.add('houseModal__bottom-button');
-        button.addEventListener('click', this.handleCloseModal)
+        button.addEventListener('click', this.handleCloseModal);
 
         this.bottomButtons.append(button);
-    }
+    };
 
     createBookButton = () => {
-        const button = document.createElement('div');
-        button.textContent = 'Забронировать домик';
-        button.classList.add('houseModal__bottom-button');
+        const link = document.createElement('a');
+        link.href = this.house.link;
+        link.target = '_blank';
+        link.textContent = 'Забронировать домик';
+        link.classList.add('houseModal__bottom-button');
 
-        this.bottomButtons.append(button);
-    }
+        this.bottomButtons.append(link);
+    };
 
     handleCloseModal = () => {
         this.modalWrapper.classList.remove('houseModal__wrapper_active');

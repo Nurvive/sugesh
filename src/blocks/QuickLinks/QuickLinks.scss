@@ -35,6 +35,13 @@
         width: 100%;
     }
 
+    &__button {
+        @include desktop() {
+            cursor: default;
+            pointer-events: none;
+        }
+    }
+
     &__link {
         padding: 30px 36px;
         background: linear-gradient(101.27deg, rgba(0, 83, 64, 0.8) 13.04%, #447A43 99.61%);

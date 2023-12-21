@@ -57,12 +57,15 @@
     }
 
     &__slide {
+        height: revert;
         max-height: 530px;
         max-width: 680px;
 
         & > img {
             display: block;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 

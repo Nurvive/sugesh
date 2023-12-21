@@ -26,4 +26,11 @@
             display: none;
         }
     }
+
+    &__button {
+        @include desktop() {
+            cursor: default;
+            pointer-events: none;
+        }
+    }
 }

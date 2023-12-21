@@ -9,7 +9,7 @@ export class GalleryBlock {
             this.glideClass = new Glide(this.glide, {
                 perView: 2,
                 breakpoints: {
-                    768: {
+                    1070: {
                         perView: 1
                     }
                 }
@@ -21,6 +21,7 @@ export class GalleryBlock {
     }
 
     init() {
+        console.log(gallery);
         const buttons = gallery.map((item) => item.name);
         this.createButtons(buttons);
         const object = gallery.find((item) => item.name === this.currrent);
@@ -36,7 +37,7 @@ export class GalleryBlock {
         this.glideClass = new Glide(this.glide, {
             perView: 2,
             breakpoints: {
-                768: {
+                1070: {
                     perView: 1
                 }
             }
@@ -100,8 +101,12 @@ export class GalleryBlock {
             wrapper.classList.add('galleryBlock__item');
             slide.forEach((image) => {
                 const newImg = document.createElement('img');
+                const imgWrapper = document.createElement('div')
+                imgWrapper.classList.add('galleryBlock__img-wrapper')
+                newImg.loading = 'lazy';
                 newImg.src = image;
-                wrapper.append(newImg);
+                imgWrapper.append(newImg)
+                wrapper.append(imgWrapper);
             });
             newSlide.append(wrapper);
             this.list.append(newSlide);

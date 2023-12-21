@@ -3,52 +3,106 @@
         "name": "Территория",
         "slides": [
             [
-                "assets/images/territory_1_1.png",
-                "assets/images/territory_1_2.png"
+                "assets/images/territory_1_1.jpg",
+                "assets/images/territory_1_2.jpg"
             ],
             [
-                "assets/images/territory_1_3.png",
-                "assets/images/territory_1_4.png"
+                "assets/images/territory_1_3.jpg",
+                "assets/images/territory_1_4.jpg"
             ],
             [
-                "assets/images/territory_2_1.png",
-                "assets/images/territory_2_2.png"
+                "assets/images/territory_2_1.jpg",
+                "assets/images/territory_2_2.jpg"
             ],
             [
-                "assets/images/territory_2_3.png",
-                "assets/images/territory_2_4.png"
+                "assets/images/territory_2_3.jpg",
+                "assets/images/territory_2_4.jpg"
+            ],
+            [
+                "assets/images/territory_3_1.jpg",
+                "assets/images/territory_3_2.jpg"
+            ],
+            [
+                "assets/images/territory_3_3.jpg",
+                "assets/images/territory_3_4.jpg"
+            ],
+            [
+                "assets/images/territory_4_1.jpg",
+                "assets/images/territory_4_2.jpg"
+            ],
+            [
+                "assets/images/territory_4_3.jpg",
+                "assets/images/territory_4_4.jpg"
+            ],
+            [
+                "assets/images/territory_5_1.jpg",
+                "assets/images/territory_5_2.jpg"
+            ],
+            [
+                "assets/images/territory_5_3.jpg",
+                "assets/images/territory_5_4.jpg"
+            ],
+            [
+                "assets/images/territory_6_1.jpg",
+                "assets/images/territory_6_2.jpg"
+            ],
+            [
+                "assets/images/territory_6_3.jpg",
+                "assets/images/territory_6_4.jpg"
             ]
         ]
-    },{
+    },
+    {
         "name": "Столовая",
         "slides": [
             [
-                "assets/images/territory_1_1.png",
-                "assets/images/territory_1_2.png"
+                "assets/images/dining_1_1.jpg",
+                "assets/images/dining_1_2.jpg"
             ],
             [
-                "assets/images/territory_1_3.png",
-                "assets/images/territory_1_4.png"
+                "assets/images/dining_1_3.jpg",
+                "assets/images/dining_1_4.jpg"
             ],
             [
-                "assets/images/territory_2_1.png",
-                "assets/images/territory_2_2.png"
+                "assets/images/dining_2_1.jpg",
+                "assets/images/dining_2_2.jpg"
             ],
             [
-                "assets/images/territory_2_3.png",
-                "assets/images/territory_2_4.png"
+                "assets/images/dining_2_3.jpg",
+                "assets/images/dining_2_4.jpg"
+            ],
+            [
+                "assets/images/dining_3_1.jpg",
+                "assets/images/dining_3_2.jpg"
             ]
         ]
-    },{
+    },
+    {
         "name": "Сауна",
         "slides": [
             [
-                "assets/images/territory_1_1.png",
-                "assets/images/territory_1_2.png"
+                "assets/images/sauna_1_1.jpg",
+                "assets/images/sauna_1_2.jpg"
             ],
             [
-                "assets/images/territory_1_3.png",
-                "assets/images/territory_1_4.png"
+                "assets/images/sauna_1_3.jpg",
+                "assets/images/sauna_1_4.jpg"
+            ],
+            [
+                "assets/images/sauna_2_1.jpg",
+                "assets/images/sauna_2_2.jpg"
+            ],
+            [
+                "assets/images/sauna_2_3.jpg",
+                "assets/images/sauna_2_4.jpg"
+            ],
+            [
+                "assets/images/sauna_3_1.jpg",
+                "assets/images/sauna_3_2.jpg"
+            ],
+            [
+                "assets/images/sauna_3_3.jpg",
+                "assets/images/sauna_3_4.jpg"
             ]
         ]
     },
@@ -56,28 +110,121 @@
         "name": "Плюшки",
         "slides": [
             [
-                "assets/images/tubing_1_1.png",
-                "assets/images/tubing_1_2.png"
+                "assets/images/tubing_1_1.jpg",
+                "assets/images/tubing_1_2.jpg"
             ],
             [
-                "assets/images/tubing_1_3.png",
-                "assets/images/tubing_1_4.png"
+                "assets/images/tubing_1_3.jpg",
+                "assets/images/tubing_1_4.jpg"
             ],
             [
-                "assets/images/tubing_2_1.png",
-                "assets/images/tubing_2_2.png"
+                "assets/images/tubing_2_1.jpg",
+                "assets/images/tubing_2_2.jpg"
             ],
             [
-                "assets/images/tubing_2_3.png",
-                "assets/images/tubing_2_4.png"
+                "assets/images/tubing_2_3.jpg",
+                "assets/images/tubing_2_4.jpg"
             ],
             [
-                "assets/images/tubing_2_1.png",
-                "assets/images/tubing_2_2.png"
+                "assets/images/tubing_3_1.jpg",
+                "assets/images/tubing_3_2.jpg"
+            ]
+        ]
+    },
+    {
+        "name": "Дома",
+        "slides": [
+            [
+                "assets/images/houses_1_1.jpg",
+                "assets/images/houses_1_2.jpg"
             ],
             [
-                "assets/images/tubing_2_3.png",
-                "assets/images/tubing_2_4.png"
+                "assets/images/houses_1_3.jpg",
+                "assets/images/houses_1_4.jpg"
+            ],
+            [
+                "assets/images/houses_2_1.jpg",
+                "assets/images/houses_2_2.jpg"
+            ],
+            [
+                "assets/images/houses_2_3.jpg",
+                "assets/images/houses_2_4.jpg"
+            ],
+            [
+                "assets/images/houses_3_1.jpg",
+                "assets/images/houses_3_2.jpg"
+            ],
+            [
+                "assets/images/houses_3_3.jpg",
+                "assets/images/houses_3_4.jpg"
+            ],
+            [
+                "assets/images/houses_4_1.jpg",
+                "assets/images/houses_4_2.jpg"
+            ],
+            [
+                "assets/images/houses_4_3.jpg",
+                "assets/images/houses_4_4.jpg"
+            ],
+            [
+                "assets/images/houses_5_1.jpg",
+                "assets/images/houses_5_2.jpg"
+            ],
+            [
+                "assets/images/houses_5_3.jpg",
+                "assets/images/houses_5_4.jpg"
+            ],
+            [
+                "assets/images/houses_6_1.jpg",
+                "assets/images/houses_6_2.jpg"
+            ],
+            [
+                "assets/images/houses_6_3.jpg",
+                "assets/images/houses_6_4.jpg"
+            ],
+            [
+                "assets/images/houses_7_1.jpg",
+                "assets/images/houses_7_2.jpg"
+            ],
+            [
+                "assets/images/houses_7_3.jpg",
+                "assets/images/houses_7_4.jpg"
+            ]
+        ]
+    },
+    {
+        "name": "Бассейн",
+        "slides": [
+            [
+                "assets/images/pool_1_1.jpg",
+                "assets/images/pool_1_2.jpg"
+            ],
+            [
+                "assets/images/pool_1_3.jpg",
+                "assets/images/pool_1_4.jpg"
+            ],
+            [
+                "assets/images/pool_2_1.jpg",
+                "assets/images/pool_2_2.jpg"
+            ],
+            [
+                "assets/images/pool_2_3.jpg",
+                "assets/images/pool_2_4.jpg"
+            ],
+            [
+                "assets/images/pool_3_1.jpg",
+                "assets/images/pool_3_2.jpg"
+            ],
+            [
+                "assets/images/pool_3_3.jpg",
+                "assets/images/pool_3_4.jpg"
+            ],
+            [
+                "assets/images/pool_4_1.jpg",
+                "assets/images/pool_4_2.jpg"
+            ],
+            [
+                "assets/images/pool_4_3.jpg"
             ]
         ]
     }

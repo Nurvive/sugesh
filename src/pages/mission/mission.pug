@@ -11,14 +11,14 @@ block title
 block content
     -
         const greeting = {
-            text: 'Мы хотим, чтобы каждый человек получал удовольствие, отдыхая на курорте “Сюгеш”. Нам важно, чтобы каждый гость испытал массу впечатлений, отдохнул и зарядился отличным настроением!',
+            text: 'Для нас важно, чтобы каждый взрослый и каждый даже самый маленький гость активно отдохнул, испытал массу положительных впечатлений и зарядился отличным настроением!',
             buttonText: 'Забронировать домик',
-            link: 'mock-me',
+            link: 'https://booking.sugesh.ru/',
             iconText: 'НАША МИССИЯ',
             icon: '../../assets/img/mission-brown.svg'
         }
     +Spray(true)
     +GreetingWrapper()
         +SeasonGreeting(greeting)
-        +Slider({slides: ['../../assets/img/winter/house.jpg', '../../assets/img/winter/inventory.jpg', '../../assets/img/winter/bath.jpg']})
+        +Slider({slides: ['../../assets/img/other/house.jpg', '../../assets/img/other/inventory.jpg', '../../assets/img/other/bath.jpg']})
     +Results()

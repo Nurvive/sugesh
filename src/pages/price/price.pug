@@ -1,5 +1,6 @@
 extends ../../templates/page-template
 include ../../blocks/Spray/Spray
+include ../../blocks/Button/Button
 include ./Cost/Cost
 
 block title
@@ -8,5 +9,6 @@ block title
 block content
     +Spray(true)
     .price-page
+        +Button({text: "Прайс на проживание в домах", link: 'https://booking.sugesh.ru/'})
         +Cost({title: "ЛЕТНИЙ ПРАЙС", img: "../../assets/img/price/summerPrice.png"})
         +Cost({title: "ЗИМНИЙ ПРАЙС", img: "../../assets/img/price/winterPrice.png"})

@@ -1083,6 +1083,12 @@
   max-width: 400px;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .quickLinks__button {
+    cursor: default;
+    pointer-events: none;
+  }
+}
 .quickLinks__link {
   padding: 30px 36px;
   background: linear-gradient(101.27deg, rgba(0, 83, 64, 0.8) 13.04%, #447A43 99.61%);
@@ -1652,12 +1658,16 @@
   }
 }
 .js-glide__slide {
+  height: revert;
   max-height: 530px;
   max-width: 680px;
 }
 .js-glide__slide > img {
   display: block;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .js-glide__bullets {
   position: absolute;
@@ -2423,6 +2433,12 @@
 @media screen and (max-width: 1320px) {
   .gallery-greeting-img {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-greeting__button {
+    cursor: default;
+    pointer-events: none;
   }
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -3480,6 +3496,12 @@
 @media screen and (max-width: 1320px) {
   .souvenirs-greeting-img {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .souvenirs-greeting__button {
+    cursor: default;
+    pointer-events: none;
   }
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\

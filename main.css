@@ -490,6 +490,11 @@
     margin-top: 30px;
   }
 }
+.footer__socials-wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer__number {
   font-size: 16px;
   line-height: 20px;
@@ -1163,56 +1168,11 @@
     padding: 20px;
   }
 }
-.requestFormSport__inputs {
-  display: flex;
-  gap: 40px;
-}
-@media screen and (max-width: 1024px) {
-  .requestFormSport__inputs {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 768px) {
-  .requestFormSport__inputs {
-    gap: 20px;
-  }
-}
-.requestFormSport__buttons {
-  display: flex;
-  gap: 40px;
-}
-@media screen and (max-width: 1024px) {
-  .requestFormSport__buttons {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 768px) {
-  .requestFormSport__buttons {
-    gap: 20px;
-  }
-}
-.requestFormSport__button {
-  display: block;
-  width: 100%;
-  padding: 26px 88px;
-  background: linear-gradient(101.27deg, rgba(0, 83, 64, 0.8) 13.04%, #447A43 99.61%);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+.requestFormSport__number {
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
-  border: none;
-  border-radius: 40px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
-  cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-  .requestFormSport__button {
-    padding: 18px 40px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-  }
+  color: #502F0A;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/blocks/Results/Results.scss ***!
@@ -2894,7 +2854,16 @@
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/index/Index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
-
+.index__warning {
+  color: #502F0A;
+  max-width: 1080px;
+  margin-inline: auto;
+  text-align: center;
+  -webkit-margin-after: 40px;
+          margin-block-end: 40px;
+  padding-inline: 20px;
+  font-size: 1.1rem;
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[5]!./src/pages/index/Map/Map.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************/

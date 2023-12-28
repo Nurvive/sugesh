@@ -2,9 +2,11 @@ include ../Input/Input
 
 mixin RequestFormSport()
     form.requestFormSport
-        .requestFormSport__inputs
-            +Input({placeholder: 'Имя'})(type='text', minlength="2")
-            +Input({placeholder: 'Телефон'})(type="tel", inputmode="tel")
-        .requestFormSport__buttons
-            button(type="submit").requestFormSport__button='Записаться к инструктору'
-            button(type="submit").requestFormSport__button='Подобрать снаряжение'
+        div="Виталий Михайлович Куцых — инструктор высшей категории, телефон: "
+            a(href="tel:+79232135087").requestFormSport__number!="8 923 213 5087"
+        div="Владимир Бутонаев — инструктор по горным лыжам, телефон: "
+            a(href="tel:+79135497040").requestFormSport__number!="8 913 549 7040"
+        div="Михаил Гопин — инструктор по сноуборду, телефон: "
+            a(href="tel:+79232126006").requestFormSport__number!="8 923 212 6006"
+        div="Дмитрий Михайлов — инструктор по горным лыжам (работает сб-вс), телефон: "
+            a(href="tel:+79061906677").requestFormSport__number!="8 906 190 6677"

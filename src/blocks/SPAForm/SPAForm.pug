@@ -1,7 +1,7 @@
 include ../Input/Input
 
 mixin SPAForm(buttonText='Записаться в SPA-центр')
-    form.spa-form&attributes(attributes)
-        +Input({placeholder: 'Имя'})(type='text', minlength="2")
-        +Input({placeholder: 'Телефон'})(type="tel", inputmode="tel")
+    form.spa-form(method="post", action="mail.php")&attributes(attributes)
+        +Input({placeholder: 'Имя'})(type='text', minlength="2", name='name', required)
+        +Input({placeholder: 'Телефон'})(type="tel", inputmode="tel", name='phone', pattern="[7-8][0-9]{3}[0-9]{3}[0-9]{4}", required)
         button(type="submit").spa-form__button=buttonText

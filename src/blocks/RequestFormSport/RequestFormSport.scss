@@ -46,52 +46,10 @@
         padding: 20px;
     }
 
-    &__inputs {
-        display: flex;
-        gap: 40px;
-
-        @include media($desktop) {
-            flex-direction: column;
-        }
-
-        @include media($tablet) {
-            gap: 20px;
-        }
-    }
-
-    &__buttons {
-        display: flex;
-        gap: 40px;
-
-        @include media($desktop) {
-            flex-direction: column;
-        }
-
-        @include media($tablet) {
-            gap: 20px;
-        }
-    }
-
-    &__button {
-        display: block;
-        width: 100%;
-        padding: 26px 88px;
-        background: linear-gradient(101.27deg, rgba(0, 83, 64, 0.8) 13.04%, #447A43 99.61%);
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    &__number {
+        font-size: 16px;
+        line-height: 20px;
         text-align: center;
-        border: none;
-        border-radius: 40px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        color: $light;
-        cursor: pointer;
-
-        @include media($tablet) {
-            padding: 18px 40px;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 24px;
-        }
+        color: $sogesh;
     }
 }

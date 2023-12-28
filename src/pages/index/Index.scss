@@ -1,0 +1,13 @@
+@import '../../scss/colors';
+
+.index {
+    &__warning {
+        color: $sogesh;
+        max-width: 1080px;
+        margin-inline: auto;
+        text-align: center;
+        margin-block-end: 40px;
+        padding-inline: 20px;
+        font-size: 1.1rem;
+    }
+}

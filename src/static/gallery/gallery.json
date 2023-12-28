@@ -78,7 +78,7 @@
         ]
     },
     {
-        "name": "Сауна",
+        "name": "Фитокомплекс",
         "slides": [
             [
                 "assets/images/sauna_1_1.jpg",
@@ -103,6 +103,42 @@
             [
                 "assets/images/sauna_3_3.jpg",
                 "assets/images/sauna_3_4.jpg"
+            ]
+        ]
+    },
+    {
+        "name": "Сауна",
+        "slides": [
+            [
+                "assets/images/hamam_1_1.jpg",
+                "assets/images/sauna_1_2.jpg"
+            ],
+            [
+                "assets/images/hamam_1_3.jpg",
+                "assets/images/sauna_1_4.jpg"
+            ],
+            [
+                "assets/images/hamam_2_1.jpg",
+                "assets/images/hamam_2_2.jpg"
+            ],
+            [
+                "assets/images/hamam_2_3.jpg",
+                "assets/images/hamam_2_4.jpg"
+            ],
+            [
+                "assets/images/hamam_3_1.jpg",
+                "assets/images/hamam_3_2.jpg"
+            ],
+            [
+                "assets/images/hamam_3_3.jpg",
+                "assets/images/hamam_3_4.jpg"
+            ],
+            [
+                "assets/images/hamam_4_1.jpg",
+                "assets/images/hamam_4_2.jpg"
+            ],
+            [
+                "assets/images/hamam_4_3.jpg"
             ]
         ]
     },
